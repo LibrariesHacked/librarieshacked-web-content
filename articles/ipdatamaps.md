@@ -8,11 +8,11 @@ Date: 2016/03/07
 Author: @librarieshacked
 */
 
-*This is the first of two posts focussing on Intellectual Property data in preparation for a hackathon being held in Manchester Library on 12th March 2016.  Rather than being a detailed tutorial post, this is an overview of the datasets and processes involved in mapping the currently available IP data.*
+**This is the first of two posts focussing on Intellectual Property data in preparation for a hackathon being held in Manchester Library on 12th March 2016.  Rather than being a detailed tutorial post, this is an overview of the datasets and processes involved in mapping the currently available IP data.**
 
-To take part in the event at Manchester library visit [EventBrite - IP Magnet Challenge](https://www.eventbrite.co.uk/e/the-ip-magnet-challenge-intellectual-property-data-hackathon-tickets-21674235221)
+To take part in the event at Manchester library visit [EventBrite - IP Magnet Challenge](https://www.eventbrite.co.uk/e/the-ip-magnet-challenge-intellectual-property-data-hackathon-tickets-21674235221).
 
-Intellectual property (IP) applications (patents, trademarks) are handled in the UK by the Intellectual Property Office (IPO).  This data has for a long time been public, and searchable through such tools as the IP patents and trademarks journals.
+Intellectual property (IP) applications (patents, trademarks) are handled in the UK by the Intellectual Property Office (IPO).  This data has for a long time been public, and searchable through such tools as the IPO patents and trademarks journals.
 
 - [Intellectual Property Office - Searchable Patents Journal](https://www.ipo.gov.uk/p-pj)
 - [Intellectual Property Office - Trademarks Journal](https://www.ipo.gov.uk/t-tmj/)
@@ -21,7 +21,7 @@ There are also various developer/consumer services for access to this data.  Wee
 
 - [Patents journal download](https://www.ipo.gov.uk/types/patent/p-os/p-journal/p-pj-download.htm) PDF or Basic XML
 
-For research, these services aren't so useful - web seaches are helpful for finding specific information, rather than data analysis. Weekly XML would also have to be compiled together in order to be turned into a current snapshot of the full data, and would ideally be in a more accessible format for non-developers. 
+For research, these services aren't always ideal - web seaches are helpful for finding specific information, rather than data analysis. For patent applications, weekly XML would also have to be compiled together in order to be turned into a current snapshot of the full data, and would ideally be in a more accessible format for non-developers. 
 
 There are a couple of datasets listed on Gov.uk, where the data has been compiled into snapshots in order for statistical research to be undertaken.  A full description of the fields is also available on the relevant pages for each dataset.
 
@@ -42,17 +42,17 @@ The snapshot data for patents includes postcode districts for each application -
 <tr><td>Current proprietor/s postcode/s</td><td>The postcode/s of the current proprietor/s. Postcodes are separated by ;</td></tr>
 </table>
 
-There are 523,367 records.  Of these only 159,913 actually have postcode information, representing the number of applications from the UK.
+There are 523,367 records.  Of these only 159,913 actually have postcode information, representing the number of applications from the UK (around 30%).
 
 ## Analysing location data
 
 Comparing the two columns for applicant and current proprietor column, it appears that there are only 34,239 records where they are different, around a fifth of the total.
 
-As there is not much difference, taking just the applicant postcode district data, this post will look at visualising the amounts of applications coming from different postcode districts.  For geographic visualisations, choropleth maps (from the Latin, simply *coloured maps*) can be useful to visualise differences in areas. This is colouring the relevant areas based upon some kind of value for that area (in this case number of applications).
+As there is not much difference, taking just the applicant postcode district data, this post will look at visualising the amounts of applications coming from different postcode districts.  For geographic visualisations, choropleth maps can be useful to visualise differences in areas. This is colouring areas based upon some kind of value for that area (in this case it will be number of applications).
 
 ## Postcode districts
 
-Postcode data is split into different levels.
+The IP data gives the postcode district of the applicants.  So what is a postcode district?  Postcode data is split into different levels.
 
 <table class="table">
 <tr><th>Level</th><th>Example</th><th>Description</th></tr>
@@ -66,7 +66,7 @@ Postcode data is split into different levels.
 
 ## Postcode open data
 
-The Ordnance Survey have a free open data product called Code-Point open which provides coordinate-based location information for all 1.8M postcode units.
+The Ordnance Survey have a free open data product called Code-Point Open, which provides coordinate-based location information for all 1.8M postcode units.
 
 - [Code-point Open](https://www.ordnancesurvey.co.uk/business-and-government/products/code-point-open.html)
 
@@ -76,13 +76,13 @@ This data is not freely available from the OS though, as it is included in an OS
 
 - [Code-point with polygons](https://www.ordnancesurvey.co.uk/business-and-government/products/code-point-with-polygons.html)
 
-*(It is worth nothing that public sector organisations should have free access to OS premium products as part of the [Public Sector Mapping Agreement](https://www.ordnancesurvey.co.uk/business-and-government/public-sector/mapping-agreements/public-sector-mapping-agreement.html)).*
+*It is worth nothing that public sector organisations should have free access to OS premium products as part of the [Public Sector Mapping Agreement](https://www.ordnancesurvey.co.uk/business-and-government/public-sector/mapping-agreements/public-sector-mapping-agreement.html).  Any public libraries or other public organisations that want access to OS premium data should contact their GIS teams.*
 
-Instead of using premium OS data, the boundaries can be derived from the open point data.  If you were to plot all of the postcodes in the UK on a map and then draw a line around all the 'sets' (whether that set is area/sector/district/unit) then those shapes are effectively the polygon data.
+Instead of using premium OS data, the boundaries can be derived from the open data.  If you were to plot all of the postcodes in the UK on a map and then draw a line around all the 'sets' (whether that set is grouped by area/sector/district/unit) then those shapes are effectively the polygon data.
 
 Luckily this has already been done from OS open data, by a Geospatial organisation called Geolytix.
 
-- [Geolytix Open Data](http://geolytix.co.uk/geodata/).
+- [Geolytix Open Data](http://geolytix.co.uk/geodata/).  Postal Boundaries Open 2012.
 
 **Licence: Released under the same terms as the OS OpenData license with the single addition of GeoLytix to the attribution list.**
 
