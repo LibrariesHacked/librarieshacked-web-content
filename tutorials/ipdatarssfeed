@@ -30,104 +30,75 @@ The Intellectual Property Office publish the Patent Journal as a weekly list, do
 
 Tutorial
 
-This tutorial is designed to demonstrate using a google apps script to query that XML weekly list and convert it into a format that web users are more familiar with seeing - RSS.
+This tutorial is designed to demonstrate using a google apps script to query that XML weekly list and convert it into a format that web users are more familiar with consuming - RSS.
 
-The apps script will then be deployed as a web app, allowing it to be shared and consumed as a traditional RSS feed.
+The apps script will then be deployed as a web app, allowing it to be shared and accessed as a traditional RSS feed.
 
 
+To complete the tutorial you will need a Google account.
 
-To complete the tutorial you need a Google account.
+1. Create a new Google apps script file.
 
-1. In your browser, access Google Drive(https://drive.google.com)
-2. Select to create a new file by New > More > Google Apps Script.
+- In your browser, access Google Drive(https://drive.google.com)
+- Select to create a new file by New > More > Google Apps Script.
+
+Later, to deploy the script as a webapp it needs to have a method called doGet().  Modify the file to look like the following:
 
 <pre class="prettyprint linenums">
-<code>function IPData() {
-
-    // user acount details
-    var memberId = '';
-    var PIN = '';
-    var emailAddress = '';
-
-    // library details - in this case an id and web service for Wiltshire libraries
-    var libraryId = '400001';
-    var libraryUrl = 'https://libraries.wiltshire.gov.uk/arena.pa.palma/loans';
-
-    // script options:
-    // at less than 1 day to go we renew the item
-    var daysToRenew = 1;
-    // at less than 5 days to go, send an email notification
-    var daysToSendEmail = 5;
-
-    // setting up some data for the script
-    // includes XML to post to the web service
-    var d = new Date();
-    var renewals = '';
-    var today = new Date();
-    var checkLoanPayload = '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:loan="http://loans.palma.services.arena.axiell.com/" xmlns:loan1="http://axiell.com/arena/services/palma/patron/loansRequest" xmlns:util="http://axiell.com/arena/services/palma/util"&gt;&lt;soapenv:Header/&gt;&lt;soapenv:Body&gt;&lt;loan:GetLoans&gt;&lt;loan1:loansRequest&gt;&lt;util:arenaMember&gt;' + libraryId + '&lt;/util:arenaMember&gt;&lt;util:user&gt;' + memberId + '&lt;/util:user&gt;&lt;util:password&gt;' + PIN + '&lt;/util:password&gt;&lt;util:language&gt;en&lt;/util:language&gt;&lt;/loan1:loansRequest&gt;&lt;/loan:GetLoans&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;';
-    var renewPayload = '&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:loan="http://loans.palma.services.arena.axiell.com/" xmlns:ren="http://axiell.com/arena/services/palma/patron/renewLoansRequest" xmlns:util="http://axiell.com/arena/services/palma/util" xmlns:loan1="http://axiell.com/arena/services/palma/util/loan"&gt;&lt;soapenv:Header/&gt;&lt;soapenv:Body&gt;&lt;loan:RenewLoans&gt;&lt;ren:renewLoansRequest&gt;&lt;util:arenaMember&gt;' + libraryId + '&lt;/util:arenaMember&gt;&lt;util:user&gt;' + memberId + '&lt;/util:user&gt;&lt;util:password&gt;' + PIN + '&lt;/util:password&gt;&lt;util:language&gt;en&lt;/util:language&gt;&lt;ren:loans&gt;[[renewals]]&lt;/ren:loans&gt;&lt;/ren:renewLoansRequest&gt;&lt;/loan:RenewLoans&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;';
-    var loansOptions = { 'method': 'POST', 'content-type': 'application/xml; charset=utf-8', 'payload': checkLoanPayload };
-    var renewOptions = { 'method': 'POST', 'content-type': 'application/xml; charset=utf-8', 'payload': renewPayload };
-
-    // start - get loans data
-    var getLoans = UrlFetchApp.fetch(libraryUrl, loansOptions);
-    var responseText = getLoans.getContentText();
-
-    // do the XML parsing to get a list of loans
-    var docRoot = XmlService.parse(responseText).getRootElement();
-    var ns = docRoot.getNamespace();
-    var loansRequest = docRoot.getChildren('Body', ns)[0].getChildren()[0].getChildren()[0];
-    ns = loansRequest.getNamespace();
-    var loans = loansRequest.getChild('loans', ns);
-    var loanItems = loans.getChildren();
-
-    var emailText = 'hi libraries hacked,\n';
-    var sendEmail = false;
-    var renew = false;
-
-    // loop through each loan and construct the email body (if necessary)
-    for (var x in loanItems) {
-        var loan = loanItems[x];
-        ns = loan.getNamespace();
-        var renewalDate = loan.getChild('loanDueDate', ns).getText().replace('+', 'T') + ':00.000Z';
-        renewalDate = new Date(renewalDate);
-
-        var reservedDate = new Date(loan.getChild('loanDate', ns).getText());
-        var branch = loan.getChild('branch', ns).getText();
-
-        var catalogueRecord = loan.getChildren()[1];
-        ns = catalogueRecord.getNamespace();
-
-        var title = catalogueRecord.getChild('title', ns).getText();
-        var id = catalogueRecord.getChild('id', ns).getText();
-        var author = catalogueRecord.getChild('author', ns).getText();
-        var oneDay = 1000 * 60 * 60 * 24;
-        var dateDifference = Math.ceil((renewalDate.getTime() - today.getTime()) / (oneDay));
-
-        if (dateDifference &lt;= daysToSendEmail) {
-            sendEmail = true;
-            if (dateDifference &lt;= daysToRenew) {
-                // it's so late we need to renew, but say this in the email.
-                renew = true;
-                emailText += 'items has been renewed ' + title + ', ' + author + ' reserved on ' + reservedDate + '.  remember to finish and return soon.\n';
-                renewals += '&lt;loan1:id&gt;' + id + '&lt;/loan1:id&gt;'
-            }
-            else {
-                // less than five days to go, will send an email each day.
-                emailText += 'your loan of ' + title + ', ' + author + ' reserved on ' + reservedDate + ', is due back on: ' + renewalDate + '.\n';
-            }
-        }
-    }
-
-    // renew whatever items are due to renew
-    if (renew) {
-        renewPayload = renewPayload.replace('[[renewals]]', renewals);
-        UrlFetchApp.fetch(libraryUrl, renewOptions);
-    }
-
-    // send out the email
-    if (sendEmail) {
-        MailApp.sendEmail(emailAddress, 'library notification report', emailText);
-    }
+<code>function doGet() {
 }</code>
 </pre>
+
+2. Accessing the patent data XML
+
+A refreshed XML file is created each week by the IPO and is accessible froma  URL such as:
+
+[]()
+
+Each week the journal will have a week number (in the case above, 6616).
+
+Any code trying to access the latest list then needs to calculate what the current list number is.  For this to be done it needs a reference value.  If we take 6615 as being from Wednesday 10th March, then for any future dates we just need to plus 1 to that number for every full week passed.
+
+When the code has the current Journal ID it can then access the data using the built in method FetchUrl.
+
+<pre class="prettyprint linenums">
+<code>
+
+
+
+
+var latestJournal = FetchUrl();
+
+</code>
+</pre>
+
+
+3. Read the data as XML
+
+Fetching the URL will just fetch the raw text data, for the script to actually understand the data as XML and allow you to extract values from it it needs to be explicitly loaded as XML.
+
+This is done using the 
+
+The XML is also split into 4 sections - Applications Filed, 
+
+
+Merging these all into a single RSS field would be a little unwieldy.  To as a more specific question of the data, how about Applications Filed where the status has become 
+
+(It would be possible of course to create many instances of the script to query different aspects of the data.)
+
+
+<pre class="prettyprint linenums">
+<code>function doGet() {
+}</code>
+</pre>
+
+
+4. Create the RSS Feed
+
+
+
+
+
+5. Deploy as web app.
+
+
