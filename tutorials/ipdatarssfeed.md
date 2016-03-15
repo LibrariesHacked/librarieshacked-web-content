@@ -13,6 +13,8 @@ Template: tutorialpage
 
 **This is a post in preparation for an IP data hack event being held at Manchester Library on 12th March 2016.  The event is being held in a Google Garage so this uses Google Apps Scripts to query the weekly published IP patents journal.**
 
+Output of tutorial: [IP Patents Jounal - Patents Granted RSS](https://script.google.com/macros/s/AKfycbxkCkH7g4sbq6v0E3w-C8h9k1znobdrOjXl1O142YF0Ta0Gh2cP/exec)
+
 ## Google Apps Scripts
 
 Google Apps Scripts can be created by Google account holders as part of their Google Drive documents.  The [Google Apps Script](https://developers.google.com/apps-script/) language is JavaScript with a number of additional methods available to simplify common scripting tasks, and integrate with other Google services. For example, you could write a Google apps script that queried your Google calendar and sent you customised alerts  (if you needed more than the built-in functionality).
@@ -70,11 +72,12 @@ When the code has the current Journal ID it can then access the data using the b
 
 <pre class="prettyprint linenums">
 <code>// Calculate the ID of the journal we're currently on
-var referenceDate = new Date(2016,03,09);
+// Note: 02 in this case is March! 00 is January.
+var referenceDate = new Date(2016,02,09);
 var currentDate = new Date();
 // The difference between the dates is returned in milliseconds.  Convert that to weeks (/604800000)
 var weeks = Math.floor((currentDate-referenceDate) / 604800000);
-var journalId = 6616 + weeks;
+var journalId = parseInt(6616 + weeks);
 var latestJournalText = UrlFetchApp.fetch('https://www.ipo.gov.uk/p-pj-fullfile/xml/' + journalId + '/' + journalId +'.xml').getContentText();</code>
 </pre>
 
@@ -86,10 +89,13 @@ The XML is split into a number of headings and sections.  The headings are:
 - Other Proceedings under the Patents Act 1977
 - Supplementary Protection Certificates.
 
-Each of these headings is split into sections summarised in the following table (**note: this table is not essential reading**)
+Each of these headings is split into sections summarised in the following table (**note: this table is not essential reading!**)
 
-<table class="table">
+<table class="table table-hover">
+<thead>
 <tr><th>Heading</th><th>Section</th></tr>
+</thead>
+<tbody>
 <tr><td>Proceedings under the Patents Act 1977</td><td>Applications for Patents filed</td></tr>
 <tr><td>Proceedings under the Patents Act 1977</td><td>Applications Terminated before Publication under Section 16(1)</td></tr>
 <tr><td>Proceedings under the Patents Act 1977</td><td>Applications Terminated after Publication under Section 16(1)</td></tr>
@@ -116,6 +122,7 @@ Each of these headings is split into sections summarised in the following table 
 <tr><td>Supplementary Protection Certificates</td><td>SPCs Lodged</td></tr>
 <tr><td>Supplementary Protection Certificates</td><td>SPCs Granted</td></tr>
 <tr><td>Supplementary Protection Certificates</td><td>SPCs Lapsed</td></tr>
+</tbody>
 </table>
 
 A sample of the XML structure is:
@@ -145,7 +152,7 @@ A sample of the XML structure is:
 &lt;/Journal&gt;</code>
 </pre>
 
-Putting all that data into a single RSS field would be a little too unwieldy, and have little focus.  To ask a more specific question of the data, this particular feed will list cases from the Patents Granted section.  It would of course be possible to create many instances of the script to query different aspects of the data, or Google Apps scripts also allow for passing in parameters as part of the URL which could specify sections to return, and even keywords to search by.
+Putting all that data into a single RSS field would be a little too unwieldy, and have little focus.  To ask a more specific question of the data, this particular feed will list cases from the **Proceedings under the Patents Act 1977 > Patents Granted** section.  It would be possible to create many instances of the script to query different aspects of the data, or Google Apps scripts also allow for passing in parameters as part of the Web App URL which could specify which section to return, or even keywords to search by.
 
 Back in the script, fetching the URL will just fetch the raw text data.  For the script to actually understand the data as XML and to extract values from it, it needs to be explicitly loaded as XML.  This is done using the **XmlService.parse** method.  Once that is done there are various methods to select specific sections of the data from the XML using the **getChild()** and **getChildren()** XML methods, starting at the root (**getRootElement()**).
 
