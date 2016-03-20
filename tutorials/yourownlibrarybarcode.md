@@ -1,4 +1,4 @@
-/*
+---
 Title: making your own library account barcode
 Description: a new library app advertises an on screen barcode - but you can do your own.
 Date: 2015/01/06
@@ -9,7 +9,8 @@ TutorialNeeded: a mobile device
 TutorialTime: 30 mins
 TutorialType: WebDevelopment
 Template: tutorialpageyourownbarcode
-*/
+---
+
 A recent news story announced that calgary public library were about to release a new smartphone app to replace membership cards - effectively by acting as a barcode on a phone.
 
 [http://mobilesyrup.com/2014/12/19/calgary-public-library-launches-smartphone-app-to-replace-library-cards/](http://mobilesyrup.com/2014/12/19/calgary-public-library-launches-smartphone-app-to-replace-library-cards/)
@@ -20,6 +21,6 @@ The immediate option would be to take a photo of your card, or scan it.  But if 
 
 The [jQuery barcode generator](http://www.jqueryscript.net/other/Simple-jQuery-Based-Barcode-Generator-Barcode.html) provides the JavaScript code to generate a barcode in a variety of standards, allowing websites to provide barcode generators on their site for users.
 
-When the barcode is generated there's also a chance to get creative with the image.  An app means you have to unlock your phone, launch the app, and get to the barcode.  Creating a *lock screen wallpaper* out of the library barcode would mean the phone/tablet doesn't even need to be unlocked to be used as a replacement library card.
+When the barcode is generated there's also a chance to get creative with the image.  An app means you have to unlock your phone, launch the app, and get to the barcode.  Creating a **lock-screen wallpaper** out of the library barcode would mean the phone/tablet doesn't even need to be unlocked to be used as a replacement library card.
 
-**note:** Check out the security of your individual library with regards to whether they enforce a membership number (barcode) AND password.  A lock screen wallpaper may not be the best option if not.
+**Note:** Do check out the security of your individual library with regards to whether they enforce a membership number (barcode) AND password.  A lock screen wallpaper may not be the best option if the barcode will gain access to your account.

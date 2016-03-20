@@ -1,4 +1,4 @@
-/*
+---
 Title: CIPFA library stats - a race to the bottom?
 Description: issues with the annual UK library performance measures
 Type: Article
@@ -6,7 +6,8 @@ Date: 2016/01/05
 Author: dave
 Template: blogpage
 Tags: public libraries, performance indicators, cipfa stats, accountability
-*/
+---
+
 Most public libraries authorities in the UK submit *CIPFA returns* each year, a standard set of questions asking for annual loans data, visits, number of service points, expenditure, and more.  Sent to the *Chartered Institute of Public Finance and Accounting* (CIPFA). These are compiled by CIPFA and released as annual library reports - available to subscribers, or for *£475* + VAT.
 
 The individual returns collected by each authority are public data, though there are no examples of them being released as open data.  There are a number of examples of Freedom of Information requests for them on the [What do they know](https://www.whatdotheyknow.com/) FoI tracking site:
@@ -36,10 +37,7 @@ While there are already many arguments against treating the public as untrustwor
 
 An example of this is highlighted in a [Brent budget report](http://democracy.brent.gov.uk/documents/b8067/Budget%20report%20and%20appendices%20Monday%2015-Dec-2014%2019.00%20Cabinet.pdf?T=9) in December 2014.  This used the CIPFA data to suggest reducing the amount spent on stock in libraries:
 
-<blockquote>
-  <p>Benchmarking with other London boroughs shows that Brent spends a relatively [high] proportion of money on library books, audio visual material and online resources in comparison (comparing number of libraries and population).  Reducing the stockfund by £100,000 to £450,000 would see Brent with just above average stock spending in comparison to other London boroughs. For the stock spending per 1000 population’ indicator the reduction would see Brent move from 3rd to 2nd quartile in the CIPFA tables for London boroughs. </p>
-  <small>Brent Budget consultation document</small>
-</blockquote>
+<blockquote><p>Benchmarking with other London boroughs shows that Brent spends a relatively [high] proportion of money on library books, audio visual material and online resources in comparison (comparing number of libraries and population).  Reducing the stockfund by £100,000 to £450,000 would see Brent with just above average stock spending in comparison to other London boroughs. For the stock spending per 1000 population’ indicator the reduction would see Brent move from 3rd to 2nd quartile in the CIPFA tables for London boroughs. </p><small>Brent Budget consultation document</small></blockquote>
 
 There is an argument that expenditure data is useful as one of many measures when analysing aspects of a service, and merging this with other data (such as usage) to identify links.  But in this case it is taken as a single indicator to inform policy, and the data isn't detailed enough to make any sensible decisions.  It is also a very selective strategy - in the instance of Brent, overall expenditure (per 1000 population) was significantly lower than average.  It was only in the single category for materials that the spend was above average.  Any reduction in spend would further reduce an already below average overall spend.
 

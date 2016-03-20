@@ -1,4 +1,4 @@
-/*
+---
 Title: public libraries and indices of deprivation
 Description: analysing the 2015 indices of deprivation data with relation to lower layer super output areas and the location of libraries
 Date: 2015/10/01
@@ -9,11 +9,11 @@ TutorialSkillsRequired: GIS, SQL
 TutorialNeeded: web browser, CartoDB
 TutorialTime: 1 hour
 Template: tutorialpage
-*/
+---
 
 On Wednesday, 30th September the UK government released the updated [2015 English indices of deprivation](https://www.gov.uk/government/statistics/english-indices-of-deprivation-2015). 
 
-For 32,844 defined areas in England, a deprivation rank is given (1 being the most deprived, 32844 being the least), in 7 different category areas.  These are:
+For **32,844** defined areas in England, a deprivation rank is given (1 being the most deprived, 32844 being the least), in 7 different category areas.  These are:
 
 - Income
 - Employment
@@ -23,11 +23,11 @@ For 32,844 defined areas in England, a deprivation rank is given (1 being the mo
 - Barriers to housing and services
 - Living environment
 
-A *decile* is then calculated by ordering those 32,844 areas into ten groups and assigning each a rating of 1 to 10 (with 1 being within the most deprived and 10 being within the least).  The 7 categories also go on to make an overall *multiple index of deprivation*, giving a single 1-10 index per area.
+A **decile** is then calculated by ordering those 32,844 areas into ten groups and assigning each a rating of 1 to 10 (with 1 being within the most deprived and 10 being within the least).  The 7 categories also go on to make an overall *multiple index of deprivation*, giving a single 1-10 index per area.
 
 In data about English public libraries, the index of deprivation is notably also included in the [DCMS Taking Part survey data](https://www.gov.uk/government/statistics/taking-part-201516-quarter-2-statistical-release), with the respondents being fairly evenly distributed across the 10 different deprivation indices.
 
-The geographical areas used are *Lower Layer Super Output Areas* (LSOAs), defined by the Office for National Statistics to create a set of comparable areas based on number of people (between 1,000 and 3,000) and households (400 - 1,200).  The data can be downloaded as spatial data, with the areas provided as polygons (providing the boundary lines):
+The geographical areas used are **Lower Layer Super Output Areas** (LSOAs), defined by the Office for National Statistics to create a set of comparable areas based on number of people (between 1,000 and 3,000) and households (400 - 1,200).  The data can be downloaded as spatial data, with the areas provided as polygons (providing the boundary lines):
 
 [2011 Lower Layer Super Output Area (LSOA) boundaries](http://www.ons.gov.uk/ons/guide-method/geography/products/census/spatial/2011/index.html)
 
@@ -67,7 +67,7 @@ ON ls.lsoa11cd = id.lsoa_code_2011
 GROUP BY id.IMDDecile</code>
 </pre>
 
-The spatial part of the query above is the *ST_Intersects* fuction, which is calculating whether a library falls within the bounds of an LSOA.  Even though there is no direct link in the library data to LSOAs, if the location is known then the spatial query can make that link.  The three tables in the above example are named *libraries* (the library locations), *indicesdeprivation* (the 2015 indices), and *lsoas2011* (the LSOA boundaries).  By grouping by the index of multiple deprivation decile (*IMDDecile*), a sum of the total libraries for each decile can be returned.
+The spatial part of the query above is the **ST_Intersects** fuction, which is calculating whether a library falls within the bounds of an LSOA.  Even though there is no direct link in the library data to LSOAs, if the location is known then the spatial query can make that link.  The three tables in the above example are named *libraries* (the library locations), *indicesdeprivation* (the 2015 indices), and *lsoas2011* (the LSOA boundaries).  By grouping by the index of multiple deprivation decile (*IMDDecile*), a sum of the total libraries for each decile can be returned.
 
 <table class="table table-striped table-nonfluid">
 <thead>
@@ -140,7 +140,7 @@ LIMIT 4</code>
 </tbody>
 </table>
 
-And by replacing *ASC* with *DESC* (descending order instead of ascending), the ones in the least deprived areas:
+And by replacing **ASC** with **DESC** (to use descending order rather than ascending), this gives the ones in the least deprived areas:
 
 <table class="table table-striped table-nonfluid">
 <thead>

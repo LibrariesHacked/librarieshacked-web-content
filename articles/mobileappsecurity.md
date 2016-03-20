@@ -1,4 +1,4 @@
-/*
+---
 Title: mobile app security testing
 Description: investigating the security of mobile apps.
 Type: Article
@@ -6,7 +6,7 @@ Date: 2015/05/31
 Author: dave
 Template: blogpage
 Tags: mobile apps, library apps, HTTPS, security, personal data
-*/
+---
 
 ###web app security and architecture
 Web browsers provide a set of information to ensure users are kept informed of online security.  The user can see if a connection is encrypted (HTTPS, generally indicated by a padlock symbol), and if so the browser will ensure various standards, such as that all individual requests on a page use encryption (protecting against [mixed content](https://developer.mozilla.org/en-US/docs/Security/MixedContent)), and that the [encryption certificate](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/) is valid.

@@ -1,4 +1,4 @@
-/*
+---
 Title: colouring-in open data maps
 Description: using QGIS to create colouring-in maps from OS open data.
 Date: 2015/09/18
@@ -9,8 +9,9 @@ TutorialSkillsRequired: GIS, colouring
 TutorialNeeded: web browser, QGIS
 TutorialTime: 1 hour
 Template: tutorialpage
-*/
-Open data can be a headache.  *Ownership* of data isn't straightforward, and if datasets include data under a third-party licence then it can be difficult to separate out what can and can't be published.  Also, data that an organisation may consider themselves to own may be *derived* from third party data.
+---
+
+Open data can be a headache.  **Ownership** of data isn't straightforward, and if datasets include data under a third-party licence then it can be difficult to separate out what can and can't be published.  Also, data that an organisation may consider themselves to own may be *derived* from third party data.
 
 In local government, the biggest block to open data publishing is OS licensing restrictions.  For example, a local Council will create planning datasets which include *point* and *polygon* data (the points and boundaries on a map that the planning application refers to).  Even though this data will have been created by the local authority, it will have been done so with the aid of licensed data and mapping tools.  So even though those planning applications are public information, and made available for anyone to view, a lot of the most important information about them is derived and cannot be made *open* to use.
 

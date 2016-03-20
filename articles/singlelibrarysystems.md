@@ -1,4 +1,4 @@
-/*
+---
 Title: a single view of library services
 Description: portals to interact with and combine library catalogue services across authorities and sectors.
 Type: Article
@@ -6,7 +6,8 @@ Date: 2015/01/21
 Author: dave
 Template: blogpagecatalogue
 Tags: library catalogues, web services, library management systems
-*/
+---
+
 There is a mobile app on the Google Play store that combines many library digital services into one single service for users to view loans, receive notifications, and renew items - across all their library accounts.
 
 [Library Reminder - Google Play store](https://play.google.com/store/apps/details?id=uk.co.fk33.lr.uk.free)

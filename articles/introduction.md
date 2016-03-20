@@ -1,4 +1,4 @@
-/*
+---
 Title: website launched 13th june
 Description: introduction to libraries hacked
 Type: Article
@@ -6,7 +6,7 @@ Date: 2014/06/13
 Author: @librarieshacked
 Template: blogpage
 Tags: introduction, hacking, web services, analysis, library data
-*/
+---
 
 Libraries Hacked is a website designed to promote open-source technology hacks and projects in libraries.  That means these things:
 

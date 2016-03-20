@@ -1,4 +1,4 @@
-/*
+---
 Title: turning RSS WordPress posts into tabular data
 Description: accessing public libraries news posts and parsing into individual news items.
 Date: 2015/01/26
@@ -9,10 +9,12 @@ TutorialNeeded: an HTML/script editor
 TutorialTime: 1 hour
 TutorialType: WebDevelopment
 Template: tutorialpagelibrariesnews
-*/
+---
+
 [Public Libraries News](http://www.publiclibrariesnews.com/) is the leading source for libraries news in the UK, providing regular posts via a WordPress site which also feeds out to email subscribers and RSS readers.  One particularly impressive aspect is that each news post has a uniform layout with a regular HTML structure - an editorial, changes, ideas, national, international, and local news.  Being structured in this way effectively makes it queryable like a database, with the ability to split up the details of the posts into datasets.
 
 ## query the rss feed
+
 To get hold of the data, [yahoo query language (YQL)](https://developer.yahoo.com/yql/) can be used to access the RSS feed, which is a nice way of only returning the fields we are interested in, and returning them in JSON (JavaScript Object Notation) format, making it easier to work with later on.
 
 YQL queries can be tested [in the YQL console](https://developer.yahoo.com/yql/console/).  The query for getting the last 10 posts from PLN is:
@@ -41,7 +43,8 @@ That returns a JSON list of the content for 10 posts, example shown below (with 
 }</code>
 </pre>
 
-##2. process the JSON data.
+## 2. process the JSON data.
+
 Having the data available to fetch in JSON means it shouldn't take long with JavaScript/jQuery to retrieve the data and use each content item:
 
 <pre class="prettyprint linenums">
@@ -69,7 +72,7 @@ $.each(stories, function() {
 });</code>
 </pre>
 
-##3. datatables.
+## 3. datatables.
 
 Text processing largely done, [datatables](https://www.datatables.net/) is a free JavaScript/jQuery plugin providing feature-rich interactive web tables with very little effort.  It can automatically provide paging and searching functionality in a table, which is especially useful when viewing large amounts of data.  The [getting started guide is here](https://www.datatables.net/manual/installation).
 
@@ -86,7 +89,8 @@ Dynamically creating a table of locations and news stories, and applying datatab
 </tbody>
 </table>
 
-##4. set up a map
+## 4. set up a map
+
 Tables are fine, but in this case locations are involved, so mapping is possible.  Leaflet maps will provide a free mapping engine, and open street map provides the base maps (the tiles on the screen), and also the location lookups from name (e.g. barnet) to geo-coordinates (latitude/longitude).  Basic setup for leaflet maps can be found in their [quick start guide](http://leafletjs.com/examples/quick-start.html).  An example of taking a text location, geocoding it, and adding a marker is:
 
 <pre class="prettyprint linenums">

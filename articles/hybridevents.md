@@ -1,4 +1,4 @@
-/*
+---
 Title: hybrid events
 Description: exploring hybrid events within hacks and code events.
 Type: Article
@@ -6,7 +6,7 @@ Date: 2014/09/09
 Author: @librarieshacked
 Template: blogpage
 Tags: hack events, hybrid events, code collaboration, twitter walls, screen sharing
-*/
+---
 
 A hybrid event, as currently described on wikipedia is *a tradeshow, conference, unconference, seminar, workshop or other meeting that combines a "live" in-person event with a "virtual" online component.*
 

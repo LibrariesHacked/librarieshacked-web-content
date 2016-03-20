@@ -1,4 +1,4 @@
-/*
+---
 Title: how secure is your library app?
 Description: do you know if your login and personal details are encrypted while using your library app?
 Type: Article
@@ -6,7 +6,8 @@ Date: 2014/11/20
 Author: dave
 Template: blogpage
 Tags: https mobile security, library mobile apps, android and iOS
-*/
+---
+
 ##HTTPS in the browser
 Many people are familiar with HTTP Secure (HTTPS) in websites: encrypting data sent between your PC and the web server.  Various rules are associated with this communications standard: websites need to present a certificate, which also needs to be verified by a certificate authority.  A browser would refuse to display a site (or at least give you a strong warning) if the certificate it found was for a different site, or not properly verified by a certificate authority, or expired.  Browsers also provide a reassuring padlock symbol in the address bar when using HTTPS, giving users some peace of mind when logging into online services.
 

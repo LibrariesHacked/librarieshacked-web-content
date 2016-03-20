@@ -1,4 +1,4 @@
-/*
+---
 Title: creating data driven dashboards
 Description: creating interactive charts that cross filter data to provide dashboards.
 Date: 2015/05/05
@@ -9,12 +9,14 @@ TutorialSkillsRequired: JavaScript,DCJS,D3
 TutorialNeeded: web browser,a text editor of your choice
 TutorialTime: 1 hour
 Template: tutorialpagedcjslending
-*/
+---
+
 Creating charts from data is a standard process using tools such as Excel, and there are many web publishing tools to create interactive charts for the web (like [Highcharts](http://www.highcharts.com/), [Google Charts](https://developers.google.com/chart/), and [Dimple](http://dimplejs.org/)).
 
 DC JS (dimensional charting) goes a little further as it uses [Crossfilter](http://square.github.io/crossfilter/) which is a JavaScript library used to dynamically filter views on large datasets.  It also uses [D3 (data driven documents)](http://d3js.org/), which aids in creating beautiful visualisations from data using web standards.  Those two supporting technologies allow DC JS users to create the usual set of charts like other tools (bar, line, pie), but with enhanced cross-filtering functionality.  A demo of the kind of power of the charts is on the main DC JS homepage, visualising [Nasdaq 100 index data](http://dc-js.github.io/dc.js/).
 
 ## an example
+
 The Bath:Hacked community data store holds data on library lending transactions for Bath from April 2013 to January 2014.  The data, available to download as CSV (or use an API connector), looks like this, with a row for each transaction *(Note: Looking at this closer it appears there's another filter on the data as there are far too few rows - will query this)*.
 
 <table class="table table-condensed">

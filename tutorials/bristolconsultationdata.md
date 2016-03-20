@@ -1,4 +1,4 @@
-/*
+---
 Title: data analysis during a library consultation
 Description: delving into the data used to close libraries.
 Date: 2015/04/19
@@ -9,7 +9,8 @@ TutorialNeeded: a text editor
 TutorialTime: 2 hours
 TutorialType: WebDevelopment
 Template: tutorialpagebristollibraries
-*/
+---
+
 Bristol have entered a period of consultancy [with a proposal](
 https://www.bristol.gov.uk/committee/2015/ua/ua000/0303_5.pdf) that aims to (amongst other things) close 7 of the 28 libraries in the authority.  Whilst any actions appear to be temporarily postponed ([plans to close seven Bristol libraries on hold](http://www.bbc.co.uk/news/uk-england-bristol-31909805)), there are no guarantees those libraries will stay open.
 

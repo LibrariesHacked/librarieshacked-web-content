@@ -1,4 +1,4 @@
-/*
+---
 Title: book search auto-complete textbox
 Description: a tutorial on creating an auto-completing text box for providing book search suggestions.
 Date: 2014/07/05
@@ -6,15 +6,18 @@ Template: tutorialpageautocomplete
 Type: Tutorial
 TutorialType: WebDevelopment
 TutorialComplexity: medium
-TutorialSkillsRequired: html,javascript,jquery,json
-TutorialNeeded: an html text editor of your choice
+TutorialSkillsRequired: HTML,JavaScript,jQuery,JSON
+TutorialNeeded: an HTML text editor of your choice
 TutorialTime: 1 hour
-*/
+---
+
 The number of open web APIs now available gives plenty of opportunity to create a wide variety of complete applications.  But sometimes these services can also be used in the background to provide small user experience improvements.  This tutorial will cover using an API to provide auto-complete functionality for a website text box.
+
 ## why use auto-complete?
+
 A book search is a good example of where auto-complete functionality can be very useful.  When using library catalogue searches on sites, the steps to search for a book are often:
 
-1. enter a search term either for an author, or a title.  if author it must be in the form *surname, first name*.  hit search.
+1. enter a search term either for an author, or a title.  if author it must be in the form **surname, first name**.  hit search.
 2. scroll through list of search results (*page 3 of 180...*).  if it's returned too many results you can go back the original screen and modify your search.  if it's returned no results the results page will be empty
 
 That doesn't give users an easy or quick experience.  Using auto-complete allows you to show results in a drop down list when the user enters text: as the user types, the results are refined by the increased detail.  Once the user sees the option that they want they can select it.
@@ -25,7 +28,9 @@ This kind of dynamic search information provided while the user is entering the 
 The [Google Books API](http://books.google.co.uk/) is one option to look up books.  There are plenty of others though as well, [open library](http://openlibrary.org) for example could provide the same functionality.  The Google Books API should normally be used with an API key (which is granted by Google and needs to be included in the URL when a search is made).  They do show  examples without a key for testing, but the usage is throttled and user limits hit very quickly.  To use something like this in a production environment it would need an API key from google or a service such as worldcat search, or openlibrary (or whatever data source is appropriate for your autocomplete requirements).
 
 ## tutorial steps
+
 ### 1. start with a basic html5 template
+
 The example will be done within a single web page, so the following is a basic html5 page template to get started.
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;!doctype html&gt;
@@ -42,6 +47,7 @@ The example will be done within a single web page, so the following is a basic h
 </pre>
 
 ### 2. add the required references to JavaScript and CSS files.
+
 For this tutorial we need jQuery and jQuery UI to provide the auto-complete functionality.  these are *JavaScript libraries*, created to simplify common JavaScript tasks, making them quicker and easier to code.  They are added to the page as shown below:
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;head&gt;
@@ -66,9 +72,10 @@ The files referred to here are held at code.jquery.com.  These could be download
 
 One thing to watch out for is that when using files held on the web, you then need to ensure you have a web connection when running the page on your local computer.  In this case the tutorial will need web access anyway to communicate with the API, so it's not worth taking local copies of the files.
 
-In the HTML a new file is also referenced, *script.js*.  This will contain the custom JavaScript code written in part 4.
+In the HTML a new file is also referenced, **script.js**.  This will contain the custom JavaScript code written in part 4.
 
 ### 3. add the basic textbox html.
+
 The web page itself will just have a header and an input text box, and a space where details of the book will be added later.
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;body&gt;
@@ -109,6 +116,7 @@ The full auto-complete documentation is available on the [jQueryUI pages](http:/
 - there is also the option to specify a number of characters that have to be entered before it will start making suggestions (*minLength:...*).
 
 ### 5. provide the search suggestions
+
 When a user enters text of at least 2 characters, the code should search all books from the google API, and list the closest matches.
 <pre class="prettyprint linenums">
 <code class="language-javascript">$(document).ready(function () {  // only begin once page has loaded
@@ -155,9 +163,11 @@ The code added to call the API uses [jQuery's AJAX method](http://api.jquery.com
 The code transforms the data returned into a set of values that contain various details about each book: title, author, published date etc. By default the value we define as being the *label* value is the one shown within the drop down suggestion list.  That label can be constructed from the returned values, so we can show 'title, author, date published' in the suggestions.
 
 ## 6. selecting the book
+
 All that's left is to code what will happen when a book is selected.  This will depend on the site using the service - it could list all details of the book, or take the user to a page on the book in order to provide further actions.  To demonstrate an example usage, this will show some details about the book on the page and provide a link to the OCLC WorldCat page for that book.
 
 Full JavaScript code:
+
 <pre class="prettyprint linenums">
 <code class="language-javascript">$(document).ready(function () {  // only begin once page has loaded
 	$("#txtBookSearch").autocomplete({ // attach auto-complete functionality to textbox

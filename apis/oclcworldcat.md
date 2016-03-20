@@ -1,4 +1,4 @@
-/*
+---
 Title: OCLC worldcat search
 Description: provides catalogue search facilities across all participating libraries (worldwide).  also search for libraries by location.
 Type: BibliographicApi
@@ -7,13 +7,4 @@ ApiKey: key required. OCLC participating institutions can request access.
 ApiExampleUrl: http://www.bookmarkyourlibrary.org.uk/find-a-book
 ApiExampleText: bookmark your library
 Format: XML,JSON
-*/
-provided by the OCLC.
-
-## usage conditions and API keys
-
-you do need to register.
-
-## tutorial and documentation
-
-there are currently no tutorials on this site in using the worldcat API, however there is full documentation on the OCLC developer site.
+---

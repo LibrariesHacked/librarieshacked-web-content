@@ -1,4 +1,4 @@
-/*
+---
 Title: YQL and global library stats
 Description: using YQL to query and merge OCLC global library stats.
 Type: Tutorial
@@ -9,13 +9,16 @@ TutorialComplexity: medium
 TutorialSkillsRequired: javascript,xml,json,sql
 TutorialNeeded: nothing
 TutorialTime: 1 hour
-*/
+---
+
 ## what is YQL?
+
 YQL is a query language developed by yahoo, and used for querying and combining data from around the web; there is more information here at yahoo developer pages, and it's worth exploring for anyone involved in web/app development and web services:
 
 [https://developer.yahoo.com/yql/](https://developer.yahoo.com/yql/)
 
 ## what global library stats?
+
 The OCLC attempted a few years ago to produce a large set of stats for *'the total global library universe'*, to provide data on expenditure, users, librarians, volumes, and libraries across the world. the relevant page is here:
 
 [http://oclc.org/global-library-statistics.en.html](http://oclc.org/global-library-statistics.en.html)
@@ -33,6 +36,7 @@ Note: the reliability and quality of this particular data is questionable, as co
 There are some particular oddities that may just be mistakes in the data (200 public libraries in the UK?) but regardless, the aim of this is to demonstrate using YQL as a tool to tackle this kind of problem, and not to take on the quality of the data itself (yet).
 
 ### step 1: get familiar with the YQL console
+
 YQL itself acts as a web service, allowing users to construct queries that may pull in data from many sources and provide one single call to that data from the user's website, or app.
 
 The YQL console however is a way of working on queries, experimenting, and seeing the results without having to call it from code.  Once the query is refined there is the option to copy the *REST url* that can be used to retrieve the data in future.  The console is at the following address:
@@ -40,6 +44,7 @@ The YQL console however is a way of working on queries, experimenting, and seein
 [https://developer.yahoo.com/yql/console/](https://developer.yahoo.com/yql/console/)
 
 ### step 2: find out where the data is coming from
+
 To be able to query the data from YQL we need to understand where it is coming from.  The easiest way to do this is to debug the OCLC webpage code.  All main browsers all have excellent developer tools available, and if you run a network scan while using the page it's easy to see that the relevant data is all being loaded dynamically by calling to web services when different options are selected (e.g. selecting a particular country).  When selecting to view the data for Afghanistan, the following URL is accessed, which returns XML data:
 
 [http://oclc.org/apps/oclc/gls?action=/service/location/AF](http://oclc.org/apps/oclc/gls?action=/service/location/AF)
@@ -53,6 +58,7 @@ The country codes themselves are also stored in the form of a web service which 
 A solution could automatically download all the country codes for each region and use them to load the stats.  To ensure it doesn't hammer the website too hard, and results are returned relatively quickly, in this tutorial it'll just be the EMEA region (still 130 or so countries).
 
 ### step 3: querying the country codes 
+
 The first thing the YQL query will need is the country codes, gained by querying the URL above.  In the YQL console:
 <pre class="prettyprint linenums">
 <code class="language-html">select * from xml 
@@ -79,6 +85,7 @@ Back to the task, the query above returns all the country codes, a snippet of th
 As with SQL it would be possible to sort and filter the data (such as all items beginning with A...).
 
 ### step 4: modify the query to construct URLs
+
 We can get a list of country codes, but what is really required is a list of URLs that include the country code, to get the stats.  This is done using the YQL *urltemplate* functionality.  A query is constructed which constructs a URL based on the results of a sub-query.
 
 <pre class="prettyprint linenums">
@@ -104,6 +111,7 @@ Running that in the console returns a list of URLs that we know will return libr
 Building up sub-queries gives YQL a lot of power, and it helps when constructing queries to create them step by step.  In this case, it's first finding out how to get all country codes, then using the result of that to construct a list of URLs.  
 
 ### step 5: query all the URLs
+
 Finally, it's possible to use that list of URLs as a further sub-query to select the data from all of those sources.  This is done fairly simply by using the *in* operator rather than *=*, which allows us to specify a list of URLs.
 
 The final query becomes:
@@ -127,4 +135,5 @@ The YQL console allows an option to generate the url that would be required to a
 There are better examples to demonstrate the power of YQL, but the amount that is being done in that one query - to retrieve a list of countries, use those to query another 130 URLs for data, to combine all that data and to provide it for use on any website in multiple formats seems beautifully easy.  And when pulling in data to use on a website, it saves a lot of code that would need to be run either on the web server or the client's browser.
 
 ## in action
+
 A table below shows this in action, displaying data from the EMEA region.  Occasionally this fails to load when the data doesn't return in time for YQLs liking but a page refresh should sort that out.

@@ -1,13 +1,14 @@
-/*
+---
 Title: wallpaper ebooks - how could it be done?
 Description: an investigation into ebooks on walls - allowing users to access ebooks by holding their phone to wallpaper or posters.
 Tags: wallpaper ebooks, nfc tags, mobile, android, library technology
 Type: Article
 Template: blogpage
 Date: 2014/07/01
-Author: libraries hacked
-*/
-On twitter, [@publiclibnews](https://twitter.com/publiclibnews/status/476433830124199937) invited thoughts for the three best innovations all public libraries should adopt.  One idea, pointed out by @commonlibraries was this one (from 2012), of downloadable ebook posters in a subway station:
+Author: @librarieshacked
+---
+
+On Twitter, [@publiclibnews](https://twitter.com/publiclibnews/status/476433830124199937) invited thoughts for the three best innovations all public libraries should adopt.  One idea, pointed out by @commonlibraries was this one (from 2012), of downloadable ebook posters in a subway station:
 
 [digital library on the bucharest subway](http://www.paulkater.com/2012/10/stunning-idea-digital-library-on-the-bucharest-subway-station/)
 
@@ -21,11 +22,15 @@ A couple of limitations though:
 The first issue could be addressed using contactless technology.  RFID and more recently NFC are established methods of transferring data to mobile devices, and are also on the increase. You hover the phone/device over the receiver/tag, it beeps (perhaps) and the device and receiver do whatever they need to do.
 
 This could be the technology required to make an impressive ebook delivery platform.  To start with, how to replace the existing idea with a contactless one?
+
 ## 1. with internet connection
+
 If you assume the user has an active internet connection the problem is fairly simple:  you use NFC tags instead of QR codes.  A URL could be written to those tags by most NFC-capable devices, and those tags could be stuck directly on the poster.  The user then holds their device up to the poster, it scans the tag, launches the URL and downloads the content.
 
 - [customised NFC stickers](http://rapidnfc.com/item/131/custom_print_nfc_stickers_44_x_55mm_rectangle_ntag203_express) ~£1 each
+
 ## 2. without internet connection
+
 Without an internet connection (such as at an underground station) it's trickier.  Could the NFC tag itself transmit enough information for an ebook sample, without the need for holding the content elsewhere?  No.  Looking at [NFC tag memory sizes](http://rapidnfc.com/which_nfc_chip), the maximum amount of data looks to be in bytes rather than kilobytes.  Suitable for storing URLs and contact details, but not significant files.
 
 To provide content in an area where internet access is unreliable you would need some kind of WiFi router, server, and digital content storage that didn't rely on an internet connection.  In other words, you'd need to use something like a [LibraryBox](http://jasongriffey.net/librarybox/) ($150 or build your own), which is all those things - providing a WiFi connection and the software to distribute digital content to connected users.

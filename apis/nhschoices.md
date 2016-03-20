@@ -1,4 +1,4 @@
-/*
+---
 Title: NHS choices
 Description: an api for local health data (nearest gp, dentist...)
 Type: PublicInfoApi
@@ -8,9 +8,13 @@ ApiExampleUrl: http://www.nhs.uk/aboutNHSChoices/professionals/syndication/Pages
 ApiUrl: http://www.nhs.uk/aboutNHSChoices/professionals/syndication/Pages/Webservices.aspx
 Format: XML
 ApiDisplayPage: true
-*/
+---
 
-although not an API directly dealing with library data, in 2013 the SCL (society of chief librarians) announced the 4 *universal offers*, '*the four key areas of service which our customers and our stakeholders see as being integral to a 21st century library service.*'  these were digital, information, reading, and health. so with that in mind, this API is one that would be very appropriate to mix in during a library hack.
+although not an API directly dealing with library data, in 2013 the SCL (society of chief librarians) announced the 4 **universal offers**:
+
+<blockquote>the four key areas of service which our customers and our stakeholders see as being integral to a 21st century library service.</blockquote>
+
+these were digital, information, reading, and **health**. so with that in mind, this API is one that would be very appropriate to mix in during a library hack.
 
 ## what data is available?
 there is a lot of NHS based data available from this API.  this includes:
