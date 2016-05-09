@@ -1,10 +1,10 @@
 ---
 Title: world library rankings
 Description: ranking literacy by using library provision
-Tags: 
+Tags: library rankings, OCLC global stats, literacy
 Type: Article
 Template: blogpage
-Date: 2016/03/05
+Date:
 Author: @librarieshacked
 ---
 
