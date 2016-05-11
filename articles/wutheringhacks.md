@@ -1,7 +1,7 @@
 ---
 Title: wuthering hacks
-Description: an open data library hack day.
-Tags: newcastle libraries, library hacks, RFID, open data
+Description: newcastle libraries open data process and library hack day 
+Tags: newcastle libraries, library hacks, open data
 Type: Article
 Template: blogpage
 Date: 2016/05/11
@@ -10,11 +10,11 @@ Author: @librarieshacked
 
 Newcastle Libraries held a hack day on 9th April - **Wuthering Hacks**.
 
-The event and motivations are blogged about, [Releasing and re-using library data](https://librariestaskforce.blog.gov.uk/2016/04/12/releasing-and-re-using-library-data/), by Aude Charillon on the Libraries Taskforce blog.
+The event and motivations are blogged about in [Releasing and re-using library data](https://librariestaskforce.blog.gov.uk/2016/04/12/releasing-and-re-using-library-data/), by Aude Charillon on the Libraries Taskforce blog.
 
 ## The data
 
-The event was preceded with an unprecedented amount of public libraries Open Data being released.  This is still listed and available on the Newcastle Council open data site.
+The event was preceded with an unprecedented amount of public libraries open data being released.  This is still listed and available on the Newcastle Council open data site.
 
 - [Newcastle Open Data - Libraries data sets](https://www.newcastle.gov.uk/your-council-and-democracy/open-data-and-access-information/open-data/data-sets/libraries-data-sets)
 
@@ -27,7 +27,7 @@ It includes such datasets as:
 - Stock - Catalogue/Items
 - Consumption in library buildings (electricity/gas/water)
 
-A key to really dedicating to an open data process is maintaining it, and not expecting immediate results.  One-off datasets and extracts are useful for a weekend event, but not as a long term process.  In the data sets above they are all listed with an update frequency, a named maintainer of the data, when they were created, and when they were last updated.
+A key to dedicating to an open data process is maintaining it, and not expecting immediate results.  One-off datasets and extracts are useful for a weekend event, but not as a long-term process.  In the datasets above they are all listed with an update frequency, a named maintainer of the data, when they were created, and when they were last updated.
 
 If there is one thing that Newcastle proved even before the event, it's that libraries open data can be done, and there isn't a good reason not to.  Newcastle Council seem fairly new to open data (though doing it very well), and it is refreshing to see the library service making themselves a part of that process, getting involved with the developer community, and putting a comprehensive process in place for their data.
 
