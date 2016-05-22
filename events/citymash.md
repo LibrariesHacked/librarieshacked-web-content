@@ -1,5 +1,5 @@
 ---
-Title: #citymash
+Title: citymash
 Description: a mashed library unconference day for those interested in libraries and technology. looking at new and existing ways of using technology in libraries and other information environments.
 Date: 2015/06/13
 Type: PastEvent

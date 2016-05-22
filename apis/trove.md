@@ -4,5 +4,5 @@ Description:  programmatic access to the metadata and some full text: holds over
 Type: NationalApi
 ApiUrl: http://help.nla.gov.au/trove/building-with-trove/api
 ApiKey: key required. register for access.
-Format: JSON, XML
+Format: JSON,XML
 ---
