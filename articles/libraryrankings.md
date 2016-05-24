@@ -1,31 +1,29 @@
 ---
 Title: world library rankings
-Description: ranking literacy by using library provision
+Description: ranking literacy by using global library provision
 Tags: library rankings, OCLC global stats, literacy
 Type: Article
 Template: blogpage
-Date: 
+Date: 2016/05/23
 Author: @librarieshacked
 ---
 
 ## OCLC global library stats
 
-A Libraries Hacked post from 2014 [YQL and global library stats](https://www.librarieshacked.org/tutorials/yqlstats), used the OCLC global library statistics as an example of extracting webpage data using Yahoo Query Language (YQL).
-
-That was to demo YQL rather than draw attention to the stats.  The [OCLC global library stats](https://www.oclc.org/global-library-statistics.en.html) were an attempt by the OCLC to collect together some global stats for public/academic/school/special libraries, such as number of libraries, volumes, members, and librarians.  The stats were manually collected and the relevant sources listed for each entry.  
+The [OCLC global library stats](https://www.oclc.org/global-library-statistics.en.html) were an attempt by the OCLC to collect together some global stats for public/academic/school/special libraries.  These include number of libraries, volumes, members, and librarians.  The stats were manually collected and the relevant sources listed for each entry.  The sources range from latest national stats, to library travel guides from the 90s.
 
 When counting libraries, the OCLC appreciate it's difficult to ensure standards.  They settle on the following method:
 
 <blockquote><p>For the sake of uniformity, the total number of libraries represents administrative units and not service points, since not all sources report service points consistently. Some of the country entries did not specify which unit they were reporting, in which case it was assumed that it was administrative units.</p><small>OCLC - Global Library Statistics.</small></blockquote>
 
-The administrative units figure is strange as it often doesn't represent what many people would think of as a library, and each country will have different systems of administration.  In the UK the administrative unit is most commonly the local authority, which can significantly vary in size and number of libraries.  It also seems odd to assume that an ambiguous figure would be administrative units, and not branches.
+The administrative units figure is strange as it often doesn't represent what many people would think of as a library, and each country will have different systems of administration.  In the UK the administrative unit is commonly the local authority, which can significantly vary in size and number of libraries.  It also seems odd to assume an ambiguous figure would be administrative units, and not branches.
 
-Looking through the data it's possible to spot some oddities:
+Looking through the data it's possible to spot some inconsistencies:
 
-- The UK is declared to have 184 public libraries (administrative units).  This gives little indication of library provision - even if another 1000 public libraries were to close, that number of authorities could potentially stay the same.
-- Estonia is an example where the number of administrative units seems closer to the complete number of branches/service points. The source is [from the IFLA](http://db.ifla-world-report.org/home/map#/2/2/G8TWX1EQKSOGSCH): *'Estimated number of public libraries in the country: 560: 487 main libraries, 73 service points'.*  The OCLC list the 487 figure.
-- Latvia is listed as having .  This appears to be the total number of branches - from a report on [Economic value and impact of public libraries in Latvia](http://www.kis.gov.lv/download/Economic%20value%20and%20impact%20of%20public%20libraries%20in%20Latvia.pdf)
-- The data sources go back quite far.  Morocco is listed as having 5 school libraries, but the date for the measure is given as 1982, and the source a book: the **Librarian's companion (2nd ed. Greenwood 1996)**.  Elsewhere in a more recent source 
+- The UK is declared to have **184** public libraries (administrative units).  This gives little indication of library provision - even if another 1000 public libraries were to close, that number of authorities could potentially stay the same.
+- Estonia is an example where the number of administrative units seems closer to the complete number of branches/service points. The source is [from the IFLA](http://db.ifla-world-report.org/home/map#/2/2/G8TWX1EQKSOGSCH): *'Estimated number of public libraries in the country: 560: 487 main libraries, 73 service points'.*  The OCLC list the **487** figure.
+- Latvia is listed as having **815** libraries.  This appears to be the total number of branches - from a report on [Economic value and impact of public libraries in Latvia](http://www.kis.gov.lv/download/Economic%20value%20and%20impact%20of%20public%20libraries%20in%20Latvia.pdf).  That report describes local public libraries as coming under the jurisdiction of **28** regional libraries.  Should the 28 figure be used?
+- The data sources go back quite far.  Morocco is listed as having **5** school libraries, but the date for the measure is given as 1982, and the source a book: the **Librarian's companion (2nd ed. Greenwood 1996)**.
 
 An excellent site, Practical Statistics, looks at the accuracy of the data, paying particular attention to the data for Norway:
 
@@ -46,7 +44,7 @@ The report is detailed at [World's Most Literate Nations](http://www.ccsu.edu/wm
 - Access to computers
 - Number of public/academic/school libraries, and number of volumes in public libraries
 
-The data used for libraries looks familiar, and [turns out to be](http://www.ccsu.edu/wmln/dataSources.html) the OCLC global library statistics.  The method used to rank the countries is to take those measures from the OCLC data, and adjust for population size.  A key missing measure is number of librarians, which doesn't appear to be considered so important.
+The data used for libraries [turns out to be](http://www.ccsu.edu/wmln/dataSources.html) the OCLC global library statistics.  The method used to rank the countries is to take those measures from the OCLC data, and adjust for population size.  A key missing measure is number of librarians, which doesn't appear to be considered so important.
 
 The data sources and methodology used is very open.  The specific rankings for libraries are listed at [Library rankings](http://www.ccsu.edu/wmln/library.html).
 
