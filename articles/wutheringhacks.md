@@ -8,7 +8,7 @@ Date: 2016/05/11
 Author: @librarieshacked
 ---
 
-Newcastle Libraries held a hack day on 9th April - **Wuthering Hacks**.
+Newcastle Libraries held a hack day on 9th April, **Wuthering Hacks**.
 
 The event and motivations are blogged about in [Releasing and re-using library data](https://librariestaskforce.blog.gov.uk/2016/04/12/releasing-and-re-using-library-data/), by Aude Charillon on the Libraries Taskforce blog.
 

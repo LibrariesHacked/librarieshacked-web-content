@@ -8,7 +8,7 @@ Template: blogpage
 Tags: linked data, open government data, government software
 ---
 
-Open data is widely considered to be a  *good thing* - greater organisation and government transparency will lead to a better informed public and greater innovation as that data will be available to use in more creative ways.
+Open data is widely considered to be a **good thing** - greater organisation and government transparency will lead to a better informed public and greater innovation as that data will be available to use in more creative ways.
 
 The government promote an open data policy.  The service design manual on gov.uk includes [a page on open data](https://www.gov.uk/service-manual/technology/open-data.html).  Key phrases include:
 

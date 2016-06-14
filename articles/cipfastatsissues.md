@@ -3,14 +3,14 @@ Title: CIPFA library stats - a race to the bottom?
 Description: issues with the annual UK library performance measures
 Type: Article
 Date: 2016/01/05
-Author: dave
+Author: @librarieshacked
 Template: blogpage
 Tags: public libraries, performance indicators, cipfa stats, accountability
 ---
 
-Most public libraries authorities in the UK submit *CIPFA returns* each year, a standard set of questions asking for annual loans data, visits, number of service points, expenditure, and more.  Sent to the *Chartered Institute of Public Finance and Accounting* (CIPFA). These are compiled by CIPFA and released as annual library reports - available to subscribers, or for *£475* + VAT.
+Many public libraries authorities in the UK submit **CIPFA returns** each year, a set of data answering pre-defined performance measures.  These include annual loans data, visits, number of service points, expenditure, and more.  These are sent to the **Chartered Institute of Public Finance and Accounting** (CIPFA). They are compiled by CIPFA and released as annual library reports - available to subscribers, or for **£475** + VAT.
 
-The individual returns collected by each authority are public data, though there are no examples of them being released as open data.  There are a number of examples of Freedom of Information requests for them on the [What do they know](https://www.whatdotheyknow.com/) FoI tracking site:
+The data collected by each authority is public, though there are no examples of these as open data.  There are a number of examples of Freedom of Information (**FoI**) requests for them on the [What do they know](https://www.whatdotheyknow.com/) site:
 
 - FoI request: [Suffolk for CIPFA return data](https://www.whatdotheyknow.com/request/library_cipfa_returns_2)
 - FoI request: [Worcestershire for CIPFA return data](https://www.whatdotheyknow.com/request/library_statistics_40)
@@ -18,14 +18,12 @@ The individual returns collected by each authority are public data, though there
 
 When the data is compiled it is then no longer public.  As CIPFA themselves pointed out on Twitter:
 
-
 <blockquote class="twitter-tweet" lang="en-gb"><p lang="en" dir="ltr"><a href="https://twitter.com/librarieshacked">@librarieshacked</a> We&#39;re a membership organisation not a government body, and our library data is funded by subscribers not the government.</p>&mdash; CIPFA (@CIPFA) <a href="https://twitter.com/CIPFA/status/683953497990115328">January 4, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+The compiled data is theirs and subject to copyright, and funded by their paying subscribers.  However it is paid for by the public by the work done by each authority in collecting it.  The public then pay for this data again as authorities subscribe to CIPFA in order to view the aggregated data.  The public then pay CIPFA again, through the DCMS, who pay [£42,000](http://www.cipfastats.net/news/newsstory.asp?content=17410) in order to release a set of PDFs comparing each authority.     
 
-The aggregated multiple authority data is theirs and subject to copyright, and funded by their paying subscribers - though completely made up of public data that was collected through public funding.
-
-This may have been an efficient method of compiling statistics across multiple authorities a number of years ago, but there are public data portals that can hold such data and make it freely available.  As well as making aggregating/combining and comparing the data for different authorities relatively easy - see [data.gov.uk](https://data.gov.uk/) and [LG Inform Plus](http://opendata.esd.org.uk/).
+This may have been an efficient method of compiling statistics a number of years ago, but there are public data portals that can hold such data and make it freely available.  As well as making aggregating/combining and comparing the data for different authorities relatively easy - see [data.gov.uk](https://data.gov.uk/) and [LG Inform Plus](http://opendata.esd.org.uk/).
 
 The concept of an annual survey is also outdated.  There are many local government systems that set up automated data exports to a set schedule, which could be as often as is appropriate - every day, every month, or even every 5 minutes.  Not all the data collected for the CIPFA annual returns will support automated exports, but much of it could be done at far more valuable intervals.
 

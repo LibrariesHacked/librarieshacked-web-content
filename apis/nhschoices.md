@@ -1,6 +1,6 @@
 ---
 Title: NHS choices
-Description: an api for local health data (nearest gp, dentist...)
+Description: an api for local health data (nearest gp, dentist, hospital, etc.)
 Type: PublicInfoApi
 ApiKey: key required. register for access.
 ApiExampleText: microsoft health vault
