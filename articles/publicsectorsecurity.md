@@ -1,8 +1,8 @@
 ---
 Title: encrytion and library catalogues
 Description: how seriously are local authorities and libraries taking web security?
-Type: Article
-Date: 2016/05/23
+Type:
+Date:
 Author: @librarieshacked
 Template: blogpage
 Tags: 
@@ -54,6 +54,7 @@ Libraries being run by local authorities (with some exceptions), how well do the
 However, encryption is not just a yes/no.  There are different levels of security:
 
 | Type | Description |
+| ---- | ----------- |
 | HTTP | Sites that only offer login over unencrypted HTTP. |
 | HTTPS (optional) | Sites that offer membership facilities over HTTPS but it isn't enforced.  For example, a link could be shared that provided access over HTTP instead. |
 | HTTPS (poorly implemented) | Sites that offer HTTPS but there could be numerous issues with the implementation and the standard of certificate.  Browsers offer some indication of this (the full green bar), but there are online checkers such as []() |
@@ -64,4 +65,4 @@ However, encryption is not just a yes/no.  There are different levels of securit
 SSL check sites offer reports on the quality of a websites encryption.  
 
 
-Note: This list is as accurate as possible.  Any mistakes, just tweet them to [@librarieshacked](), or pop in the comments box.
+Note: This list is as accurate as possible.  Any mistakes, just tweet them to [@librarieshacked](https://twitter.com/librarieshacked), or pop in the comments box.

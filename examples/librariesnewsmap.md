@@ -6,4 +6,4 @@ Date: 2015/01/22
 Template: plnmapexample
 ---
 
-news taken from the last ten posts on [http://www.publiclibrariesnews.com](http://www.publiclibrariesnews.com), unmodified (cc attribution license)
+news taken from the last ten posts on [http://www.publiclibrariesnews.com](http://www.publiclibrariesnews.com), unmodified (cc attribution license).

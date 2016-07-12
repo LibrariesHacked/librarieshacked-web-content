@@ -1,11 +1,11 @@
 ---
 Title: contribute
 Description: submit a contribution to the site
-Keys: contributions, articles, collaboration, community
+Keys: contributions,articles,collaboration,community
 Template: contributepage
 ---
 
-libraries hacked is open to contributions from any interested parties with relation to technology in libraries and hacks
+libraries hacked is open to contributions from any interested parties.
 
 - **suppliers**:  if you are a supplier of library technology it would be great to get a technical insight into how that technology works.
 - **hackers**: have you attended an event, created a web/mobile app, or analysed any library data?
@@ -13,10 +13,12 @@ libraries hacked is open to contributions from any interested parties with relat
 
 ## the process
 
-- fill in the submission form,
-- you will then be emailed a link to start work on the content,
-- at the press of a button this can be sent for authorisation, and will then be published.
+- fill in the submission form;
+- you will then be emailed a link to start work on the content;
+- after review it will then be published.
 
 ## policies
 
 your content will be published into the site, but it remains your content to edit and tweak as you wish as long as it appears to be relevant to the [site](/about) and is not illegal.
+
+there is a full (non restrictive) policy in progress!

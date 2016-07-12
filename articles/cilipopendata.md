@@ -1,7 +1,7 @@
 ---
 Title: open data, library technnology and hack events in libraries.
-Description:
-Type: Article
+Description: an introduction to open data and library hacking.
+Type:
 Date:
 Author: @librarieshacked
 Template: blogpage
@@ -10,13 +10,17 @@ Tags: open data, libraries, hack events
 
 ## Open Data
 
-Open Data is data made publicly available with a licence allowing reuse without restrictive terms.  Tim Berners Lee's 5 star open data plan also provides a guidance to open data quality.  This includes just making stuff available, to using open formats, to linking data to other datasets to provide additional context.
+Open Data is data made public with a licence allowing reuse without restrictive terms.  Tim Berners Lee's 5 star open data plan provides guidance to open data quality.  This includes just making stuff available, to using open formats linked to other datasets to provide additional context (linked open data).
 
-The UK is currently ranked top for open data.  This is largely due to the work of local open data groups and enthusiasts pushing for more open data nationally and locally.  The ODCamp unconference  
+The UK is currently ranked 1st globally for open data by the Open Data Barometer, and 2nd by the Open Knowledge Foundation.  This is partly due to the work of local open data groups and enthusiasts pushing for more national and local data.  
 
-Why make data open?  There are various studies that point to wider economical benefit, such as a Deloitte report, 'Open Data - Driving growth, ingenuity and innovation' that claim, and also the Open Data Institute (ODI) that .  But at a more individual service level benefits can be imagines by asking very simple questions.  Is data currently being used to it's full potential?  
+Why make data open?  There are various studies that point to wider economical benefit, such as a Deloitte report, 'Open Data - Driving growth, ingenuity and innovation' that claim, and also the Open Data Institute (ODI) that .  But at a more individual service level the benefits can be easily imagined by asking very simple questions.  Is data currently being used to it's full potential?    
 
-Say open data and many services will think 'Freedom of Information' and think of lost hours fulfilling requests for who said what in which email.  Being asked to release open data then cam then just seems like more encouraging.  Of course FoI is an esssential right for citizens that must be protected, but it's a mistake to see open data as being about transparency and accountability.  For stretched services, that would seem like a self-indulgent luxury.  Open data (like open source, open access, etc) is about letting go of control.  That means giving access to the library management system to the public, opening up the catalogue data,   
+Say open data and many organisations will think Freedom of Information, and lost hours fulfilling requests for who said what in which email.  Of course FoI is an right for citizens that must be protected, but it's a mistake to see open data as being about transparency and accountability - these are things many people agree with in principle but don;t see the hard benefits of doing.  
+
+Embracing open data is about adknoledging that more can be made of existing data.  
+
+Open data is about letting go of control, which can be a difficult culture shock.  That means giving access to the library management system to the public, opening up the catalogue data,   
 
 It also means letting go of the idea that library management can define library performance.  Public libraries currently have national (non-open) performance data data based on historic opinions on what needs to be measured.  But where such measures attempt to **collect** data, an open data strategy **releases** data, with few pre-conditions other than respecting personal data.  This better matches a library's relationship with the public.  It is the public that define the performance of their library.  The data released then engages citizens and encourages them to form their own questions of it.   Rather than being told answers to questions that they may not agree with in the first place, it allows individuals to add their own insight.  
 
@@ -40,11 +44,13 @@ This is not about mimicking commercial models like Twitter and GoodReads, it's a
 
 ## Hack events
 
-Hacks are creating solutions though a spirit of exploration, trying things out, and 
+Hacks are creating solutions though exploration, trying things out, and 
 
-Hacks make sense in public libraries for many reasons.  There are the obvious ones:
+Hacks make sense in public libraries for many reasons.
 
-- Hacks are most commonly held 
+- The basic practicality of community hacks is that they require a public space (or paid-for private space) that has WiFi, desks and power sockets.  The Library.
+- 
+- 
 
 Despite not currentl held in public libraries, look around the Internet and you can find hacks where people engage with library services and data to fill holes in existing library provision.  But these currently rely on either taking badly formatted data (like a PDF), or building systems using web automation scripts.  There are scripts to automatically renew library loans, library membership apps that combine all your library accounts (university/public) into a single portal, adn much more.  But that creativity could be happening directly in the library.  As well as that libraries have the community focus to get more people involved.  Traditional hack events have tended to focus on developers.
 
@@ -56,6 +62,10 @@ It will also change .  Web stats on how a web catalogue is visited and accesses 
 Concepts like a single digital library presence seem outdated when looking at existing technology models, and how services are provided.  Even if there were a single libray authority, it is unlikely that a single presence would provide services in the way that each user wanted them.  Certainly it's important to provide an online library presence, but to then open that open for others to do the same.  More important would be a single set of web services 
 
 ## References
+
+Open Data Barometer http://opendatabarometer.org/2ndEdition/analysis/rankings.html
+Global Open Data Index - Open Knowledge Foundation http://index.okfn.org/place/
+
 
 Deloitte Open Data Driving growth, ingenuity and innovation (http://www2.deloitte.com/uk/en/pages/deloitte-analytics/articles/open-data-driving-growth-ingenuity-and-innovation.html)
 5 Star Open Data (http://5stardata.info/en/)

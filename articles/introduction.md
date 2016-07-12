@@ -33,6 +33,6 @@ Articles from a variety of sources will be put on the site to provide guidance f
 Any contributors will be given a link to work on an article which can directly be published to the site, and they will always have access to this to make modifications as necessary.
 
 ## events
-With a National libraries festival, Exeter Fab lab, Pi and Mash, and more there is already an exciting lineup.
+With a National libraries festival, Exeter Fab lab, Pi and Mash, and more, there is already an exciting lineup for 2014.
 
 Website launch dates tend to be the point a website is ready to begin, rather than a date when it is finished.  In this case it is definitely the former - more content will be available soon.

@@ -41,6 +41,7 @@ Using a variety of these tools, this post looks at a number of publicly availabl
 ### solus
 
 | app type | example | privacy policy | enforces HTTPS |
+| -------- | ------- | -------------- | -------------- |
 | hybrid | [manchester libraries](https://play.google.com/store/apps/details?id=uk.co.solus.manchesterlibraries) | policy(http://www.yourlibraryapp.co.uk/Privacy.htm) | yes |
 
 Solus supply many UK authorities with a library membership app.  The app is built using [PhoneGap](http://phonegap.com/)/[Apache Cordova](http://cordova.apache.org/).
@@ -54,6 +55,7 @@ The privacy policy gives details of policy on adware, spyware, what data is stor
 ### axiell
 
 | app type | example | privacy policy | enforces HTTPS |
+| -------- | ------- | -------------- | -------------- |
 | native | [axiell my library](https://play.google.com/store/apps/details?id=dk.bridgeit.axiell.mylibrary&hl=en) | none provided | no |
 
 Axiell are a library technology supplier providing solutions such as *OpenGalaxy*.  The Axiell My Library app takes a different approach to the Solus one.  Rather than provide an app for each authority, the app lists all participating authorities and the user chooses their own.
@@ -65,6 +67,7 @@ Because the Axiell app uses individual web services for each library, the answer
 ### sirsi dynix
 
 | app type | example | privacy policy | enforces HTTPS |
+| -------- | ------- | -------------- | -------------- |
 | hybrid | [BookMyne](https://play.google.com/store/apps/details?id=sirsidynix.bookmyne) (e.g. Sutton Council) | | yes |
 
 Sirsi Dynix also have a single app to access services across multiple libraries.  Any library service that have [Sirsi Dynix web services](http://www.sirsidynix.com/products/api-web-services) installed can make use of the BookMyne mobile application.
@@ -76,6 +79,7 @@ BookMyne also use a set of web services under an HTTPS address, so data is trans
 ### civica - sorcer mobile
 
 | app type | example | privacy policy | enforces HTTPS |
+| -------- | ------- | -------------- | -------------- |
 | native | [sorcer](https://play.google.com/store/apps/details?id=com.civica.sorcer) (e.g. Lincolnshire libraries) | none provided | no |
 
 Civica provide Sorcer mobile for users to access their library account.  Another single library app, this integrates with authorities who are using [Spydus](https://www.civica.co.uk/library-and-learning/spydus_opac).
@@ -85,6 +89,7 @@ The app is written in native code (e.g. Java for the Android version).  Like the
 ### civica - spydus mobile
 
 | app type | example | privacy policy | enforces HTTPS |
+| -------- | ------- | -------------- | -------------- |
 |  | [spydus mobile](https://play.google.com/store/apps/details?id=com.civica.sorcer) (e.g. ) | none provided |  |
 
 Civica seem to have another app providing integration with Spydus.
@@ -92,6 +97,7 @@ Civica seem to have another app providing integration with Spydus.
 ### infor
 
 | app type | example | privacy policy | enforces HTTPS |
+| -------- | ------- | -------------- | -------------- |
 | hybrid | [iguana library](https://play.google.com/store/apps/details?id=com.infor.libraries.iguana.mobile&hl=en) (e.g. Warwickshire libraries) | policy(http://infor.colo.ba.be/iguanamobile/www.index.cls#description) | no |
 
 Infor systems have an Android/iOS/Windows app for the Iguana web portal.  Again, this allows integration with any authorities that use Iguana web catalogue.

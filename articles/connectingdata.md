@@ -8,9 +8,9 @@ Template: blogpage
 Tags: linked data, open government data, government software
 ---
 
-Open data is widely considered to be a **good thing** - greater organisation and government transparency will lead to a better informed public and greater innovation as that data will be available to use in more creative ways.
+Open data is widely considered to be a **good thing** - greater organisation and government transparency leads to a better informed public and greater innovation and creative use of that data.
 
-The government promote an open data policy.  The service design manual on gov.uk includes [a page on open data](https://www.gov.uk/service-manual/technology/open-data.html).  Key phrases include:
+The government promote an open data policy.  The service design manual on gov.uk includes [a page on open data](https://www.gov.uk/service-manual/technology/open-data.html).  Key phrases:
 
 - *You should publish all public data, unless it is private data collected from people or restricted for national security reasons.*
 - *Your open data should be user-friendly and findable. You should support people who want to reuse it and provide guarantees about how it will be made available.*
@@ -18,7 +18,7 @@ The government promote an open data policy.  The service design manual on gov.uk
 
 ... and many more such examples.  It reads like a manifesto in support of open data, and will be gratifying for those who are keen for more public data to be published in reusable formats.
 
-Despite all this, for a local council the question will still be *why?*  and though the arguments for open data are compelling, they are rarely ones that provide a measurable cost saving, yet they do often pose a heavy implementation cost.
+Despite all this, for a local council the question will still be *why?* and though arguments for open data are compelling, they are rarely ones that provide a measurable cost saving, yet they often present implementation costs.
 
 ## what data does a council have?
 Councils are not typically organisations that are on top of the data they hold.  For example, they may have the following systems:

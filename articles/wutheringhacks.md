@@ -10,11 +10,11 @@ Author: @librarieshacked
 
 Newcastle Libraries held a hack day on 9th April, **Wuthering Hacks**.
 
-The event and motivations are blogged about in [Releasing and re-using library data](https://librariestaskforce.blog.gov.uk/2016/04/12/releasing-and-re-using-library-data/), by Aude Charillon on the Libraries Taskforce blog.
+The event and motivations are blogged about for the Libraries Taskforce in [Releasing and re-using library data](https://librariestaskforce.blog.gov.uk/2016/04/12/releasing-and-re-using-library-data/), by Aude Charillon.
 
 ## The data
 
-The event was preceded with an unprecedented amount of public libraries open data being released.  This is still listed and available on the Newcastle Council open data site.
+The event was preceded with an unprecedented amount of public libraries open data.  This is still listed and available on the Newcastle Council open data site.
 
 - [Newcastle Open Data - Libraries data sets](https://www.newcastle.gov.uk/your-council-and-democracy/open-data-and-access-information/open-data/data-sets/libraries-data-sets)
 

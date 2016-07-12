@@ -23,13 +23,13 @@ The first issue could be addressed using contactless technology.  RFID and more 
 
 This could be the technology required to make an impressive ebook delivery platform.  To start with, how to replace the existing idea with a contactless one?
 
-## 1. with internet connection
+## with internet connection
 
 If you assume the user has an active internet connection the problem is fairly simple:  you use NFC tags instead of QR codes.  A URL could be written to those tags by most NFC-capable devices, and those tags could be stuck directly on the poster.  The user then holds their device up to the poster, it scans the tag, launches the URL and downloads the content.
 
 - [customised NFC stickers](http://rapidnfc.com/item/131/custom_print_nfc_stickers_44_x_55mm_rectangle_ntag203_express) ~£1 each
 
-## 2. without internet connection
+## without internet connection
 
 Without an internet connection (such as at an underground station) it's trickier.  Could the NFC tag itself transmit enough information for an ebook sample, without the need for holding the content elsewhere?  No.  Looking at [NFC tag memory sizes](http://rapidnfc.com/which_nfc_chip), the maximum amount of data looks to be in bytes rather than kilobytes.  Suitable for storing URLs and contact details, but not significant files.
 

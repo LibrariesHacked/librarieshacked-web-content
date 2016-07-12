@@ -10,13 +10,13 @@ Author: @librarieshacked
 
 ## OCLC global library stats
 
-The [OCLC global library stats](https://www.oclc.org/global-library-statistics.en.html) were an attempt by the OCLC to collect together some global stats for public/academic/school/special libraries.  These include number of libraries, volumes, members, and librarians.  The stats were manually collected and the relevant sources listed for each entry.  The sources range from latest national stats, to library travel guides from the 90s.
+The [OCLC global library stats](https://www.oclc.org/global-library-statistics.en.html) were an attempt by the OCLC to collect global stats for libraries.  These include number of libraries, volumes, members, and librarians in public/academic/school/special libraries.  The stats were manually collected and the relevant sources listed for each entry.  The sources range from latest national stats, to decades-old library travel guides.
 
-When counting libraries, the OCLC appreciate it's difficult to ensure standards.  They settle on the following method:
+When counting libraries, the OCLC appreciate it's difficult to ensure standards:
 
 <blockquote><p>For the sake of uniformity, the total number of libraries represents administrative units and not service points, since not all sources report service points consistently. Some of the country entries did not specify which unit they were reporting, in which case it was assumed that it was administrative units.</p><small>OCLC - Global Library Statistics.</small></blockquote>
 
-The administrative units figure is strange as it often doesn't represent what many people would think of as a library, and each country will have different systems of administration.  In the UK the administrative unit is commonly the local authority, which can significantly vary in size and number of libraries.  It also seems odd to assume an ambiguous figure would be administrative units, and not branches.
+The administrative units figure is strange as it often doesn't represent what many would think of as a library.  And for comparative stats, each country will have different systems of administration.  In the UK the administrative unit is commonly the local authority, which can significantly vary in size, population, and number of libraries.  It also seems odd to assume an ambiguous figure would be administrative units, and not branches.
 
 Looking through the data it's possible to spot some inconsistencies:
 
@@ -25,7 +25,7 @@ Looking through the data it's possible to spot some inconsistencies:
 - Latvia is listed as having **815** libraries.  This appears to be the total number of branches - from a report on [Economic value and impact of public libraries in Latvia](http://www.kis.gov.lv/download/Economic%20value%20and%20impact%20of%20public%20libraries%20in%20Latvia.pdf).  That report describes local public libraries as coming under the jurisdiction of **28** regional libraries.  Should the 28 figure be used?
 - The data sources go back quite far.  Morocco is listed as having **5** school libraries, but the date for the measure is given as 1982, and the source a book: the **Librarian's companion (2nd ed. Greenwood 1996)**.
 
-An excellent site, Practical Statistics, looks at the accuracy of the data, paying particular attention to the data for Norway:
+An excellent site, Practical Statistics, looks at the accuracy of the data, particularly for the data for Norway:
 
 [Practical Statistics - OCLC Initiative](https://sites.google.com/site/practicalstatistics/2-events/ifla-singapore/oclc-initiative)
 
