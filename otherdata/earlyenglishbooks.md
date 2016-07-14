@@ -1,7 +1,7 @@
 ---
 Title: early english books
 Description: data formats for the early English books text creation partnership.  fully searchable text of English language work published in the first two centuries of printing in england.
-Format: XML, HTML, EPUB
+Format: XML,HTML,EPUB
 DataUrl: http://www.bodleian.ox.ac.uk/eebotcp/
 Type: ComputerFormat
 Year: 2015

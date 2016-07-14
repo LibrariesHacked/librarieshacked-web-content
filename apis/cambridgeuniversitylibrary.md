@@ -4,5 +4,4 @@ Description: web service interfaces for the library catalogues and other online 
 ApiUrl: http://www.lib.cam.ac.uk/api/
 Type: CollectionApi
 Format: XML,JSON
-Tutorial: 
 ---

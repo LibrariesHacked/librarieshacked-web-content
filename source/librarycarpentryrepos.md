@@ -4,5 +4,5 @@ Description: repositories from the library carpentry software skills sessions fo
 Type: SourceLearning
 SourceType: GitHub
 SourceUrl: https://github.com/LibraryCarpentry
-TwitterTag: @j_w_baker
+TwitterTag: j_w_baker
 ---

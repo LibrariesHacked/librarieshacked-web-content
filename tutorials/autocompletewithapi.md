@@ -11,7 +11,7 @@ TutorialNeeded: an HTML text editor of your choice
 TutorialTime: 1 hour
 ---
 
-The number of open web APIs now available gives plenty of opportunity to create a wide variety of complete applications.  But sometimes these services can also be used in the background to provide small user experience improvements.  This tutorial will cover using an API to provide auto-complete functionality for a website text box.
+The number of web APIs available gives plenty of opportunity to create a wide variety of applications.  Sometimes these services can also be used in the background to provide small user experience improvements.  This tutorial will cover using an API to provide auto-complete functionality for a website text box.
 
 ## why use auto-complete?
 

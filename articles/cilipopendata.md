@@ -1,6 +1,6 @@
 ---
-Title: open data, library technnology and hack events in libraries.
-Description: an introduction to open data and library hacking.
+Title: open data, libraries and hack events
+Description: an introduction to open data and library hacking
 Type:
 Date:
 Author: @librarieshacked
@@ -10,65 +10,52 @@ Tags: open data, libraries, hack events
 
 ## Open Data
 
-Open Data is data made public with a licence allowing reuse without restrictive terms.  Tim Berners Lee's 5 star open data plan provides guidance to open data quality.  This includes just making stuff available, to using open formats linked to other datasets to provide additional context (linked open data).
+Open Data is data made public with a non-restrictive licence.  The 5-star open data plan provides guidance for open data quality.  This includes just making stuff available (maybe a PDF - 1 star), to open formats linked to other datasets (linked open data - 5 stars!)[1].
 
-The UK is currently ranked 1st globally for open data by the Open Data Barometer, and 2nd by the Open Knowledge Foundation.  This is partly due to the work of local open data groups and enthusiasts pushing for more national and local data.  
+The UK is currently top ranked for open data by the Open Data Barometer[2], and 2nd by the Open Knowledge Foundation[3].  This is a partly due to open data enthusiasts pushing for more national and local data, and how organisations have responded to that demand. 
 
-Why make data open?  There are various studies that point to wider economical benefit, such as a Deloitte report, 'Open Data - Driving growth, ingenuity and innovation' that claim, and also the Open Data Institute (ODI) that .  But at a more individual service level the benefits can be easily imagined by asking very simple questions.  Is data currently being used to it's full potential?    
+Why make data open?  Studies point to wider economic benefit, such as an Open Data Institute (ODI) and Nesta report suggesting a 5 to 10-fold return on investment over 3 years[4].  But for an organisation, benefits can be imagined by asking very simple questions.  Are we using data to it's full potential? Could it be merged with data from elsewhere?  Are those sources open and available?  Do we have the time to do all these things or should we let other people have a go?
 
-Say open data and many organisations will think Freedom of Information, and lost hours fulfilling requests for who said what in which email.  Of course FoI is an right for citizens that must be protected, but it's a mistake to see open data as being about transparency and accountability - these are things many people agree with in principle but don;t see the hard benefits of doing.  
+Previous barriers to open data have been a natural suspicion and fear of data requests, associating that process with transparency obligations.  But both public and private organisations are realising data-sharing benefits everyone.  And external demand for their data could be of direct benefit to them.
 
-Embracing open data is about adknoledging that more can be made of existing data.  
+What to make open?  Bath and North East Somerset Council have an open data policy[5] which states they will open up any data requested of them.  The few exemptions are for personal/sensitive data, third-party owned/commercial, or a security risk.  It's a policy that has led the community to dictate what they want, requesting live car park occupancy, cycling/traffic counts, mapping of green spaces, and much more.  Far from being an exercise in transparency, this has been a process to use local data to create technical solutions, and inform policy (a 'smart city').
 
-Open data is about letting go of control, which can be a difficult culture shock.  That means giving access to the library management system to the public, opening up the catalogue data,   
+It's easy to enthuse about, but where's the link to libraries?  Part of the problem is there rarely is one.  The 'smart city' agenda promoted by government[6] has largely ignored libraries, but cities have been 'smart' since they've had public libraries.  It is odd that a movement to inform citizens about their immediate environment, and enable community solutions would exclude libraries, where such activity has always been promoted.
 
-It also means letting go of the idea that library management can define library performance.  Public libraries currently have national (non-open) performance data data based on historic opinions on what needs to be measured.  But where such measures attempt to **collect** data, an open data strategy **releases** data, with few pre-conditions other than respecting personal data.  This better matches a library's relationship with the public.  It is the public that define the performance of their library.  The data released then engages citizens and encourages them to form their own questions of it.   Rather than being told answers to questions that they may not agree with in the first place, it allows individuals to add their own insight.  
-
+Articles often try to envisage a 'library of the future', imagining changing the role of libraries.  But the lack of library involvement in open data processes (which can often receive significant funding) is an abberation.  Addressing this is not a suggestion of any change in focus or existing skills.  Open data needs libraries, and existing professional library skills.  Local and national open data portals, such as data.gov.uk[7] are often a chaotic mess.  Few metadata standards, conflicting structures, poor categorisations, no conventions.  They just require some of the skills listed in CILIPs 'types of job' pages[8].
 
 ## Library data
 
-Library-related data can appear in many places.  Ian Anstice releases regular news posts on the popular Public Libraries News site.  Looking at these posts it's easy to see them as a dataset.  There is a regular database structure:  local news by authority, changes, international news.  A libraries hacked project queries public libraries news for new posts each night and extracts the local news stories.  This was initially done just as a tutorial for web scraping and geocoding data to display on a map.  Ian then asked whether that map could be put back on the public libraries news website.  If the data is there it can be done, and was. 
+There is also a lack of open data about public libraries, such as library catalogues, usage data, opening hours, or static and mobile library locations.
 
-It's is made possible purely by the dedication of one librarian and an attribution statement: creative commons.  The code is also available under the MIT open sourec licence, adn the data is available for re-use under the terms Ian uses.
+The benefits to libraries in having comprehensive open data are clear.  Measuring performance is not well covered by existing processes.  Current national (non-open) performance data is based on historic opinions on what needs to be measured, alongside incomplete responses.  But where measures attempt to collect specific data, an open data strategy simply releases data.  It is the public that define the performance of their library.  The data released engages citizens and encourages them to form their own questions of it.  Rather than being told answers to questions they may not agree with in the first place, it allows individuals to produce their own insight.  
 
+With a lack of official open data, library-related data can still appear in many places.  Ian Anstice releases regular news posts on Public Libraries News (PLN)[9].  Looking at these it's easy to see them as a dataset, with regular structure:  local news by authority, changes, international news.  A libraries hacked project queries PLN for new posts each night and extracts the individual stories.  The data is then embedded into the sidebar of the PLN site as an interactive map to show the spread of news across the UK.
 
-It is a shame not just that libraries are not publishing open data, but that libraries are not seen as leaders in this field.  Open data portals are not lead by information professionals, and as such have become messy, unstructured dumping grounds for datasets.  This is exactly the area where information professional expertise would be so useful.
+Sue Lawson and Julia Chandler worked to produce a Google sheet that listed libraries, library authorities, and their twitter accounts.  A libraries hacked twitter gallery[11] provides a view of those accounts with information such as when the account was created, last tweeted, and number of tweets/followers.  @manclibraries started tweeting way back in 2007.  @hull_libraries have a massive 60,000 tweets, well over double their nearest challengers.
 
-Newcastle libraries took this approach in their recent open data releases of library data, saying ''.  When running a hack day to invite the community to come and use the data, there were no specific questions they asked individuals to set about answering.  Just provide the data, and let people do what they will with it.
+## Hacks
 
-Open data releases can only go so far in creatihg new applications and systems.  For 
+Look around the Internet and you can find examples where people engage with library data.  There are scripts to automatically renew library loans, library membership apps that combine all your library accounts (university/public) into a single portal, and much more.  These are small 'hacks' - hacking together systems and data with enthusiasm and a spirit of exploration, and not being too bothered if it doesn't work out.  They don't need to be serious policy-forming analysis.  Simply engaging with data, creating 'mashups' with other services is often enough to see where more sophisticated solutions could be created, and where better data is required.
 
+The popularity of engaging in this kind of hacking has led to hack events (hackathons), often run by tech companies or groups of developers.  Traditional these have focussed on a stereotypical view of developers and encouraged fairly anti-social working patterns (feed them pizza and beer through the night and they'll make software).  But this isn't always the case, the organisation Data Kind run 'DataDive'[12] events, getting together developers, designers and data scientists to use those skills for community and charity causes.
 
-APIs .  
-This is not about mimicking commercial models like Twitter and GoodReads, it's about wondering why their systems are more accessible than public libraries'.
+To run community hack events you really just need community spaces that are suitable for working, have WiFi, have experts on hand to give guidance on data, and try to ensure a balanced and wide-ranging community contribution.  In other words, they should be run in libraries, which have space, infrastructure, expertise, and are safe and trusted community spaces that have widespread appeal.
 
-## Hack events
-
-Hacks are creating solutions though exploration, trying things out, and 
-
-Hacks make sense in public libraries for many reasons.
-
-- The basic practicality of community hacks is that they require a public space (or paid-for private space) that has WiFi, desks and power sockets.  The Library.
-- 
-- 
-
-Despite not currentl held in public libraries, look around the Internet and you can find hacks where people engage with library services and data to fill holes in existing library provision.  But these currently rely on either taking badly formatted data (like a PDF), or building systems using web automation scripts.  There are scripts to automatically renew library loans, library membership apps that combine all your library accounts (university/public) into a single portal, adn much more.  But that creativity could be happening directly in the library.  As well as that libraries have the community focus to get more people involved.  Traditional hack events have tended to focus on developers.
-
-
-It is worth anticipating how to deal with losing control over the ways users will interact with library services.  Currently, the majority of interactions are defined by the service itself, whether that is renewing an item, or checking one out.  With APIs made open, much of that control is lost.  Existing library membership apps don't offer automatic renewal options, but this is likely to be the first thing unofficial apps will offer.  Then if an app can be set to automatically renew an item imminently about to become overdue, will that change the way in which . Is it worth bothering with renewals at all?
-
-It will also change .  Web stats on how a web catalogue is visited and accesses will still be useful, but if library transactions could be made from any app/website then these won't be of much use 
-
-Concepts like a single digital library presence seem outdated when looking at existing technology models, and how services are provided.  Even if there were a single libray authority, it is unlikely that a single presence would provide services in the way that each user wanted them.  Certainly it's important to provide an online library presence, but to then open that open for others to do the same.  More important would be a single set of web services 
+The current situation is promising.  Newcastle Libraries have started an open data process, and started running hack events encouraging use of this data[13].  Libraries hacked aims to promote open data and hacks in libraries, as these activities don't feel like libraries of the future but as making use of all the skills and resources that libraries already have.
 
 ## References
 
-Open Data Barometer http://opendatabarometer.org/2ndEdition/analysis/rankings.html
-Global Open Data Index - Open Knowledge Foundation http://index.okfn.org/place/
-
-
-Deloitte Open Data Driving growth, ingenuity and innovation (http://www2.deloitte.com/uk/en/pages/deloitte-analytics/articles/open-data-driving-growth-ingenuity-and-innovation.html)
-5 Star Open Data (http://5stardata.info/en/)
-Public Libraries News ()
-Somerset Mobiles - Libraries Hacked (http://somersetmobiles.librarieshacked.org/)
-Public Libraries News - Libraries Hacked (http://publiclibrariesnews.librarieshacked.org/)
+[1] 5 Star Open Data (http://5stardata.info/en/)
+[2] Open Data Barometer (http://opendatabarometer.org/2ndEdition/analysis/rankings.html)
+[3] Global Open Data Index - Open Knowledge Foundation (http://index.okfn.org/place/)
+[4] Investment in Open Data Challenge Series could see 5 to 10-fold return to UK economy over 3 years (http://theodi.org/news/investment-in-open-data-challenge-series-could-see-10fold-return-to-uk-economy-over-3-years)
+[5] Bath and North East Somerset Council Open Data Policy (http://www.bathnes.gov.uk/services/your-council-and-democracy/local-research-and-statistics/wiki/open-data)
+[6] UK set to lead the way for smart cities (https://www.gov.uk/government/news/uk-set-to-lead-the-way-for-smart-cities)
+[7] Opening Up Government - data.gov.uk (https://data.gov.uk)
+[8] CILIP - Types of job (http://www.cilip.org.uk/cilip/types-job)
+[9] Public Libraries News (http://www.publiclibrariesnews.com)
+[10] Hack { libraries: twitter } (http://twitter.librarieshacked.org)
+[11] Hack { libraries: mobiles } (http://somersetmobiles.librarieshacked.org/)
+[12] Data Kind (http://www.datakind.org/datadives)
+[13] Releasing and re-using library data (https://librariestaskforce.blog.gov.uk/2016/04/12/releasing-and-re-using-library-data/)

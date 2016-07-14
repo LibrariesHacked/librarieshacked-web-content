@@ -1,7 +1,7 @@
 ---
 Title: UK public libraries catalogue web service
-Description: 
-GitHub: 
+Description: a project to be able to query all library catalogues in the UK at once.  for personal use and data analysis.
+GitHub: catalogue-nodeWS
 Type: Project
 Template: projectpage
 ---
