@@ -12,7 +12,7 @@ Author: @librarieshacked
 
 To take part in the event at Manchester library visit [EventBrite - IP Magnet Challenge](https://www.eventbrite.co.uk/e/the-ip-magnet-challenge-intellectual-property-data-hackathon-tickets-21674235221).
 
-Intellectual property (IP) applications (patents, trademarks) are handled in the UK by the Intellectual Property Office (IPO).  This data has for a long time been public, and searchable through such tools as the IPO patents and trademarks journals.
+Intellectual property (IP) applications (patents, trademarks) are handled in the UK by the Intellectual Property Office (IPO).  This data has for a long time been publicly accessible, through tools such as the IPO patents and trademarks journals.
 
 - [Intellectual Property Office - Searchable Patents Journal](https://www.ipo.gov.uk/p-pj)
 - [Intellectual Property Office - Trademarks Journal](https://www.ipo.gov.uk/t-tmj/)
@@ -21,7 +21,7 @@ There are also various developer/consumer services for access to this data.  Wee
 
 - [Patents journal download](https://www.ipo.gov.uk/types/patent/p-os/p-journal/p-pj-download.htm) PDF or Basic XML
 
-For data analysis, these services aren't ideal - web seaches find specific information, rather than data. For patent applications, weekly XML would also have to be compiled to be turned into a current snapshot of the full data, and would ideally be in a more accessible format for non-developers. 
+For data analysis, these services aren't ideal - web seaches find specific information, rather than data. For patent applications, weekly XML would also have to be processed to be turned into a current snapshot of the full data, and would ideally be in a more accessible format for non-developers. 
 
 There are a couple of datasets listed on Gov.uk, where the data has been compiled into snapshots in order for statistical research to be undertaken.  A full description of the fields is available on the pages for each dataset.
 
@@ -34,13 +34,12 @@ There are a couple of datasets listed on Gov.uk, where the data has been compile
 
 The snapshot data for patents includes postcode districts for each application - for the applicant(s), and the current proprietor(s).
 
-<table class="table">
-<tr><th>Column</th><th>Description</th></tr>
-<tr><td>Applicant/s at application</td><td>The name of the applicant/s first recorded for the given application. Applicants separated by ;</td></tr>
-<tr><td>Postcode/s of applicant at application</td><td>Postcode/s of the applicant/s at application (note this only contains the area code and present for UK applicants). Postcodes are separated by ;</td></tr>
-<tr><td>Current proprietor/s</td><td>The name of the current proprietor/s of this patent. The proprietor could be the same as the applicant but will differ if the applicant has changed name or ownership of the patent application has changed hands. Proprietors are separated by ;</td></tr>
-<tr><td>Current proprietor/s postcode/s</td><td>The postcode/s of the current proprietor/s. Postcodes are separated by ;</td></tr>
-</table>
+| Column | Description |
+| ------ | ----------- |
+| Applicant/s at application | The name of the applicant/s first recorded for the given application. Applicants separated by ; |
+| Postcode/s of applicant at application | Postcode/s of the applicant/s at application (note this only contains the area code and present for UK applicants). Postcodes are separated by ; |
+| Current proprietor/s | The name of the current proprietor/s of this patent. The proprietor could be the same as the applicant but will differ if the applicant has changed name or ownership of the patent application has changed hands. Proprietors are separated by ; |
+| Current proprietor/s postcode/s | The postcode/s of the current proprietor/s. Postcodes are separated by ; |
 
 There are 523,367 records.  Of these 159,913 have postcode information, representing the number of applications from the UK (around 30%).
 
@@ -54,13 +53,12 @@ As there is not much difference, taking just the applicant postcode district dat
 
 The IP data gives the postcode district rather than full postcode.  What is a postcode district?  Postcode data is split into different levels.
 
-<table class="table">
-<tr><th>Level</th><th>Example</th><th>Description</th></tr>
-<tr><td>Postcode area</td><td>M</td><td>The area is identified by one or two alpha characters at the start of the full postcode, the letters being derived from a town, city or district falling within the postcode area.  There are, at present, 120 postcode areas in Great Britain.</td></tr>
-<tr><td>Postcode district</td><td>M2</td><td>A sub-area of the postcode area, specified by the character sub-string within the first half of a full postcode.  There are approximately 2,800 postcode districts in Great Britain.</td></tr>
-<tr><td>Postcode sector</td><td>M2 5</td><td>A sub-area of a postcode district, whose area is identified by the number third from the end of a full postcode. There are approximately 9,000 postcode sectors in Great Britain.</td></tr>
-<tr><td>Postcode unit</td><td>M2 5PD</td><td>An area covered by a particular postcode. Postcodes are an alphanumeric abbreviated form of address. Postcode units are unique references and identify an average of 15 addresses.  There are approximately 1.7 million postcode units in the UK.</td></tr>
-</table>
+| Level | Example | Description |
+| ----- | ------- | ----------- |
+| Postcode area | M | The area is identified by one or two alpha characters at the start of the full postcode, the letters being derived from a town, city or district falling within the postcode area.  There are, at present, 120 postcode areas in Great Britain. |
+| Postcode district | M2 | A sub-area of the postcode area, specified by the character sub-string within the first half of a full postcode.  There are approximately 2,800 postcode districts in Great Britain. |
+| Postcode sector | M2 5 | A sub-area of a postcode district, whose area is identified by the number third from the end of a full postcode. There are approximately 9,000 postcode sectors in Great Britain. |
+|Postcode unit | M2 5PD | An area covered by a particular postcode. Postcodes are an alphanumeric abbreviated form of address. Postcode units are unique references and identify an average of 15 addresses.  There are approximately 1.7 million postcode units in the UK. |
 
 (Data abbreviated from Ordnance Survey [Linked Open Data Ontologies](http://data.ordnancesurvey.co.uk/ontology/postcode/PostcodeDistrict).)
 
@@ -86,11 +84,11 @@ Fortunately this has already been done by a geospatial organisation called Geoly
 
 **Licence: Released under the same terms as the OS OpenData license with the single addition of GeoLytix to the attribution list.**
 
-## CartoDB
+## carto
 
-Having found the relevant data sets, [CartoDB](https://cartodb.com/) is an online tool *to map and analyse location data*.  A free account (restricted by 250Mb limit) is generally enough to do a lot of visualisation work.
+Having found the relevant data sets, [Carto](https://cartodb.com/) is an online tool *to map and analyse location data*.  A free account (restricted by 250Mb limit) is generally enough to do a lot of visualisation work.
 
-Both the Geolytix open data, and the Gov.UK snapshots of IPO data can be directly uploaded into CartoDB as datasets.  These can then be joined (using the postcode district in both sets), and manipulated using structured query langugage (SQL), within CartoDB.  The [CartoDB docs](http://docs.cartodb.com/) are the best places to get started if you want to delve into mapping data within the online tool.
+Both the Geolytix open data, and the Gov.UK snapshots of IPO data can be directly uploaded into Carto as datasets.  These can then be joined (using the postcode district in both sets), and manipulated using structured query langugage (SQL).  The [Carto docs](https://carto.com/docs/) are the best places to get started if you want to delve into mapping data within the online tool.
 
 ## Filtering data to Manchester
 
@@ -98,7 +96,7 @@ Filtering data can aid in display, as any kind of interactive visualisation will
 
 - [Wikipedia: M Postcode area](https://en.wikipedia.org/wiki/M_postcode_area)
 
-The map below, produced using CartoDB, shows the relevant postcode districts in the M postcode area, coloured to show the number of IP data applicants.  Clicking on a particular area will show some more detailed information.
+The map below shows the relevant postcode districts in the M postcode area, coloured to show the number of IP data applicants.  Clicking on a particular area will show some more detailed information.
 
 <iframe width="100%" height="520" frameborder="0" src="https://daveroweuk.cartodb.com/viz/a0bf12e8-e2e4-11e5-8559-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 

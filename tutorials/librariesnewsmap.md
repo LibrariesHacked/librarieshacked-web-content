@@ -3,6 +3,7 @@ Title: turning RSS WordPress posts into tabular data
 Description: accessing public libraries news posts and parsing into individual news items.
 Date: 2015/01/26
 Type: Tutorial
+Author: @librarieshacked
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,jQuery,AJAX,YQL 
 TutorialNeeded: an HTML/script editor
@@ -13,7 +14,7 @@ Template: tutorialpagelibrariesnews
 
 [Public Libraries News](http://www.publiclibrariesnews.com/) is the leading source for libraries news in the UK, providing regular posts via a WordPress site which also feeds out to email subscribers and RSS readers.  One particularly impressive aspect is that each news post has a uniform layout with a regular HTML structure - an editorial, changes, ideas, national, international, and local news.  Being structured in this way effectively makes it queryable like a database, with the ability to split up the details of the posts into datasets.
 
-## query the rss feed
+## query the RSS feed
 
 To get hold of the data, [yahoo query language (YQL)](https://developer.yahoo.com/yql/) can be used to access the RSS feed, which is a nice way of only returning the fields we are interested in, and returning them in JSON (JavaScript Object Notation) format, making it easier to work with later on.
 
@@ -57,7 +58,7 @@ $.getJSON(url, function(data) {
 }</code>
 </pre>
 
-That *'do something with each post'* placeholder above is where it gets complex, because each post is HTML text.  From that text it'd be useful to get things like each individual local news item, each idea, etc.
+That **'do something with each post'** placeholder above is where it gets complex, because each post is HTML text.  From that text it'd be useful to get things like each individual local news item, each idea, etc.
 
 Each news story is generally an item within an HTML unordered list.  So, to get local news stories, it's a case of limiting to the 'UK local news by authority' section, and fetching each *&lt;li&gt;* HTML element.  Items take the form *'Gloucester - something happened in Gloucester'*, so splitting by *'-'* can also separate the location from the news text.
 

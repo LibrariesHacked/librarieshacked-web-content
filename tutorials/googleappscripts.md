@@ -3,6 +3,7 @@ Title: use google apps scripts to schedule notifications
 Description: schedule loan checks using google scripting services and schedules.
 Date: 2015/02/07
 Type: Tutorial
+Author: @librarieshacked
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,scripting,XML
 TutorialNeeded: a google account

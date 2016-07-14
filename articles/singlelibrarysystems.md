@@ -3,7 +3,7 @@ Title: a single view of library services
 Description: portals to interact with and combine library catalogue services across authorities and sectors.
 Type: Article
 Date: 2015/01/21
-Author: dave
+Author: @librarieshacked
 Template: blogpagecatalogue
 Tags: library catalogues, web services, library management systems
 ---

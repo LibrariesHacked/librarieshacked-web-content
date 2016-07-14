@@ -3,6 +3,7 @@ Title: making sure your hack sites can't be hacked
 Description: WordPress is a popular platform for hack sites - but it leaves security to the administrator.
 Date: 2014/07/07
 Type: Tutorial
+Author: @librarieshacked
 TutorialType: WebDevelopment
 TutorialSkillsRequired: WordPress,security
 ---
@@ -29,25 +30,25 @@ If you have a WordPress site it's worth navigating to the following page to see 
 
 In many cases that redirects to a page showing the username of the first user (often 'admin').
 
-### 1.1 don't display usernames in WordPress
+### don't display usernames in WordPress
 
 One way of giving away usernames to attackers is by listing them on the site pages.  There is a setting in WordPress to use nicknames rather than usernames when displaying users.
 
-### 1.2 don't allow WordPress login to reveal any secrets
+### don't allow WordPress login to reveal any secrets
 
 If you go to a WordPress login page, type in your username with an incorrect password what message does it give?  It will probably be something like:
 
 **ERROR: The password you entered for the username admin is incorrect**
 
-Which is effectively WordPress responding: *yes, that's half-right, but the password is wrong*.  Even if the WordPress pages are not listing usernames in them, a simple login attempt can confirm whether certain usernames are being used.
+Which is effectively WordPress responding: **yes, that's half-right, but the password is wrong**.  Even if the WordPress pages are not listing usernames in them, a simple login attempt can confirm whether certain usernames are being used.
 
 You could search through the website code and change that text, or there are security plugins that will display a more standard message.  
 
-### 1.3 don't use the default user names
+### don't use the default user names
 
 None of these things show any definite vulnerabilities in WordPress, they just assume that users will not show usernames in pages, and that they will not use usernames that could be guessed.  The most important thing is to not use a username like 'admin' that can easily be guessed and confirmed to be correct.
 
-### 1.4 force strong passwords
+### force strong passwords
 
 There is an argument that usernames should not be secret, as ultimately a strong (complex) password will keep out any attack.  It's true that this is most important, but if keeping a username secret stops an attack in the first place it still seems worthwhile.  An administrator doesn't always have control over user passwords, so this is one option they can manage.
 

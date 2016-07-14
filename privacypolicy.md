@@ -1,6 +1,6 @@
 ---
 Title: privacy policy
-Description: how libraries hacked deals with your privacy concerns
+Description: how { libraries: hacked } deals with your privacy concerns
 Keys: privacy,cookies
 ---
 

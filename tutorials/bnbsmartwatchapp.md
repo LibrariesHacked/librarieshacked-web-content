@@ -3,6 +3,8 @@ Title: a british national bibliography smartwatch app
 Description: creating a smartwatch app to show books published and set in the current location.
 Date: 2015/07/30
 Type: Tutorial
+Author: @librarieshacked
+GitHub: Pebble-BNBBooks
 TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,SPARQL,PebbleJS
@@ -11,24 +13,21 @@ TutorialTime: 1 hour
 Template: tutorialpage
 ---
 
-With the Apple watch launch, various Android watches, and Microsoft [releasing the Band](https://www.microsoft.com/microsoft-band/en-gb), 2015 may still be set to be the year of the smart watch (though this telegraph article suggests in terms of **wearables** it is the [year of the smart bra](http://www.telegraph.co.uk/news/predictions/technology/11306735/wearable-technology-trend.html)).
+With the Apple watch, various Android watches, and Microsoft [releasing the Band](https://www.microsoft.com/microsoft-band/en-gb), 2015 may still be set to be the year of the smart watch (though this telegraph article suggests in terms of **wearables** it is the [year of the smart bra](http://www.telegraph.co.uk/news/predictions/technology/11306735/wearable-technology-trend.html)).
 
-##pebble
-
+## pebble
 Pebble is a Kickstarter funded smart watch, the second generation version holds the record for highest funded project at around $2 million.  It is also relatively cheap (the first one around £80), integrates with iOS and Android phones, and includes an easy cloud based-development environment, [CloudPebble](http://cloudpebble.net).
 
-Although it is yet to be seen how successful the second watch will be, or how popular smart watches will turn out to be in general, Pebble is at the least a fun learning tool for writing simple watch apps that make use of the features on the phone paired with the watch.
+Although it is yet to be seen how successful the second watch will be, or how popular smart watches will turn out to be in general, Pebble is at least a fun learning tool for writing simple watch apps that make use of the features on the phone paired with the watch.
 
-##pebble.js
+## pebble.js
+Like hybrid apps on phones, pebble has created an option for developers to write apps (**watchapps**) purely using a JavaScript library, **Pebble.JS**.  A [basic guide](http://developer.getpebble.com/guides/js-apps/pebble-js/) to Pebble.JS on the Pebble site shows how to set up an app.
 
-Like hybrid apps on phones, pebble has created an option for developers to write apps (**watchapps**) purely using a JavaScript library, *Pebble.JS*.  A [basic guide](http://developer.getpebble.com/guides/js-apps/pebble-js/) to Pebble.JS on the Pebble site shows how to set up an app.
-
-##example app - finding books published nearby
-
-As another example, this app will:
+## example app - finding books published nearby
+As an example, this app will:
 
 - query the [British National Bibliography](http://bnb.bl.uk/) (BNB) for a book that was published in the user's current location.
-- also query for a book *set* in the current location.
+- also query for a book **set** in the current location.
 
 ## setting up the app
 The app can be written within the cloud pebble environment, which includes a simulator for testing.  All the code is written within a single app.js file.  CloudPebble also allows easy integration with GitHub, so the full code for this app is located at:
@@ -54,9 +53,9 @@ main.show();</code>
 
 ## handling events
 
-The code needs to perform actions when each button is pressed.  These are available as JavaScript *events*, so event handlers are written in the same way as traditional web-based JavaScript (such as clicking a button on a webpage).
+The code needs to perform actions when each button is pressed.  These are available as JavaScript **events**, so event handlers are written in the same way as traditional web-based JavaScript (such as clicking a button on a webpage).
 
-The Pebble watch has three buttons.  Top, middle and bottom.  Using the top and bottom for each process, in the code below, each action triggers a call to get the current location (*navigator.geolocation.getCurrentPosition*).
+The Pebble watch has three buttons.  Top, middle and bottom.  Using the top and bottom for each process, in the code below, each action triggers a call to get the current location (**navigator.geolocation.getCurrentPosition**).
 
 The Pebble watch itself does not does not have an Internet connection, or the ability to detect location - all these features are obtained via a Bluetooth connection to a phone.  The JavaScript library hides that though, and handles the communication between the phone and the watch.
 
@@ -78,7 +77,7 @@ main.on('click', 'down', function(e) {
 
 ## getting location
 
-The navigator.geolocation.getCurrentPosition method takes in three arguments.  These are:
+The **navigator.geolocation.getCurrentPosition** method takes in three arguments.  These are:
 
 - a method to run when the location has been retrieved;
 - a method to run if there is an error;
@@ -86,7 +85,7 @@ The navigator.geolocation.getCurrentPosition method takes in three arguments.  T
 
 In the example above, once the location is retrieved, both actions go on to run a method called reverseGeocode.
 
-##what is reverse geocoding?
+## what is reverse geocoding?
 
 Geocoding is getting location coordinates (typically in latitude and longitude) from descriptive data (such as an address).  In the case of location data from GPS, we start off with the location coordinates and want to turn that into something descriptive (e.g. Tewkesbury) - reverse geocoding.
 
@@ -108,7 +107,7 @@ Open Street Map can be used for reverse geocoding.  A single call to a URL (**ht
 }</code>
 </pre>
 
-##querying the BNB
+## querying the BNB
 
 The BNB data has an open SPARQL endpoint, allowing remote querying.  It also has a [test editor online](http://bnb.data.bl.uk/flint-sparql) for trying out queries.
 
@@ -116,7 +115,7 @@ It is worth reading [Leigh Dodds' 4 part series](http://blog.ldodds.com/2014/10/
 
 Rather than showing the JavaScript code to pass through SPARQL queries, these are two example queries that would be used to find books set and published in Gloucester.
 
-###getting books published in a location
+### books published in a location
 
 <pre class="prettyprint linenums">
 <code>PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
@@ -135,7 +134,7 @@ SELECT ?book ?title ?isbn ?timeLabel ?creator ?name WHERE {
 }</code>
 </pre>
 
-###getting books set in a location
+### books set in a location
 
 A notable point about getting books set in a location is that location is most are typically formatted like 'Gloucester (England)'.  So some manipulation of the address data has to be done to combine city and state.
 

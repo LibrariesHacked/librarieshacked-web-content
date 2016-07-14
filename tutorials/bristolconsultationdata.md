@@ -3,6 +3,7 @@ Title: data analysis during a library consultation
 Description: delving into the data used to close libraries.
 Date: 2015/04/19
 Type: Tutorial
+Author: @librarieshacked
 TutorialComplexity: medium
 TutorialSkillsRequired: mapping, JavaScript, web services
 TutorialNeeded: a text editor
@@ -20,7 +21,7 @@ Along with survey data from a preliminary 'Bristol library futures' public consu
 Locations of the libraries and the Bristol authority boundary lines are used to visualise library coverage: the libraries are plotted with circular radius of 1.5 miles to show the plans still give majority coverage across the authority.  Using a radius as a measure comes with various issues:
 
 - For non-walking access it is largely irrelevant.  Travel to a nearest library needs to be measured in journey time, accessibility and expenditure.
-- For walking, the radius is effectively *'as the crow flies'* and can be very different to the journey time.  At best it is a minimum possible distance assuming a perfectly straight pedestrianised route.  To calculate real walking distances would require more in depth route analysis.  Councils have very good GIS teams and software tools (e.g. they may need to calculate the routes that waste collection teams will take across the whole authority); it is not unfeasible to expect an analysis of distance to libraries based on real route data.
+- For walking, the radius is effectively 'as the crow flies' and can be very different to the journey time.  At best it is a minimum possible distance assuming a perfectly straight pedestrianised route.  To calculate real walking distances would require more in depth route analysis.  Councils have very good GIS teams and software tools (e.g. they may need to calculate the routes that waste collection teams will take across the whole authority); it is not unfeasible to expect an analysis of distance to libraries based on real route data.
 
 The 1.5 mile figure is given as one that is better than a 'recommended minimum' of 2 miles:
 

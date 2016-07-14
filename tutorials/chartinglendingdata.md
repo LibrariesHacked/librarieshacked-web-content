@@ -3,6 +3,7 @@ Title: creating data driven dashboards
 Description: creating interactive charts that cross filter data to provide dashboards.
 Date: 2015/05/05
 Type: Tutorial
+Author: @librarieshacked
 TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,DCJS,D3
@@ -17,7 +18,7 @@ DC JS (dimensional charting) goes a little further as it uses [Crossfilter](http
 
 ## an example
 
-The Bath:Hacked community data store holds data on library lending transactions for Bath from April 2013 to January 2014.  The data, available to download as CSV (or use an API connector), looks like this, with a row for each transaction *(Note: Looking at this closer it appears there's another filter on the data as there are far too few rows - will query this)*.
+The Bath: Hacked community data store holds data on library lending transactions for Bath from April 2013 to January 2014.  The data, available to download as CSV (or use an API connector), looks like this, with a row for each transaction **(Note: Looking at this closer it appears there's another filter on the data as there are far too few rows - will query this)**.
 
 <table class="table table-condensed">
 <tr>
@@ -42,12 +43,12 @@ The Bath:Hacked community data store holds data on library lending transactions 
 
 Creating a data-driven dashboard is about giving users the ability to filter and query that data for themselves from their own questions, rather than creating fixed charts or views on the data.  In this example, questions could be:
 
-- *what does the trend of lending transactions look like for the central library compared to the mobile libraries?*
-- *are there particular categories of lending item that people use council connect to deal with rather than a library?*
+- what does the trend of lending transactions look like for the central library compared to the mobile libraries?
+- are there particular categories of lending item that people use council connect to deal with rather than a library?
 
 The dataset itself is relatively straightforward so wouldn't pose much challenge to a manual data analysis.  But if that lending data were as detailed as being transactions per hour, over the course of the year, and even included data from the library accounts involved, the data could answer questions like:
 
-- *for only people who live in X ward, how many lending transactions are there for their local library, compared to the central library?  How does that comparison differ for people who live in Y ward?*
+- for only people who live in X ward, how many lending transactions are there for their local library, compared to the central library?  How does that comparison differ for people who live in Y ward?
 
 That combined with other datasets such as deprivation by ward, or public transport/car ownership could start giving some real insight.  But regardless of the questions asked of the data, the dashboards themselves provide a means of answering questions using the relevant dimensions of the data.
 

@@ -4,10 +4,11 @@ Description: creating a summary of links from twitter hashtags, for revisiting l
 Template: tutorialpagetwitterurls
 Type: Tutorial
 Date: 2014/08/1
+Author: @librarieshacked
 TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: jquery,javascript,json,sql
-TutorialNeeded: an html editor of your choice
+TutorialNeeded: an HTML editor of your choice
 TutorialTime: 2 hours
 ---
 

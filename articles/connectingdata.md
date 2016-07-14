@@ -8,7 +8,7 @@ Template: blogpage
 Tags: linked data, open government data, government software
 ---
 
-Open data is widely considered to be a **good thing** - greater organisation and government transparency leads to a better informed public and greater innovation and creative use of that data.
+Open data is widely considered to be a **good thing** - greater organisation and government transparency leads to a better informed public and creative use of that data.
 
 The government promote an open data policy.  The service design manual on gov.uk includes [a page on open data](https://www.gov.uk/service-manual/technology/open-data.html).  Key phrases:
 
@@ -18,7 +18,7 @@ The government promote an open data policy.  The service design manual on gov.uk
 
 ... and many more such examples.  It reads like a manifesto in support of open data, and will be gratifying for those who are keen for more public data to be published in reusable formats.
 
-Despite all this, for a local council the question will still be *why?* and though arguments for open data are compelling, they are rarely ones that provide a measurable cost saving, yet they often present implementation costs.
+Despite all this, for a local council the question will still be **why?** and though arguments for open data are compelling, they are rarely ones that provide a measurable cost saving, yet they often present implementation costs.
 
 ## what data does a council have?
 Councils are not typically organisations that are on top of the data they hold.  For example, they may have the following systems:
@@ -27,7 +27,7 @@ Councils are not typically organisations that are on top of the data they hold. 
 - a library member database.
 - a database of planning and licensing applications with associated data on individuals (those who have made applications and those who have commented on applications).
 - a CRM (customer relationship management) database used by the customer services department to keep track of engagement with residents.
-- a *revenues and benefits* system with personal details of those paying/receiving money from the council (e.g. council tax/housing benefit).
+- a revenues and benefits system with personal details of those paying/receiving money from the council (e.g. council tax/housing benefit).
 - various GIS (geographic information systems) databases such as school locations, air quality data, or waste/recycling collection routes.
 - social care systems, school admissions, and countless other and smaller systems such as allotment holdings and waiting lists.
 
@@ -39,7 +39,7 @@ If a council is going to spend money on opening data to the public they will nee
 - query different systems and platforms to extract the data.
 - keep those exports up to date
 
-Despite holding this wealth of information, the systems will rarely be *linked together* in any way, despite all the data being related.  Those registered to vote will also be on the council tax and benefits systems, and the CRM system, and the library system.  Their house will be a registered property which will be on waste and recycling collection routes.  They will be a member of a council ward, which will have specific health data, which could be linked to relevant air quality monitors, or directly linked to council spend in that area.
+Despite holding this wealth of information, the systems will rarely be **linked** in any way, despite all the data being related.  Those registered to vote will also be on the council tax and benefits systems, and the CRM system, and the library system.  Their house will be a registered property which will be on waste and recycling collection routes.  They will be a member of a council ward, which will have specific health data, which could be linked to relevant air quality monitors, or directly linked to council spend in that area.
 
 ## the cost of opening up data
 Unfortunately, any question asked of a council that involves data from more than one system will likely prove a challenge (and be expensive) to answer - because those systems will be made by a variety of suppliers with a mix of technologies and database systems (sql server, oracle, access, *excel!*), and even hosted on different operating systems.

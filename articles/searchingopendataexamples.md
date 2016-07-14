@@ -3,7 +3,7 @@ Title: where to find public libraries open data
 Description: searching through central gov portals, and local datastores.
 Type: Article
 Date: 2015/12/04
-Author: dave
+Author: @librarieshacked
 Template: blogpage
 Tags: open data, local government datastores, public libraries data
 ---
@@ -11,7 +11,7 @@ Tags: open data, local government datastores, public libraries data
 Hunting out library open data - in particular for public libraries - can be difficult.  Even where a library authority is actively publishing open data (already then making them a minority), the data could appear in multiple different places.
 
 ## data.gov.uk
-A quick search for *'library'* or *'libraries'* on [data.gov.uk](https://data.gov.uk/) will return a large number of results.  But filtering through that to find current and *open* datasets (the *Open Government Licence* is a good filter to use), reveals far less.
+A quick search for **'library'** or **'libraries'** on [data.gov.uk](https://data.gov.uk/) will return a large number of results.  But filtering through that to find current and **open** datasets (the **Open Government Licence** is a good filter to use), reveals far less.
 
 Quite a number of these are library location and services data.  For examples, Calderdale have an [information on libraries dataset](https://data.gov.uk/dataset/libraries8), released under the Open Government Licence, which looks fabulous in term of the detail published for each library.  The fields included are:
 

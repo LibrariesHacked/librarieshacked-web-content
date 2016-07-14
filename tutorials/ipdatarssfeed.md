@@ -3,6 +3,7 @@ Title: creating an RSS feed from IP data
 Description: use google apps scripts to make use of IP weekly list data
 Date: 2016/03/11
 Type: Tutorial
+Author: @librarieshacked
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,scripting,XML,RSS
 TutorialNeeded: a google account
@@ -91,39 +92,34 @@ The XML is split into a number of headings and sections.  The headings are:
 
 Each of these headings is split into sections summarised in the following table (**note: this table is not essential reading!**)
 
-<table class="table table-hover">
-<thead>
-<tr><th>Heading</th><th>Section</th></tr>
-</thead>
-<tbody>
-<tr><td>Proceedings under the Patents Act 1977</td><td>Applications for Patents filed</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>Applications Terminated before Publication under Section 16(1)</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>Applications Terminated after Publication under Section 16(1)</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>Applications Published</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>Patents Granted</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>European Patents Granted</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>Translations Filed</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>European Patents Revoked</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>European Patents Expired</td></tr>
-<tr><td>Proceedings under the Patents Act 1977</td><td>UK Patents Expired</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Reinstatement of Applications</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Amendment of specification after grant</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Restoration of ceased patents</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Surrender of patent</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Transactions in Patents and Applications</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Register of patents</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Claim/Counterclaim for Revocation Before the Court</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Revocation on Comptroller's Initiative</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Amendment of patent in infringement or revocation proceedings before the Court.</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Amendment of patent in infringement or revocation proceedings before the comptroller</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Request for Publication of Translation</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Correction of errors in Patents and Applications</td></tr>
-<tr><td>Other Proceedings under the Patents Act 1977</td><td>Appeals to the Court</td></tr>
-<tr><td>Supplementary Protection Certificates</td><td>SPCs Lodged</td></tr>
-<tr><td>Supplementary Protection Certificates</td><td>SPCs Granted</td></tr>
-<tr><td>Supplementary Protection Certificates</td><td>SPCs Lapsed</td></tr>
-</tbody>
-</table>
+| Heading | Section |
+| ------- | ------- |
+| Proceedings under the Patents Act 1977 | Applications for Patents filed |
+| Proceedings under the Patents Act 1977 | Applications Terminated before Publication under Section 16(1) |
+| Proceedings under the Patents Act 1977 | Applications Terminated after Publication under Section 16(1) |
+| Proceedings under the Patents Act 1977 | Applications Published |
+| Proceedings under the Patents Act 1977 | Patents Granted |
+| Proceedings under the Patents Act 1977 | European Patents Granted |
+| Proceedings under the Patents Act 1977 | Translations Filed |
+| Proceedings under the Patents Act 1977 | European Patents Revoked |
+| Proceedings under the Patents Act 1977 | European Patents Expired |
+| Proceedings under the Patents Act 1977 | UK Patents Expired |
+| Other Proceedings under the Patents Act 1977 | Reinstatement of Applications |
+| Other Proceedings under the Patents Act 1977 | Amendment of specification after grant |
+| Other Proceedings under the Patents Act 1977 | Restoration of ceased patents |
+| Other Proceedings under the Patents Act 1977 | Surrender of patent |
+| Other Proceedings under the Patents Act 1977 | Transactions in Patents and Applications |
+| Other Proceedings under the Patents Act 1977 | Register of patents |
+| Other Proceedings under the Patents Act 1977 | Claim/Counterclaim for Revocation Before the Court |
+| Other Proceedings under the Patents Act 1977 | Revocation on Comptroller's Initiative |
+| Other Proceedings under the Patents Act 1977 | Amendment of patent in infringement or revocation proceedings before the Court.</td></tr>
+| Other Proceedings under the Patents Act 1977 | Amendment of patent in infringement or revocation proceedings before the comptroller</td></tr>
+| Other Proceedings under the Patents Act 1977 | Request for Publication of Translation |
+| Other Proceedings under the Patents Act 1977 | Correction of errors in Patents and Applications |
+| Other Proceedings under the Patents Act 1977 | Appeals to the Court |
+| Supplementary Protection Certificates | SPCs Lodged |
+| Supplementary Protection Certificates | SPCs Granted |
+| Supplementary Protection Certificates | SPCs Lapsed |
 
 A sample of the XML structure is:
 

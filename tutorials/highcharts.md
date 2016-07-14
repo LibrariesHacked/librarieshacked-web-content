@@ -3,6 +3,7 @@ Title: making interactive web charts with Highcharts
 Description: linking to CSV data to quickly publish live charts on the web.
 Date: 2015/11/30
 Type: Tutorial
+Author: @librarieshacked
 TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,Highcharts

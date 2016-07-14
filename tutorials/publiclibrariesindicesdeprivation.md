@@ -6,7 +6,7 @@ Type: Tutorial
 TutorialType: Maps
 TutorialComplexity: medium
 TutorialSkillsRequired: GIS, SQL
-TutorialNeeded: web browser, CartoDB
+TutorialNeeded: web browser, Carto
 TutorialTime: 1 hour
 Template: tutorialpage
 ---
@@ -43,17 +43,17 @@ Taking an older, though still relatively recent dataset, the list of libraries o
 
 With that data, along with the defined LSOA areas, and the deprivation indices for those LSOAs, it is possible to do some analysis on which areas public libraries tend to be located, in terms of deprivation.
 
-## CartoDB
+## Carto
 
-[CartoDB](https://cartodb.com/) is a paid-for mapping and data service that offers a free option for a relatively small number of datasets (maximum 250Mb), which generally covers personal use.  The service is built on PostGIS, an open source database specialised for GIS (geographic information systems) querying.  The analysis could all be done directly on a PostGIS database, but CartoDB has a convenient web interface and also includes many flashy map visualisations such as chloropleth maps (coloured/shaded areas).
+[Carto](https://Carto.com/) is a paid-for mapping and data service that offers a free option for a relatively small number of datasets (maximum 250Mb), which generally covers personal use.  The service is built on PostGIS, an open source database specialised for GIS (geographic information systems) querying.  The analysis could all be done directly on a PostGIS database, but Carto has a convenient web interface and also includes many flashy map visualisations such as chloropleth maps (coloured/shaded areas).
 
-Three sets of data can be uploaded into CartoDB:  the 2015 indices of deprivation, the LSOA polygon data, and the libraries point data.
+Three sets of data can be uploaded into Carto:  the 2015 indices of deprivation, the LSOA polygon data, and the libraries point data.
 
-1. When the LSOA areas are uploaded CartoDB will recognise the GIS data and also include the LSOA codes as a lookup against the geographic polygons.
+1. When the LSOA areas are uploaded Carto will recognise the GIS data and also include the LSOA codes as a lookup against the geographic polygons.
 2. The indices are then uploaded which also include the LSOA codes.
 3. The library points data is then loaded.
 
-Those datasets being in CartoDB effectively become three database tables that can be queried and joined.  Due to it being built using PostGIS, those queries include the full power of spatial SQL.
+Those datasets being in Carto effectively become three database tables that can be queried and joined.  Due to it being built using PostGIS, those queries include the full power of spatial SQL.
 
 For example, a SQL query can be written that counts the number of libraries per multiple deprivation index decile:
 
@@ -67,25 +67,20 @@ ON ls.lsoa11cd = id.lsoa_code_2011
 GROUP BY id.IMDDecile</code>
 </pre>
 
-The spatial part of the query above is the **ST_Intersects** fuction, which is calculating whether a library falls within the bounds of an LSOA.  Even though there is no direct link in the library data to LSOAs, if the location is known then the spatial query can make that link.  The three tables in the above example are named *libraries* (the library locations), *indicesdeprivation* (the 2015 indices), and *lsoas2011* (the LSOA boundaries).  By grouping by the index of multiple deprivation decile (*IMDDecile*), a sum of the total libraries for each decile can be returned.
+The spatial part of the query above is the **ST_Intersects** fuction, which is calculating whether a library falls within the bounds of an LSOA.  Even though there is no direct link in the library data to LSOAs, if the location is known then the spatial query can make that link.  The three tables in the above example are named **libraries** (the library locations), **indicesdeprivation** (the 2015 indices), and **lsoas2011** (the LSOA boundaries).  By grouping by the index of multiple deprivation decile (*IMDDecile*), a sum of the total libraries for each decile can be returned.
 
-<table class="table table-striped table-nonfluid">
-<thead>
-<tr class="info"><th>Index of multiple deprivation decile</th><th>Library count</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>424</td></tr>
-<tr><td>2</td><td>367</td></tr>
-<tr><td>3</td><td>354</td></tr>
-<tr><td>4</td><td>324</td></tr>
-<tr><td>5</td><td>300</td></tr>
-<tr><td>6</td><td>319</td></tr>
-<tr><td>7</td><td>296</td></tr>
-<tr><td>8</td><td>255</td></tr>
-<tr><td>9</td><td>311</td></tr>
-<tr><td>10</td><td>248</td></tr>
-</tbody>
-</table>
+| Index of multiple deprivation decile | Library count |
+| ------------------------------------ | ------------- |
+| 1 | 424 |
+| 2 | 367 |
+| 3 | 354 |
+| 4 | 324 |
+| 5 | 300 |
+| 6 | 319 |
+| 7 | 296 |
+| 8 | 255 |
+| 9 | 311 |
+| 10 | 248 |
 
 Or, looking at the data another way, which LSOAs have the most libraries within them (and the associated multiple index of deprivation)?
 
@@ -101,16 +96,11 @@ ORDER BY libcount DESC
 LIMIT 3</code>
 </pre>
 
-<table class="table table-striped table-nonfluid">
-<thead>
-<tr class="info"><th>LSOA Name</th><th>Index of multiple deprivation decile</th><th>Library count</th></tr>
-</thead>
-<tbody>
-<tr><td>Richmond upon Thames 008B</td><td>8</td><td>3</td></tr>
-<tr><td>Westminster 023E</td><td>4</td><td>3</td></tr>
-<tr><td>City of London 001F</td><td>7</td><td>3</td></tr>
-</tbody>
-</table>
+| LSOA Name | Index of multiple deprivation decile | Library count |
+| --------- | ------------------------------------ | ------------- |
+| Richmond upon Thames 008B | 8 | 3 |
+| Westminster 023E | 4 | 3 |
+| City of London 001F | 7 | 3 |
 
 Or find the libraries in the most deprived areas.
 
@@ -128,30 +118,20 @@ ORDER BY id.IMDRank ASC
 LIMIT 4</code>
 </pre>
 
-<table class="table table-striped table-nonfluid">
-<thead>
-<tr class="info"><th>Index of multiple deprivation rank</th><th>Library name</th></tr>
-</thead>
-<tbody>
-<tr><td>3</td><td>Blackpool Central Library</td></tr>
-<tr><td>33</td><td>Wheatsheaf Library</td></tr>
-<tr><td>34</td><td>Freedom Centre Library</td></tr>
-<tr><td>34</td><td>Marfleet Library</td></tr>
-</tbody>
-</table>
+| Index of multiple deprivation rank | Library name |
+| ---------------------------------- | ------------ |
+| 3 | Blackpool Central Library |
+| 33 | Wheatsheaf Library |
+| 34 | Freedom Centre Library |
+| 34 | Marfleet Library |
 
 And by replacing **ASC** with **DESC** (to use descending order rather than ascending), this gives the ones in the least deprived areas:
 
-<table class="table table-striped table-nonfluid">
-<thead>
-<tr class="info"><th>Index of multiple deprivation rank</th><th>Library name</th></tr>
-</thead>
-<tbody>
-<tr><td>32843</td><td>Wargrave Library</td></tr>
-<tr><td>32837</td><td>Binfield Library</td></tr>
-<tr><td>32819</td><td>Long Crendon Community Library</td></tr>
-<tr><td>32803</td><td>Berkhamsted Library</td></tr>
-</tbody>
-</table>
+| Index of multiple deprivation rank | Library name |
+| ---------------------------------- | ------------ |
+| 32843 | Wargrave Library |
+| 32837 | Binfield Library |
+| 32819 | Long Crendon Community Library |
+| 32803 | Berkhamsted Library |
 
 Though only being a few years old the library data soon begins to show inaccuracies and limitations - quite a few hundred of those libraries will now be closed.  Having a comprehensive national set of library locations is essential not just for obvious uses, such as tracking closures, but for real data analysis, and understanding how libraries have an impact on deprivation in their immediate area, by combining with other data sources.

@@ -4,6 +4,7 @@ Description: a tutorial on creating an auto-completing text box for providing bo
 Date: 2014/07/05
 Template: tutorialpageautocomplete
 Type: Tutorial
+Author: @librarieshacked
 TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: HTML,JavaScript,jQuery,JSON
@@ -32,6 +33,7 @@ The [Google Books API](http://books.google.co.uk/) is one option to look up book
 ### 1. start with a basic html5 template
 
 The example will be done within a single web page, so the following is a basic html5 page template to get started.
+
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -48,7 +50,8 @@ The example will be done within a single web page, so the following is a basic h
 
 ### 2. add the required references to JavaScript and CSS files.
 
-For this tutorial we need jQuery and jQuery UI to provide the auto-complete functionality.  these are *JavaScript libraries*, created to simplify common JavaScript tasks, making them quicker and easier to code.  They are added to the page as shown below:
+For this tutorial we need jQuery and jQuery UI to provide the auto-complete functionality.  These are **JavaScript libraries**, created to simplify common JavaScript tasks, making them quicker and easier to code.  They are added to the page as shown below:
+
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;head&gt;
 	&lt;meta charset=&quot;utf-8&quot;&gt;
@@ -77,6 +80,7 @@ In the HTML a new file is also referenced, **script.js**.  This will contain the
 ### 3. add the basic textbox html.
 
 The web page itself will just have a header and an input text box, and a space where details of the book will be added later.
+
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;body&gt;
     &lt;h1&gt;auto-complete book search example&lt;/h1&gt;
@@ -91,8 +95,10 @@ The web page itself will just have a header and an input text box, and a space w
 	&lt;script src=&quot;js/scripts.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;</code>
 </pre>
+
 ### 4. add the auto-complete JavaScript.
 The following code is added to the empty script.js file, providing a framework for the jQuery UI autocomplete functionality.
+
 <pre class="prettyprint linenums">
 <code class="language-javascript">$(document).ready(function () {  // the code should only run once the document is ready
 	$("#txbBookSearch").autocomplete({ // attach the autocomplete functionality to the textbox
@@ -118,6 +124,7 @@ The full auto-complete documentation is available on the [jQueryUI pages](http:/
 ### 5. provide the search suggestions
 
 When a user enters text of at least 2 characters, the code should search all books from the google API, and list the closest matches.
+
 <pre class="prettyprint linenums">
 <code class="language-javascript">$(document).ready(function () {  // only begin once page has loaded
 	$("#txtBookSearch").autocomplete({ // attach auto-complete functionality to textbox

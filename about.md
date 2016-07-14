@@ -3,8 +3,8 @@ Title: about the site
 Description: promoting open data and hacks
 ---
 
-## why *hacked*?
-**hacks** and **hacking** are the process of creating tech solutions, often very quickly (dispensing with normal project processes).  
+## why **hacked**?
+**hacks** and **hacking** are the process of creating tech solutions, often very quickly, dispensing with normal project processes.
 
 **hacking** is also associated with **hack days** or **hackathon** events (or even **codefests**).  prior to these events data is published openly in order for developers to be let loose on it during the event, ending up with prototypes of systems or data mashups.  this site aims to compile some of those data sources, list tools that are commonly used, and keep up to date with future events.
 

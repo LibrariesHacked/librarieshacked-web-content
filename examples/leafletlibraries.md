@@ -1,7 +1,7 @@
 ---
 Title: leaflet libraries map
 Description: a leaflet map example using culture grid library location data to create a map of UK libraries.
-Template: leafletexample
+Template: examplepageleaflet
 Type: ExampleVisualisation
 ---
 

@@ -8,7 +8,7 @@ Template: blogpage
 Tags: hack events, hybrid events, code collaboration, twitter walls, screen sharing
 ---
 
-A hybrid event, as currently described on wikipedia is *a tradeshow, conference, unconference, seminar, workshop or other meeting that combines a "live" in-person event with a "virtual" online component.*
+A hybrid event, as currently described on wikipedia is **a tradeshow, conference, unconference, seminar, workshop or other meeting that combines a "live" in-person event with a "virtual" online component.**
 
 Most conferences, unconferences and hack events will already have a significant online presence without needing to define themselves as *hybrid* - a twitter hashtag, website, blog write-ups, and more.  What this doesn't always amount to is officially defined virtual participation.
 
@@ -19,7 +19,7 @@ But there are benefits to formal virtual participation - limitations of physical
 Virtual attendance allows more people to be involved but also a more diverse group of people: location can be a limiting factor that affects the demographics of those who wish to attend. Sometimes this can be necessary (e.g. a hack event focussing on local data may want local people), but an event that addresses UK or global issues is limited by being held in a single location.  As well as removing the location barrier, virtual participation can remove the obvious social barrier of those nervous of attending.
 
 ## sample options
-A number of useful solutions can be used for this:
+A number of useful solutions can be used for this.
 
 ### twitter walls
 Online solutions such as [live tweet app](https://www.livetweetapp.com/en/) and [twitter fall](http://www.twitterfall.com/), allow for display of tweets (from a particular hashtag or other search terms) on a dedicated broadcast screen. These can also allow for event photographs to be shown by encouraging participants to tweet pictures alongside hashtags - which are then shown on the twitter wall.
