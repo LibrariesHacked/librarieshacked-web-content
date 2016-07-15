@@ -1,8 +1,8 @@
 ---
 Title: libraries hacked data store
-Description: compiling many libraries datasets into a standard form on GitHub.
+Description: compiling many libraries datasets, storing these on GitHub and visualising into a basic data portal.
 GitHub: 
-Type:
+Type: ProjectInProgress
 Template: projectpage
-ProjectUrl: http://data.librarieshacked.org
+ProjectUrl:
 ---

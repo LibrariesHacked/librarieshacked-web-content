@@ -1,8 +1,8 @@
 ---
 Title: early english books
-Description: browse early english books, open data as released by the bodleian libraries.
+Description: browse early english books open data, as released by the bodleian libraries.
 GitHub: 
-Type:
+Type: ProjectInProgress
 Template: projectpage
-ProjectUrl: http://data.librarieshacked.org
+ProjectUrl:
 ---
