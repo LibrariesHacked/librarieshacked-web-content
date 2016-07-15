@@ -10,14 +10,14 @@ Tags: PSN, encyption, HTTPS, penetration testing, security
 
 ## What is HTTPS and why is it important?
 
-Imagine you are in public place and need to talk with an individual.  You haven't met them before but it's important only they receive the information.  You need to:
+Imagine you are in public place and need to talk with an individual.  You haven't met them before but it's important that only they receive the information.  You need to:
 
 - be sure that they are the right person.
 - agree some kind of code to make sure others standing between you can't eavesdrop.
 
-Perhaps in a real world scenario you would ask for their passport, which includes a name and a certificate of authenticity from the issuing nation.  On meeting them you shake hands, and in a secret masonic handshake silently agree a code to talk in.  This ensures that the annoying man who happens to be standing in the middle of the two of you can't understand what's going on.
+Perhaps in a real world scenario you would know them by some ID.  You may then shake hands, and in a secret masonic handshake, silently agree a code to talk in.  This ensures that the annoying man standing in the middle of the two of you can't understand what's going on.
 
-Information Technology uses lots of real-world terminology to describe technological processes, and the above process is played out whenever you visit a website in your browsers preceded with the HTTPS (**https://**) protocol.
+Information Technology uses lots of real-world terminology to describe technological processes.  The above process is played out whenever you visit a website preceded with the HTTPS (**https://**) protocol.
 
 - SSL certificate: SSL Certificates are small data files that digitally bind a cryptographic key to an organization’s details. [GlobalSign - SSL Information Center](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/)
 - Handshake: During this handshake, the client and server agree on various parameters used to establish the connection's security: The client sends the server the client's SSL version number, cipher settings, session-specific data, and other information that the server needs to communicate with the client using SSL. [Wikipedia: Transport Level Security](https://en.wikipedia.org/wiki/Transport_Layer_Security)
@@ -54,7 +54,13 @@ However, encryption is not just a yes/no.  There are different levels of securit
 
 ## SSL checking
 
-SSL check sites offer reports on the quality of a websites encryption.  One of these, 
+SSL check sites offer reports on the quality of a websites encryption.  One of these, SSL Labs provide an API for this testing to be automated.
 
 
-Note: This list is as accurate as possible.  Any mistakes, just tweet them to [@librarieshacked](https://twitter.com/librarieshacked), or pop in the comments box.
+** Note: this is not a definitive list of those web catalogues that are secure/not secure.  It is the result of a single test from SSL Labs, and individual results may have many mitigating circumstances.  The aim is to gove a general indication of the quality of SSL implementations.**
+
+
+
+
+
+Any mistakes and adjustments please tweet them to [@librarieshacked](https://twitter.com/librarieshacked), or pop in the comments box.
