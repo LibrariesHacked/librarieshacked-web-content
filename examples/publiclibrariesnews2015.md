@@ -4,7 +4,7 @@ Description: a D3 example visualising news stories for UK public libraries
 Type: ExampleVisualisation
 Template: examplepagepubliclibrariesnews2015
 ---
-using D3 JavaScript visualisation library to display the libraries news stories from 2015 (per month).  data taken by extracting the **local news by authority** sections of [Public Libraries News](http://www.publiclibrariesnews.com/) news posts (*CC Attribution 3.0*).
+using D3 JavaScript visualisation library to display the libraries news stories from 2015 (per month).  data taken by extracting the **local news by authority** sections of [Public Libraries News](http://www.publiclibrariesnews.com/) news posts (**CC Attribution 3.0**).
 
 select a location/authority to see the news for that year.
 

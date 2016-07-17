@@ -2,7 +2,7 @@
 Title: D3 libraries
 Description: an example of visualisation public libraries in the UK using D3.
 Type: ExampleVisualisation
-Template: examplepaged3example
+Template: examplepaged3libraries
 ---
 
 an example of using D3 Javascript visualisation library with library data.  the library data is taken from the culture grid libraries web service, making use of the fields **region** and **jurisdiction** to visualise libraries in the UK.
