@@ -44,6 +44,12 @@ However, encryption is not just a yes/no.  Getting HTTPS **right** means address
 | HTTPS (vulnerable) | Sites that offer HTTPS but there could be numerous issues with the implementation on the web server or the standard of certificate.  Browsers offer some indication of this quality (such as a 'full green bar') but more advanced checks are available. |
 | HTTPS (good) | Sites that have a high quality SSL implementation and certificate |
 
+As rough estimation, a number of the current UK public web catalogues are shown below, with an indicator as to whether HTTPS is available, and an indicator of any issues if so.  This does not give full details of any security vulnerabilities, and it's advised that services do their own checking.  If any further guidance is needed in doing this, email **info** at **librarieshacked.org**.
+
+<div class="table-responsive">
+    <table id="tblCatalogues"></table>
+</div>
+
 ## what to do?
 
 Are you part of a local authority?  Firstly ensure your IT department includes the online catalogue in annual penetration tests.  Not only will the tests be carried out by external, accredited professionals, but negative results will be dealt with urgently.
@@ -53,16 +59,6 @@ Some basic testing of web security doesn't need experienced penetration testers 
 1. Is the site using an HTTPS web address?  Check login and membership pages in particular.  All browsers should indicate encryption next to the address, such as a green bar or padlock.  See **How to Know if a Website is Secure**[^5] for more info.  If not uing HTTPS contact the supplier and IT to get this implemented urgently.
 2. If already using HTTPS, can the login be accessed by HTTP instead? Try changing the address to HTTP and see if it redirects you back to HTTPS.
 3. As site owner, check the site against an online SSL checker such as SSL Labs[^6].  This will give detailed and complex results, but also a simple grade of quality.  You should ideally be getting an A grade, if anything lower report to the supplier and IT to investigate.
-
-## current situation
-
-As rough estimation, a number of the current UK public web catalogues are shown below, with an indicator as to whether HTTPS is available, and an indicator of any issues if so.  This does not give full details of any security vulnerabilities, and it's advised that services do their own checking.  If any further guidance is needed in doing this, email **info** at **librarieshacked.org**.
-
-<div class="table-responsive">
-    <table id="tblCatalogues"></table>
-</div>
-
-Any mistakes and adjustments please contact as above.
 
 ## references
 
