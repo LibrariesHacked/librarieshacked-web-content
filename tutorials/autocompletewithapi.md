@@ -12,27 +12,26 @@ TutorialNeeded: an HTML text editor of your choice
 TutorialTime: 1 hour
 ---
 
-The number of web APIs available gives plenty of opportunity to create a wide variety of applications.  Sometimes these services can also be used in the background to provide small user experience improvements.  This tutorial will cover using an API to provide auto-complete functionality for a website text box.
+The number of freely available web APIs gives plenty of opportunity to create a wide variety of web applications.  But sometimes these services can also be used in the background to provide small user experience improvements.  This tutorial will cover using an API to provide auto-complete functionality for a website text box.
 
 ## why use auto-complete?
 
-A book search is a good example of where auto-complete functionality can be very useful.  When using library catalogue searches on sites, the steps to search for a book are often:
+A book search is a good example of where auto-complete functionality can be useful.  When using library catalogue searches on sites, the steps to search for a book are often:
 
-1. enter a search term either for an author, or a title.  if author it must be in the form **surname, first name**.  hit search.
-2. scroll through list of search results (*page 3 of 180...*).  if it's returned too many results you can go back the original screen and modify your search.  if it's returned no results the results page will be empty
+1. Enter the search term either for an author, or a title.  If author it must be in the form **surname, first name**.  Hit search.
+2. Scroll through list of search results (**page 3 of 180...**).  If too many results you can go back the original screen and modify your search.  If no results the results page will be empty.
 
-That doesn't give users an easy or quick experience.  Using auto-complete allows you to show results in a drop down list when the user enters text: as the user types, the results are refined by the increased detail.  Once the user sees the option that they want they can select it.
+That doesn't give users an easy or quick experience.  Using auto-complete allows you to show results in a drop down list as the user types.  As they type more, the results are refined by the increased detail.  Once the user sees the option they want, they can select it.
 
-This kind of dynamic search information provided while the user is entering the search can both prompt the user for what they're looking for (if they have half a title in their mind), and it can also be used to provide them details of their search results before they've even pressed search.  There is often no point in showing a results page where there are none to display, unless an easy option to adjust the search is provided, or other useful information such as similar words and spelling corrections.  The information that a particular search term gave no results is useful to know, but not loading a whole new page that leaves the user only able to go back.
+This kind of dynamic search information can prompt the user for what they're looking for (if they have half a title in their mind).  It can also be used to provide them details of their search results before they've even pressed search.  There is often no point in showing a results page of zero results, unless an easy option to adjust the search is provided, or other useful information such as similar words and spelling corrections.
 
 ## services to use
-The [Google Books API](http://books.google.co.uk/) is one option to look up books.  There are plenty of others though as well, [open library](http://openlibrary.org) for example could provide the same functionality.  The Google Books API should normally be used with an API key (which is granted by Google and needs to be included in the URL when a search is made).  They do show  examples without a key for testing, but the usage is throttled and user limits hit very quickly.  To use something like this in a production environment it would need an API key from google or a service such as worldcat search, or openlibrary (or whatever data source is appropriate for your autocomplete requirements).
-
+The [Google Books API](http://books.google.co.uk/) is one option to look up books.  There are plenty of others though, [open library](http://openlibrary.org) for example.  The Google Books API should normally be used with an API key (which is granted by Google and needs to be included in the URL when a search is made).
 ## tutorial steps
 
-### 1. start with a basic html5 template
+### 1. start with a basic HTML5 template
 
-The example will be done within a single web page, so the following is a basic html5 page template to get started.
+The example will be done within a single web page, so the following is a basic HTML5 page template to get started.
 
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;!doctype html&gt;
@@ -50,7 +49,7 @@ The example will be done within a single web page, so the following is a basic h
 
 ### 2. add the required references to JavaScript and CSS files.
 
-For this tutorial we need jQuery and jQuery UI to provide the auto-complete functionality.  These are **JavaScript libraries**, created to simplify common JavaScript tasks, making them quicker and easier to code.  They are added to the page as shown below:
+For this tutorial we need jQuery and jQuery UI to provide the auto-complete functionality.  These are JavaScript **libraries**, created to simplify common JavaScript tasks, making them quicker and easier to code.  They are added to the page as shown below:
 
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;head&gt;
@@ -69,17 +68,17 @@ For this tutorial we need jQuery and jQuery UI to provide the auto-complete func
 
 The files referred to here are held at code.jquery.com.  These could be downloaded and included as part of the project code, but there are advantages to using externally hosted versions:
 
-- your users who have already used a site referencing those same JavaScript/CSS files won't need to download them again - their browser will cache them, effectively speeding up your site and saving the user time and data usage.
-- the files are hosted on web servers where performance is optimised and will be faster than most other web servers.
-- less file space is used on your web server and less cost to your bandwidth allowances.
+- Your users who have already used a site referencing those same JavaScript/CSS files won't need to download them again.  Their browser will cache them, effectively speeding up your site and saving the user time and data usage.
+- The files are hosted on web servers where performance is optimised, likely faster than your web server.
+- Less file space is used on your web server and less cost to your bandwidth allowances.
 
-One thing to watch out for is that when using files held on the web, you then need to ensure you have a web connection when running the page on your local computer.  In this case the tutorial will need web access anyway to communicate with the API, so it's not worth taking local copies of the files.
+One thing to watch out for when using files held on the web, you need to ensure you have a web connection when running the page on your local computer.  In this case the tutorial will need web access anyway to communicate with the API.
 
 In the HTML a new file is also referenced, **script.js**.  This will contain the custom JavaScript code written in part 4.
 
 ### 3. add the basic textbox html.
 
-The web page itself will just have a header and an input text box, and a space where details of the book will be added later.
+The web page itself will just have a header and an input text box, and a space where details of the book will be added dynamically later.
 
 <pre class="prettyprint linenums">
 <code class="language-html">&lt;body&gt;
@@ -97,7 +96,7 @@ The web page itself will just have a header and an input text box, and a space w
 </pre>
 
 ### 4. add the auto-complete JavaScript.
-The following code is added to the empty script.js file, providing a framework for the jQuery UI autocomplete functionality.
+The following code is added to the empty **script.js** file, providing a framework for the jQuery UI autocomplete functionality.
 
 <pre class="prettyprint linenums">
 <code class="language-javascript">$(document).ready(function () {  // the code should only run once the document is ready
@@ -113,13 +112,14 @@ The following code is added to the empty script.js file, providing a framework f
 });</code>
 </pre>
 
-Having jQuery on the page allows for the text box to be referenced easily by using it's ID (*$("#txbBookKeywork")*).  jQueryUI gives the functionality to easily attach to the text box so that it will provide suggestions as text is entered (*.autocomplete(....)*).
+Having jQuery on the page allows for the text box to be referenced by using it's ID (*$("#txbBookKeywork")*).  jQueryUI gives the functionality to easily attach to the text box so that it will provide suggestions as text is entered (**.autocomplete(....)**).
 
-The full auto-complete documentation is available on the [jQueryUI pages](http://jqueryui.com/autocomplete/).  In this basic template there is a space to write custom code that will run at two different *events*:
+The full auto-complete documentation is available on the [jQueryUI pages](http://jqueryui.com/autocomplete/).  In this basic template there is space to write the code that will run at two different **events**:
 
-- when the input text is changed, in order to provide the suggestions (*source: function (request, response)...*); 
-- when an item is selected from the suggestions (*select: function (event, ui)...*);
-- there is also the option to specify a number of characters that have to be entered before it will start making suggestions (*minLength:...*).
+- When the input text is changed, in order to provide the suggestions (**source: function (request, response)...**); 
+- When an item is selected from the suggestions (**select: function (event, ui)...**);
+
+There is also the option to specify a number of characters that have to be entered before it will start making suggestions (**minLength:...**).  This example sets it to 2. 
 
 ### 5. provide the search suggestions
 
