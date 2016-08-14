@@ -4,5 +4,5 @@ Description: the raspberry pi mini-computer, perfect for use in libraries - grea
 Type: HardwareComputer
 HardwareUrl: http://www.raspberrypi.org/
 HardwareUrlTitle: raspberry pi foundation
-Price: £25.
+Price: £25
 ---

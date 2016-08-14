@@ -1,15 +1,16 @@
 ---
 Title: extracting link data from twitter searches
 Description: creating a summary of links from twitter hashtags, for revisiting later.
-Template: tutorialpagetwitterurls
-Type: Tutorial
 Date: 2014/08/1
+Type: Tutorial
 Author: @librarieshacked
-TutorialType: WebDevelopment
+GitHub: 
 TutorialComplexity: medium
-TutorialSkillsRequired: jquery,javascript,json,sql
+TutorialSkillsRequired: JQuery,JavaScript,JSON,SQL
 TutorialNeeded: an HTML editor of your choice
 TutorialTime: 2 hours
+TutorialType: WebDevelopment
+Template: tutorialpagetwitterurls
 ---
 
 ## what's the problem?

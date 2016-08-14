@@ -1,11 +1,11 @@
 ---
 Title: prisoner of azkaban vs. order of the phoenix
 Description: comparing the popularity in UK public libraries of the best and worst harry potter novels.
-Type:
 Date:
+Type:
 Author: @librarieshacked
+Tags: open data,libraries,harry potter,library catalogues
 Template: blogpageharrypotter
-Tags: open data, libraries, harry potter, library catalogues
 ---
 
 ISBN - Prisoner of Azkaban - 

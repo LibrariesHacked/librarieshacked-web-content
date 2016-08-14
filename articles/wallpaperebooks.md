@@ -1,11 +1,11 @@
 ---
 Title: wallpaper ebooks - how could it be done?
-Description: an investigation into ebooks on walls - allowing users to access ebooks by holding their phone to wallpaper or posters.
-Tags: wallpaper ebooks, nfc tags, mobile, android, library technology
-Type: Article
-Template: blogpage
+Description: an investigation into ebooks on walls - allowing users to access ebooks by holding their phone to wallpaper or posters
 Date: 2014/07/01
+Type: Article
 Author: @librarieshacked
+Tags: wallpaper ebooks,NFC tags,mobile,android,library technology
+Template: blogpage
 ---
 
 On Twitter, [@publiclibnews](https://twitter.com/publiclibnews/status/476433830124199937) invited thoughts for the three best innovations all public libraries should adopt.  One idea, pointed out by @commonlibraries was this one (from 2012), of downloadable ebook posters in a subway station:

@@ -4,6 +4,7 @@ Description: take over the library and hack things, bring a project, find a part
 Type: FabLab
 EventLocation: oldham library
 EventUrl: http://hackoldham.com/
+EventTwitter:
 Lat: 53.5400920
 Lng: -2.1097880
 ---

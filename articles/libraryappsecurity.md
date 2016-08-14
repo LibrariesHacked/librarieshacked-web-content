@@ -1,11 +1,11 @@
 ---
 Title: how secure is your library app?
 Description: do you know if your login and personal details are encrypted while using your library app?
-Type: Article
 Date: 2014/11/20
+Type: Article
 Author: @librarieshacked
+Tags: https mobile security,library mobile apps,android and iOS
 Template: blogpage
-Tags: https mobile security, library mobile apps, android and iOS
 ---
 
 *[HTTPS]: Hyper Text Transfer Protocol Secure

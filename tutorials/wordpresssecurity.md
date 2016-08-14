@@ -4,11 +4,16 @@ Description: WordPress is a popular platform for hack sites - but it leaves secu
 Date: 2014/07/07
 Type: Tutorial
 Author: @librarieshacked
-TutorialType: WebDevelopment
+GitHub: 
+TutorialComplexity: low
 TutorialSkillsRequired: WordPress,security
+TutorialNeeded: WordPress site
+TutorialTime: 30 mins
+TutorialType: WebDevelopment
+Template: tutorialpage
 ---
 
-It's impossible to know for certain how many websites use WordPress, but various reports suggest it's around 20% of all sites:
+It's difficult to know how many websites use WordPress, but various reports suggest it's around 20% of all sites:
 
 - [http://venturebeat.com/2013/07/27/19-percent-of-the-web-runs-on-wordpress/](http://venturebeat.com/2013/07/27/19-percent-of-the-web-runs-on-wordpress/)
 

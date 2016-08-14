@@ -4,6 +4,7 @@ Description: use google apps scripts to make use of IP weekly list data
 Date: 2016/03/11
 Type: Tutorial
 Author: @librarieshacked
+GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,scripting,XML,RSS
 TutorialNeeded: a google account

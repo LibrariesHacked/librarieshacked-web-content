@@ -1,11 +1,11 @@
 ---
 Title: IP data - mapping applicant postcodes
 Description: Looking at intellectual property trademark and patent location data to produce interactive maps.
-Tags: mapping, intellectual property, patents, postcodes
-Type: Article
-Template: blogpage
 Date: 2016/03/07
+Type: Article
 Author: @librarieshacked
+Tags: mapping,intellectual property,patents,postcodes
+Template: blogpage
 ---
 
 **This is the first of two posts on Intellectual Property data in preparation for a hackathon at Manchester Library on 12th March 2016.  Rather than a detailed tutorial post, this is an overview of the datasets and process for mapping currently available IP data.**

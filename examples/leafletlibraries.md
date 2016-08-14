@@ -1,8 +1,8 @@
 ---
 Title: leaflet libraries map
 Description: a leaflet map example using culture grid library location data to create a map of UK libraries.
-Template: examplepageleaflet
 Type: ExampleVisualisation
+Template: examplepageleaflet
 ---
 
 this is an example of the [leaflet JavaScript library](http://leafletjs.com/) for creating a map, alongside the [marker cluster plugin](https://github.com/Leaflet/Leaflet.markercluster), using UK libraries as points plotted on the map.

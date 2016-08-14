@@ -5,7 +5,7 @@ Type: Article
 Date: 2015/02/18
 Author: @librarieshacked
 Template: blogpagepubliclendingright
-Tags: public lending right, top titles
+Tags: public lending right,top titles
 ---
 
 Every year Public Lending Right release data on the most popular books and authors in UK libraries.  This data is made up from select contributing authorities.  There is a system for accessing PLR data ([LEWIS](https://www.plr.uk.com/lewis/lewis.aspx)), but only accessible with a qualifying library account.

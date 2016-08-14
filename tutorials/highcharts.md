@@ -4,11 +4,12 @@ Description: linking to CSV data to quickly publish live charts on the web.
 Date: 2015/11/30
 Type: Tutorial
 Author: @librarieshacked
-TutorialType: WebDevelopment
+GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,Highcharts
 TutorialNeeded: web browser
 TutorialTime: 1 hour
+TutorialType: WebDevelopment
 Template: tutorialpagehighcharts
 ---
 

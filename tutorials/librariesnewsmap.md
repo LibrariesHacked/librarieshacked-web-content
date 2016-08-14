@@ -4,6 +4,7 @@ Description: accessing public libraries news posts and parsing into individual n
 Date: 2015/01/26
 Type: Tutorial
 Author: @librarieshacked
+GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,jQuery,AJAX,YQL 
 TutorialNeeded: an HTML/script editor

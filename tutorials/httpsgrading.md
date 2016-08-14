@@ -1,15 +1,16 @@
 ---
 Title: encryption, library catalogues, and security testing
 Description: how seriously are UK public libraries taking web security, and how can it be tested?
-Type: Tutorial
 Date: 2016/07/18
+Type: Tutorial
 Author: @librarieshacked
-Template: tutorialpagehttpsgrading
-TutorialType: WebDevelopment
+GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: encryption, HTTPS, penetration testing, security
 TutorialNeeded: web browser
 TutorialTime: 1 hour
+TutorialType: WebDevelopment
+Template: tutorialpagehttpsgrading
 ---
 
 ## what is HTTPS and why is it important?

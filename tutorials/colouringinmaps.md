@@ -4,11 +4,12 @@ Description: using QGIS to create colouring-in maps from OS open data.
 Date: 2015/09/18
 Type: Tutorial
 Author: @librarieshacked
-TutorialType: Maps
+GitHub: 
 TutorialComplexity: medium
-TutorialSkillsRequired: GIS, colouring
-TutorialNeeded: web browser, QGIS
+TutorialSkillsRequired: GIS,colouring
+TutorialNeeded: web browser,QGIS
 TutorialTime: 1 hour
+TutorialType: Maps
 Template: tutorialpage
 ---
 

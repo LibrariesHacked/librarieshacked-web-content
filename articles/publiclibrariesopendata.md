@@ -1,11 +1,11 @@
 ---
 Title: public libraries open data
 Description: where is the open data investment for public libraries?
-Type: Article
 Date: 2015/07/29
+Type: Article
 Author: @librarieshacked
+Tags: open data,public libraries data,local government
 Template: blogpage
-Tags: open data, public libraries data, local government
 ---
 
 Open data has become so successful it is being used to justify a review Freedom of Information.  The UK government citing the current UK ranking in the Open Data Barometer [to demonstrate the UK is still dedicated to transparency](https://www.gov.uk/government/speeches/freedom-of-information-new-commission).  But FoI is an initial stage of Open Data: without those requests an organisation has less guidance as to what to make open.  [This telegraph article](http://www.telegraph.co.uk/technology/news/10412374/Information-Commissioner-Open-data-is-no-substitute-for-freedom-of-information.html) highlights that without open data being directed by the public, it can become a tool for government propaganda.

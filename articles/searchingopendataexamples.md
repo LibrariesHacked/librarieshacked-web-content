@@ -1,11 +1,11 @@
 ---
 Title: where to find public libraries open data
-Description: searching through central gov portals, and local datastores.
-Type: Article
+Description: searching through central gov portals, and local datastores
 Date: 2015/12/04
+Type: Article
 Author: @librarieshacked
+Tags: open data,local government datastores,public libraries data
 Template: blogpage
-Tags: open data, local government datastores, public libraries data
 ---
 
 Hunting out library open data - in particular for public libraries - can be difficult.  Even where a library authority is actively publishing open data (already then making them a minority), the data could appear in multiple different places.

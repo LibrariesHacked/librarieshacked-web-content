@@ -4,8 +4,9 @@ Description: delving into the data used to close libraries.
 Date: 2015/04/19
 Type: Tutorial
 Author: @librarieshacked
+GitHub: 
 TutorialComplexity: medium
-TutorialSkillsRequired: mapping, JavaScript, web services
+TutorialSkillsRequired: mapping,JavaScript,web services
 TutorialNeeded: a text editor
 TutorialTime: 2 hours
 TutorialType: WebDevelopment

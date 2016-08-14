@@ -4,6 +4,7 @@ Description: the new fab lab in the new exeter library.  a number of 3d printers
 Type: FabLab
 EventUrl: http://fablabdevon.org
 EventLocation: exeter library, exeter, devon
+EventTwitter:
 Lat: 50.7251830
 Lng: -3.5300890
 ---

@@ -1,25 +1,27 @@
 ---
 Title: YQL and global library stats
 Description: using YQL to query and merge OCLC global library stats.
-Type: Tutorial
 Date: 2014/07/11
-Template: tutorialpageyqlstats
-TutorialType: DataAnalysis
+Type: Tutorial
+Author: @librarieshacked
+GitHub: 
 TutorialComplexity: medium
-TutorialSkillsRequired: javascript,xml,json,sql
+TutorialSkillsRequired: JavaScript,XML,JSON,SQL
 TutorialNeeded: nothing
 TutorialTime: 1 hour
+TutorialType: DataAnalysis
+Template: tutorialpageyqlstats
 ---
 
 ## what is YQL?
 
-YQL is a query language developed by yahoo, and used for querying and combining data from around the web; there is more information here at yahoo developer pages, and it's worth exploring for anyone involved in web/app development and web services:
+YQL is a query language developed by yahoo, and used for querying and combining data from around the web.  There is more information at the yahoo developer pages, and it's worth exploring for anyone involved in web/app development and web services:
 
 [https://developer.yahoo.com/yql/](https://developer.yahoo.com/yql/)
 
 ## what global library stats?
 
-The OCLC attempted a few years ago to produce a large set of stats for *'the total global library universe'*, to provide data on expenditure, users, librarians, volumes, and libraries across the world. the relevant page is here:
+The OCLC attempted a few years ago to produce a large set of stats for **'the total global library universe'**.  To provide data on expenditure, users, librarians, volumes, and libraries across the world. The relevant page is here:
 
 [http://oclc.org/global-library-statistics.en.html](http://oclc.org/global-library-statistics.en.html)
 

@@ -3,11 +3,13 @@ Title: public libraries and indices of deprivation
 Description: analysing the 2015 indices of deprivation data with relation to lower layer super output areas and the location of libraries
 Date: 2015/10/01
 Type: Tutorial
-TutorialType: Maps
+Author: @librarieshacked
+GitHub: 
 TutorialComplexity: medium
-TutorialSkillsRequired: GIS, SQL
+TutorialSkillsRequired: GIS,SQL
 TutorialNeeded: web browser, Carto
 TutorialTime: 1 hour
+TutorialType: Maps
 Template: tutorialpage
 ---
 

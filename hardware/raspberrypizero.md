@@ -4,5 +4,5 @@ Description: a much smaller version of the Raspberry Pi - designed for internet 
 Type: HardwareComputer
 HardwareUrl: http://www.raspberrypi.org/
 HardwareUrlTitle: raspberry pi foundation
-Price: £4.
+Price: £4
 ---

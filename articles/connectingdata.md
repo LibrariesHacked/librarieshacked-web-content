@@ -1,11 +1,11 @@
 ---
 Title: connecting and opening local government data
 Description: the challenges of opening up data from local government systems
-Type: Article
 Date: 2014/10/07
+Type: Article
 Author: @librarieshacked
+Tags: linked data,open government data,government software
 Template: blogpage
-Tags: linked data, open government data, government software
 ---
 
 Open data is widely considered to be a **good thing** - greater organisation and government transparency leads to a better informed public and creative use of that data.

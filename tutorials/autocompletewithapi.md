@@ -2,26 +2,27 @@
 Title: book search auto-complete textbox
 Description: a tutorial on creating an auto-completing text box for providing book search suggestions.
 Date: 2014/07/05
-Template: tutorialpageautocomplete
 Type: Tutorial
 Author: @librarieshacked
-TutorialType: WebDevelopment
+GitHub: tutorial_autocomplete
 TutorialComplexity: medium
 TutorialSkillsRequired: HTML,JavaScript,jQuery,JSON
 TutorialNeeded: an HTML text editor of your choice
 TutorialTime: 1 hour
+TutorialType: WebDevelopment
+Template: tutorialpageautocomplete
 ---
 
 The number of freely available web APIs gives plenty of opportunity to create a wide variety of web applications.  But sometimes these services can also be used in the background to provide small user experience improvements.  This tutorial will cover using an API to provide auto-complete functionality for a website text box.
 
 ## why use auto-complete?
 
-A book search is a good example of where auto-complete functionality can be useful.  When using library catalogue searches on sites, the steps to search for a book are often:
+A book search is a good example where auto-complete functionality can be useful.  When using the catalogue searches on library sites, the steps to search for a book are often:
 
 1. Enter the search term either for an author, or a title.  If author it must be in the form **surname, first name**.  Hit search.
 2. Scroll through list of search results (**page 3 of 180...**).  If too many results you can go back the original screen and modify your search.  If no results the results page will be empty.
 
-That doesn't give users an easy or quick experience.  Using auto-complete allows you to show results in a drop down list as the user types.  As they type more, the results are refined by the increased detail.  Once the user sees the option they want, they can select it.
+That doesn't give users an easy experience.  Using auto-complete allows you to show results as the user types.  As they type more, the results are refined by the increased detail.  Once the user sees the option they want, they can select it.
 
 This kind of dynamic search information can prompt the user for what they're looking for (if they have half a title in their mind).  It can also be used to provide them details of their search results before they've even pressed search.  There is often no point in showing a results page of zero results, unless an easy option to adjust the search is provided, or other useful information such as similar words and spelling corrections.
 
@@ -66,9 +67,9 @@ For this tutorial we need jQuery and jQuery UI to provide the auto-complete func
 &lt;/body&gt;</code>
 </pre>
 
-The files referred to here are held at code.jquery.com.  These could be downloaded and included as part of the project code, but there are advantages to using externally hosted versions:
+The files referred to here are held at **code.jquery.com**.  These could be downloaded and included as part of the project folder, but there are advantages to using externally hosted versions:
 
-- Your users who have already used a site referencing those same JavaScript/CSS files won't need to download them again.  Their browser will cache them, effectively speeding up your site and saving the user time and data usage.
+- Users already having visited a site referencing those same JavaScript/CSS files won't need to download them again.  Their browser will cache them, effectively speeding up your site and saving the user time and data usage.
 - The files are hosted on web servers where performance is optimised, likely faster than your web server.
 - Less file space is used on your web server and less cost to your bandwidth allowances.
 
@@ -112,7 +113,7 @@ The following code is added to the empty **script.js** file, providing a framewo
 });</code>
 </pre>
 
-Having jQuery on the page allows for the text box to be referenced by using it's ID (*$("#txbBookKeywork")*).  jQueryUI gives the functionality to easily attach to the text box so that it will provide suggestions as text is entered (**.autocomplete(....)**).
+Having jQuery on the page allows for the text box to be referenced by using it's ID (**$("#txbBookKeywork")**).  jQueryUI gives the functionality to easily attach to the text box so that it will provide suggestions as text is entered (**.autocomplete(....)**).
 
 The full auto-complete documentation is available on the [jQueryUI pages](http://jqueryui.com/autocomplete/).  In this basic template there is space to write the code that will run at two different **events**:
 

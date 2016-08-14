@@ -1,11 +1,11 @@
 ---
 Title: open data, libraries and hack events
 Description: an introduction to open data and library hacking
-Type:
 Date:
+Type:
 Author: @librarieshacked
+Tags: open data,libraries,hack events
 Template: blogpage
-Tags: open data, libraries, hack events
 ---
 
 ## Open Data

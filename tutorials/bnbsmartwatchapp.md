@@ -4,12 +4,12 @@ Description: creating a smartwatch app to show books published and set in the cu
 Date: 2015/07/30
 Type: Tutorial
 Author: @librarieshacked
-GitHub: Pebble-BNBBooks
-TutorialType: WebDevelopment
+GitHub: bnb-books-pebble
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,SPARQL,PebbleJS
 TutorialNeeded: web browser
 TutorialTime: 1 hour
+TutorialType: WebDevelopment
 Template: tutorialpage
 ---
 
@@ -32,7 +32,7 @@ As an example, this app will:
 ## setting up the app
 The app can be written within the cloud pebble environment, which includes a simulator for testing.  All the code is written within a single app.js file.  CloudPebble also allows easy integration with GitHub, so the full code for this app is located at:
 
-[https://github.com/LibrariesHacked/Pebble-BNBBooks](https://github.com/LibrariesHacked/Pebble-BNBBooks)
+[https://github.com/LibrariesHacked/bnb-books-pebble](https://github.com/LibrariesHacked/bnb-books-pebble)
 
 After following steps in the [guide to starting cloud pebble development](http://developer.getpebble.com/guides/js-apps/pebble-js/), the initial set-up of the app is to design the screen, which just consists of a single UI 'card' with title, subtitle, and body text.
 

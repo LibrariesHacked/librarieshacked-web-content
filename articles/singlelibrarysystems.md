@@ -1,11 +1,11 @@
 ---
 Title: a single view of library services
-Description: portals to interact with and combine library catalogue services across authorities and sectors.
-Type: Article
+Description: portals to interact with and combine library catalogue services across authorities and sectors
 Date: 2015/01/21
+Type: Article
 Author: @librarieshacked
+Tags: library catalogues,web services,library management systems
 Template: blogpagecatalogue
-Tags: library catalogues, web services, library management systems
 ---
 
 There is a mobile app on the Google Play store that combines many library services into one for users to view loans, receive notifications, and renew items - across all their library accounts.
