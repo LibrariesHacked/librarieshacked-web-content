@@ -47,7 +47,7 @@ However, encryption is not just a yes/no.  Getting it **right** means addressing
 
 Current UK public web catalogues are shown below, with an indicator as to whether HTTPS is available, and any issues if so.  This does not give full details of security vulnerabilities, and it's advised for services do their own checking.  If any further guidance is needed in doing this, feel free to email **info** at **librarieshacked.org**.
 
-The majority of these can be tested simply by visiting the site (for further methodology see **what to do** suggestions below).  The individual catalogues were gathered as part of an alternative project (see the in-progress code on [UK Public Libraries Catalogue Web Service](https://github.com/LibrariesHacked/catalogue-nodews).   
+The majority of these can be tested simply by visiting the site (for further methodology see **what to do** suggestions below).
 
 <div class="table-responsive">
     <table id="tblCatalogues"></table>
