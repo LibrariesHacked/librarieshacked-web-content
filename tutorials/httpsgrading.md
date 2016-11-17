@@ -60,6 +60,8 @@ This post will be updated regularly to reflect changes.
 - Original tests completed: **17th July 2016**.
 - Update: **1st September 2016**.  Replaced older catalogue listings for Welsh library authorities moving over to combined LMS.
 - Update: **6th September 2016**. Warrington [moved to Koha LMS](https://livewirewarrington.co.uk/news/library/1025-livewire-introduce-new-library-management-system) in August 2016.
+- Update: **1st November**. Sutton moved to Axiell Arena with HTTPS security.  Tameside move to Spydus (HTTPS but with mixed content).
+- Update: **15th November**.  Darlington apply SSL certificate to their Arena site.
 
 ## what to do?
 
