@@ -13,13 +13,8 @@ Template: contributepage
 
 ## the process
 
-- fill in the submission form;
-- you will then be emailed a link to start work on the content;
-- after review it will then be published.
+all content for this site is held in the [librarieshacked-web-content](https://github.com/LibrariesHacked/librarieshacked-web-content) GitHub repository.  for more details on using GitHub, a good place to start is the [Library Carpentry GitHub module]().
 
 ## policies
 
 your content will be published into the site, but it remains your content to edit and tweak as you wish as long as it appears to be relevant to the [site](/about) and is not illegal.
-
-there is a full (non restrictive) policy in progress!
-
