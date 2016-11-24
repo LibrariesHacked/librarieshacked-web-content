@@ -16,7 +16,7 @@ This repository holds all the content. Directories are used to split the content
 
 | Directory | Description | Readme |
 | --------- | ----------- | ------ |
-| apis |  |  |
+| apis | listings of library data APIs |  |
 | apps |  |  |
 | articles |  |  |
 | events |  |  |

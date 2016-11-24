@@ -17,4 +17,6 @@ all content for this site is held in the [librarieshacked-web-content](https://g
 
 ## policies
 
-your content will be published into the site, but it remains your content to edit and tweak as you wish as long as it appears to be relevant to the [site](/about) and is not illegal.
+your content will be published into the site, but it remains yours to edit and tweak as you wish as long as it appears to be relevant to the [site](/about) and is not illegal.
+
+content on the site is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).  
