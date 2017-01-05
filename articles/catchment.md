@@ -61,7 +61,7 @@ To summarise, Gloucestershire:
 ### Sources
 
 - [Gloucestershire County Council Library Service: Context and User Needs Assessment](http://glostext.gloucestershire.gov.uk/documents/s6298/Ag%20item%204%20App%201.pdf)
-- [Gloucestershire Library Strategy 2012](www.gloucestershire.gov.uk/CHttpHandler.ashx?id=64623&p=0)
+- [Gloucestershire Library Strategy 2012](http://www.gloucestershire.gov.uk/CHttpHandler.ashx?id=64623&p=0)
 
 ## Bedford Library Profiles 2014.
 
