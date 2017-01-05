@@ -102,7 +102,7 @@ Beddington library was actually situated very close to the intersection of 3 LSO
 
 Sutton also do some data analysis around driving distances.  A '10 minute drive area' (a 2 mile radius around the library) is plotted around Beddington library to suggest alternative libraries that could be reached by car, of which there are 3.
 
-The suggestion is existing users of Beddington library could drive to 3 other libraries in 10 minutes.  It would be more appropriate to plot the drive radius from the centre of the library catchment area, to represent the distance that needed to travel by the population.  Because the library is actually at the edge of the catchment area, the majority of people would have to travel further than described.
+The suggestion is existing users of Beddington library could drive to 3 other libraries in 10 minutes.  It would be more appropriate to plot the drive radius from the centre of the library catchment area, to represent the distance required to travel by the population.  Because the library is actually at the edge of the catchment area, the majority of people would have to travel further than described.
 
 In September 2015 a proposal to Sutton residents was put on closing Beddington library.
 
