@@ -108,7 +108,7 @@ In September 2015 a proposal to Sutton residents was put on closing Beddington l
 
 > Beddington library’s catchment area does not score highly on measures such as the indices of deprivation and the needs analysis. In particular, the area is well served by public transport and 84% of people in the area have access to a car/van.
 
-Beddington library was closed in 2016.  In 2016, Sutton Borough Council were featured as a case study in the Libraries Taskforce [Ambition document](https://www.gov.uk/government/publications/libraries-deliver-ambition-for-public-libraries-in-england-2016-to-2021/libraries-deliver-ambition-for-public-libraries-in-england-2016-to-2021): 
+Beddington library was closed in 2016.  In December 2016, Sutton Borough Council were featured as a case study in the Libraries Taskforce [Ambition document](https://www.gov.uk/government/publications/libraries-deliver-ambition-for-public-libraries-in-england-2016-to-2021/libraries-deliver-ambition-for-public-libraries-in-england-2016-to-2021): 
 
 > The consultation on changes to Sutton libraries was backed by research mapping demographic trends and needs analysis across the borough. This was so staff had a clear view of the communities the libraries serve.
 
