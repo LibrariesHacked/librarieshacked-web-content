@@ -1,19 +1,27 @@
-Library catchment areas
+---
+Title: library catchments areas
+Description: how do public libraries define catchment areas?
+Date: 2017/01/05
+Type: Article
+Author: @librarieshacked
+Tags: catchment areas, consultations, geographic profiling
+Template: blogpage
+---
 
-What is a library catchment area?  It's used to describe the geographical area representing the home locations of the users of a library.
+What is a library catchment area?  It's used to describe the geographical area representing the home locations for the users of a library.
 
 Interpretations vary.  Is it the geographical area within which people are reasonably able to access the library e.g. a certain mile radius or travel time?  Is it based on the home locations of the existing registered members of the library, or just those who have been 'borrowers' within the last year?  Or, is it the area from which ALL visitors to the library may come (which for some tourist destinations could be very large)?
 
 For library services, defining catchment may depend on what they want to achieve.
 
 - to assess library locations (static and mobile) to see if these are spread appropriately.
-- to understand which demographics (e.g. based on income or age) are less likely to be library users
+- to understand which demographics (e.g. based on income or age) are likely (or less likely) to be library users
 - to understand which communities aren't currently library users.
 - to tailor services of libraries depending on existing membership.
 
-Geographic analysis of public libraries is often done immediately before a consultation exercise.  But geographical intelligence, which in turn gives intelligence about people and services, should not be limited to informing service cuts.  It is important to understand the residents that each library serves (and *could* serve but doesn't), and the different requirements that may go along with that.  
+Geographic analysis of a service is often done immediately before a consultation exercise.  But geographical intelligence, which in turn gives intelligence about people and services, should not be limited to informing cuts.  It is important to understand the residents that each library serves (and *could* serve but doesn't), and the different requirements that may go along with that.  
 
-Introducing better geographical intelligence to all library based reporting (e.g. simple monthly issue/visit stats) could stop these being 'one-off' exercises.  The results of such catchment profiles are often used for many years, rather than being an ever-changing profile.
+Introducing better geographical intelligence to ALL library-based data (e.g. simple monthly issue/visit stats) could stop these being 'one-off' exercises.  The results of catchment profiles are often used for many years, rather than being treated as an ever-changing profile.
 
 What have library services done in the past to define catchment?  This post will look at 3 quite different examples.
 
@@ -23,16 +31,19 @@ What have library services done in the past to define catchment?  This post will
 
 Before that, here is some jargon.
 
-**LSOAs** - Lower Super Output areas.  These are small geographical areas of an authority (e.g like a Ward or Parish), but are created from Census data in order to collect statistical profiling of that area.  They all have roughly the same number of people (around 1500 people) and households, so are good for comparisons, unlike Ward or Parish (or even postcode) which are more random.
-**OAs** - Output areas.  These are the base unit census areas - smaller in size than LSOAs but they used as the 'building blocks' that make up LSOAs (e.g. a particular LSOA may consist of 5 OAs).  They tend to consist of around 300 people.
-**Indices of deprivation** - These are statistics on deprivation that are released by the <abbr title="Office for National Statistics">ONS</abbr> for each LSOA.  There are around 35,000 LSOAs in England, each one is ranked agaist the rest by deprivation measures (e.g. income, or education).  For example, a community east of Jaywick near Clacton-on-Sea is defined as the most deprived overall in all of England.
+**LSOAs** - Lower Super Output areas.  These are small geographical areas of an authority (e.g like a Ward or Parish), but are created from small cesus areas in order to collect statistical profiling of that area (such as income deprivation or likelihood of owning a car).  They all have roughly the same number of people (around 1500) and households, so are good for comparisons.  This is unlike areas like Ward or Parish (or even postcode) which are more random.
+**OAs** - Output areas.  These are the base unit census areas - smaller in size than LSOAs but used as the 'building blocks' that make up LSOAs (e.g. a particular LSOA may consist of 5 OAs).  They tend to consist of around 300 people.
+**Indices of deprivation** - These are statistics on deprivation that are released by the <abbr title="Office for National Statistics">ONS</abbr> for each LSOA.  There are around 35,000 LSOAs in England, each one is ranked against the rest for deprivation measures (e.g. income, or education).  For example, a community east of Jaywick near Clacton-on-Sea is defined as the most deprived overall in all of England.
 **Mosaic** - This is a commercial (from Experian, the credit rating people) demographic profiling tool.  This profiles households into 15 main socio-economic groups and, within this, 69 types.  For example, the groups are things like 'Happy Families' (which represent families from Middle England), a type may be 'Upwardly mobile South Asian families living in inter war suburbs'.  The data will also give marketing indications such as whether the household is likely to take advantage of free credit, which is why the tool is used frequently by financial marketing departments.
 
 ## Gloucestershire 2012.
 
-In 2012, Gloucestershire developed a new library strategy.  This involved creating library catchment areas.  But Gloucestershire is huge area.  instead of just creating a catchment area for each library they created 6 main catchment area districts - each one having a set of libraries that would then be assigned their own catchment area.  The 6 districts referred to are Gloucester, Cheltenham, Stroud, Tewkesbury, Forest of Dean, and the Cotswolds, which largely parallel district council areas.
+In 2012, Gloucestershire developed a new library strategy.  This involved creating library catchment areas.  But Gloucestershire is huge area.  instead of just creating a catchment area for each library they first created 6 main catchment area districts - each one having a set of libraries that would then be assigned their own catchment area.  The 6 districts referred to are Gloucester, Cheltenham, Stroud, Tewkesbury, Forest of Dean, and the Cotswolds.  These largely parallel district council areas.
 
-Sample source: [Gloucestershire County Council Library Service: Context and User Needs Assessment](http://www.gloucestershire.gov.uk/CHttpHandler.ashx%3Fid%3D50181%26p%3D0&ved=0ahUKEwjq0fbWh6vRAhWqD8AKHeMrBWkQFggaMAA&usg=AFQjCNFJ66tYUzOsudg1yU5vFk9dGjkMjQ&sig2=XYSdmzrDSgTqsNgnL-kENw)
+### Sources
+
+- [Gloucestershire County Council Library Service: Context and User Needs Assessment](http://glostext.gloucestershire.gov.uk/documents/s6298/Ag%20item%204%20App%201.pdf)
+- [Gloucestershire Library Strategy 2012](www.gloucestershire.gov.uk/CHttpHandler.ashx?id=64623&p=0)
 
 So what methodology is used to create the library catchment areas?
 
@@ -40,11 +51,13 @@ So what methodology is used to create the library catchment areas?
 
 > In 2003 the Library Service wanted to understand the characteristics of the communities served by each library. In consultation with library managers, catchments were drawn up using COAs as a basic unit. The catchments reflect natural communities and local issues such as public transport, main road links and shopping facilities rather than being strictly district based. Using these enabled the Research Team to report Census 2001 information for each library.
 
-This method of defining catchment appears to be a largely manual exercise, using the expertise of library managers and other intelligence to decide which areas are assigned to each library.  This could be quite a time consuming task - Gloucestershire consists of hundreds of Output Areas, but it is likely that the majority of it may be fairly obvious (e.g. the immediate area surrounding a library).  It is interesting to see such an exercise not being done in isolation from the expertise of those involved in running the libraries, where often it can be outsourced to <abbr title="Geographic Information Systems">GIS</abbr> departments or research intelligence teams.  It is the managers and staff who will know the most about their own users.
+This method of defining catchment appears to be a partially manual exercise, using the expertise of library managers and other intelligence to decide which areas are assigned to each library.  This could be quite a time consuming task - Gloucestershire consists of hundreds of Output Areas, but it is likely that the majority of it may be fairly obvious (e.g. the immediate area surrounding a library).  It is interesting to see such an exercise not being done in isolation from the expertise of those involved in running the libraries.  Often the task can be outsourced to <abbr title="Geographic Information Systems">GIS</abbr> departments, or research intelligence teams.  It is the managers and staff who will know the most about their own users.
 
-Gloucestershire have:
+There is some quite considerable profiling down of each of these catchment areas using stats such as the indices of deprivation, access to vehicles, protected characteristics, and much more.
 
-- Created catchment areas that have no overlap between different libraries (each area uniquely identified with a library).
+To summarise, Gloucestershire:
+
+- Created catchment areas that have no overlap between different libraries (each area is identified with a single ibrary).
 - Used expert knowledge to assign these areas to libraries.
 - Not directly based catchment areas on current membership or usage (aside perhaps as another aspect of expert knowledge).
 - Ensured that each area of the authority is assigned to a library.
@@ -53,20 +66,27 @@ Gloucestershire have:
 
 In 2014 the Bedford Borough Council Community Intelligence team profiled Bedford's libraries.  This included defining an '*all users main catchment area*', and an '*IT only catchment area*' for each library.  Those areas were then profiled using the ONS indices of deprivation and Mosaic profiling.
 
-Sample Source: [Beford Central Library Reach and Catchment Area] (https://www.bedford.gov.uk/council_and_democracy/statistics_and_census/idoc.ashx%3Fdocid%3D9f2e59fd-f282-4c80-a64e-031a7c5d17ee%26version%3D-1&ved=0ahUKEwiRncnIw6nRAhULLcAKHVj1BLoQFggdMAE&usg=AFQjCNEp48h2fskANQsyGnlLTxJnTdVc9A&sig2=Qt5hRqclwz7EcfowqxLxtw)
+### Sources
 
-Although these provide detailed profiling of each library's catchment areas, they don't include a definition of how the area itself was defined.  On querying this, Bedford have said that the individual who did the work has left and unfortunately that knowledge has left with them.  These things happen, it is failry clear though that the two catchment areas are based on different usage profiles, and therefore taken from usage and member address information.  That membership has been analysed to define IT users, and all users, and construct two different geographical areas.
+- [Beford Central Library Reach and Catchment Area] (https://www.bedford.gov.uk/council_and_democracy/statistics_and_census/idoc.ashx?docid=9f2e59fd-f282-4c80-a64e-031a7c5d17ee&version=-1)
+- [Woottom Library Reach and Catchment Area](https://www.bedford.gov.uk/council_and_democracy/statistics_and_census/idoc.ashx?docid=51d7d517-7c89-4621-b271-b14545827db4&version=-1)
 
-This is the opposite to the method used by Gloucestershire, who take the geography of the whole authority to split up the areas, regardless of current membership.  The profiles are worth reading for the disparity between the different types of catchment areas for a single library.  
+Although these provide detailed profiling of each library's catchment areas, they don't include a definition of how the area itself was defined.  On querying this, Bedford have said that the individual who did the work has left and unfortunately that knowledge has left with them.  These things happen, it is clear though that the two catchment areas are based on different usage statistics, and therefore taken from existing member address information.  That membership has been analysed to define IT users, and all users, and construct two different geographical areas.
 
-Bedford have:
+This is the opposite to the method used by Gloucestershire, who take the geography of the whole authority to split up the areas, regardless of current membership.  The profiles are worth reading for the disparity between the different types of catchment areas for a single library.
 
-- Used member usage data as a primary indicator for catchment but done this on different usage types to take account of IT use.
-- Not recorded their methodology for future use.
+To summarise, Bedford:
+
+- Used member usage data as a definition for catchment, but have done this on different usage types.
+- Have overlapping catchment areas between libraries.
+- Do not include the whole of the authority in their analysis.
 
 ## Sutton, consultation 2014.
 
-Sources: [Libraries and culture downloads](https://www.sutton.gov.uk/downloads/200168/libraries_and_culture)
+### Sources
+
+- [Libraries and culture downloads](https://www.sutton.gov.uk/downloads/200168/libraries_and_culture)
+- [Beddington Library - Facts and Figures](https://www.sutton.gov.uk/download/downloads/id/2154/beddington_library_-_facts_and_figures.pdf)
 
 As part of a consultation, Sutton created PDF profiles of each of their libraries, defining the catchment area of each library as:  *"The library catchment area includes all Lower Super Output Areas (LSOAs) where 5% or more of the population borrow from the library."*
 
