@@ -8,18 +8,18 @@ Tags: catchment areas, consultations, geographic profiling
 Template: blogpage
 ---
 
-What is a library catchment area?  For public libraries, it's often used to describe the area covered by the home locations of library users.
+What is a library catchment area?  It's often used to describe the area covered by the locations of library users.
 
-Interpretations vary.  Is it the area within which people are reasonably able to access the library e.g. a certain mile radius or travel time?  Is it based on home locations of registered members of the library, or just those who have been 'borrowers' within the last year?  Or, is it the area from which ALL visitors to the library may come (which for some tourist destinations could be very large)?
+Interpretations vary.  Is it the area where people are reasonably able to get to the library e.g. a certain mile radius or travel time?  Is it based on home locations of registered members of the library, or those who have been recent 'borrowers'?  Or, is it the area from which ALL visitors to the library may come (which for some tourist destinations could be very large)?
 
 For library services, defining catchment may depend on what they wish to achieve.
 
 - to assess library locations (static and mobile) to see if these are spread appropriately.
-- to understand which demographics (e.g. based on income or age) are most likely to be library users.
+- to understand which demographics (e.g. based on income or age) are most likely to be users of a library.
 - to understand which communities aren't currently library users.
-- to tailor services of libraries based on existing membership.
+- to tailor library services based on existing membership.
 
-Analysis of a service is often done before a consultation exercise.  But geographic intelligence, which in turn gives intelligence about people and services, is always important.  It is necessary to understand the residents that each library serves (and *could* serve), and the different requirements that may go along with that.  
+Analysis of a service is often done prior to a consultation exercise.  But geographic intelligence, which in turn gives intelligence about people and services, is always important.  It is necessary to understand the people each library serves (or *could* serve), and the different requirements that may go along with that.  
 
 Introducing geography to ALL library-based data (e.g. simple monthly issue/visit stats) could stop these being 'one-off' exercises.  The results of catchment profiling are often used for many years, rather than being treated as an ever-changing profile.
 
@@ -29,34 +29,34 @@ What have library services done in the past to define catchment?  This post will
 - **Bedford**, library profiles 2014.
 - **Sutton**, consultation 2014.
 
-Before that, here is some jargon.
+Before that, here's some jargon.
 
-**LSOAs** - Lower Super Output areas.  These are small areas of an authority (e.g like a Ward or Parish), created from census data in order to profile that area (such as by income deprivation or likelihood of owning a car).  They all have roughly the same number of people (around 1500) and households, so are good for comparisons.  This is unlike a Ward or Parish (or even postcode) which are more random.
+**LSOAs** - Lower Super Output areas.  These are small areas of an authority (e.g like a Ward or Parish), created from census data in order to profile that area (such as by deprivation or likelihood of owning a car).  They all have roughly the same number of people (around 1500), so are good for comparisons.  This is unlike a Ward or Parish (or even postcode) which are more random.
 
-**OAs** - Output areas.  These are the base unit census areas - smaller in size than LSOAs, but used as the 'building blocks' that make up LSOAs (e.g. a particular LSOA may consist of 5 OAs).  They tend to consist of around 300 people.
+**OAs** - Output areas.  These are the base unit census areas - smaller in size than LSOAs, but used as the 'building blocks' that make up LSOAs.  They tend to consist of around 300 people.
 
-**Indices of deprivation** - These are statistics on deprivation that are released by the <abbr title="Office for National Statistics">ONS</abbr> for each LSOA.  There are around 35,000 LSOAs in England, each ranked against the rest on different deprivation measures (e.g. income, or education).  For example, a community east of Jaywick near Clacton-on-Sea is defined as the most deprived overall in all of England.
+**Indices of deprivation** - These are statistics on deprivation, released by the <abbr title="Office for National Statistics">ONS</abbr> for each LSOA.  There are around 35,000 LSOAs in England, each ranked on different deprivation measures (e.g. income, or education).  For example, a community east of Jaywick near Clacton-on-Sea is defined as the most deprived overall in all of England.
 
-**Mosaic** - This is a commercial demographic profiling tool from Experian, the credit rating people.  This profiles households into 15 main socio-economic groups and, within this, 69 types.  For example, the groups are things like 'Happy Families' (which represent families from Middle England), a type may be more detailed like 'Upwardly mobile South Asian families living in inter war suburbs'.  The data will also give marketing indications such as whether the household is likely to take advantage of free credit, which is why the tool is used frequently by financial marketing departments.  Other products are available.
+**Mosaic** - This is a commercial demographic profiling tool from Experian, the credit rating people.  It profiles households into 15 main socio-economic groups and, within this, 69 types.  For example, the groups are things like 'Happy Families' (families from Middle England), a type may be more detailed like 'Upwardly mobile South Asian families living in inter war suburbs'.  The data will also give indications such as whether a household is likely to take advantage of free credit, which is why the tool is used frequently by financial marketing departments.  Other products are available.
 
 ## Gloucestershire 2012.
 
-In 2012, Gloucestershire developed a library strategy, involving library catchment areas.  But Gloucestershire is huge area.  Before creating a catchment area for each library, they created 6 main districts - each one having a set of libraries that would then be assigned their own catchment area.  The 6 districts referred to are Gloucester, Cheltenham, Stroud, Tewkesbury, Forest of Dean, and the Cotswolds.  These largely parallel the district council areas.
+In 2012, Gloucestershire developed a library strategy, involving catchment areas.  But Gloucestershire is huge.  Before creating a catchment area for each library, they created 6 main districts - each one having a set of libraries that would then be assigned their own catchment.  The 6 districts referred to are Gloucester, Cheltenham, Stroud, Tewkesbury, Forest of Dean, and the Cotswolds.
 
 So what methodology was used to create the library catchment areas?
 
 > the Library Service wanted to understand the characteristics of the communities served by each library. In consultation with library managers, catchments were drawn up using COAs as a basic unit. The catchments reflect natural communities and local issues such as public transport, main road links and shopping facilities rather than being strictly district based. Using these enabled the Research Team to report Census 2001 information for each library.
 
-This method of defining catchment appears to be a partially manual exercise, using expertise from staff and other intelligence sources to decide which areas are assigned to each library.  This could be quite time-consuming - Gloucestershire consists of hundreds of Output Areas - but it is likely that the majority of it is fairly obvious (e.g. the immediate area surrounding a library).  It is interesting to see such an exercise not being done in isolation from the expertise of those involved in running the libraries.  Often the task can be outsourced to <abbr title="Geographic Information Systems">GIS</abbr> departments, or research intelligence teams.  But it is staff who will still know the most about their own users.
+This appears to be a partially manual exercise, using expertise from staff and other intelligence sources to decide which output areas are assigned to each library.  This could be quite time-consuming - Gloucestershire consists of hundreds of Output Areas - but it's likely the majority would be fairly obvious (e.g. the immediate area surrounding a library).  It's interesting to see this not being done in isolation from the expertise of those involved in running the libraries.  Often the task can be outsourced to <abbr title="Geographic Information Systems">GIS</abbr> departments, or research intelligence teams.  But it is staff who will know the most about their own users and local area.
 
-In the documentation there is some considerable profiling of each catchment area using stats such as the indices of deprivation, access to vehicles, protected characteristics, and much more.
+In the documentation there is considerable profiling of each catchment area using stats such as indices of deprivation, access to vehicles, protected characteristics, and more.
 
 To summarise, Gloucestershire:
 
-- Created catchment areas that have no overlap between different libraries (each population area is identified with a single ibrary).
-- Used expert knowledge to assign areas to libraries.
+- Created catchment areas with no overlap between different libraries (each community is identified with a single library).
+- Used expert knowledge to assign areas.
 - Did not base catchment areas on membership or usage (aside perhaps as another aspect of expert knowledge).
-- Ensured that each area of the authority was assigned to a library.
+- Ensured each area of the authority was assigned to a library.
 
 ### Sources
 
@@ -67,9 +67,9 @@ To summarise, Gloucestershire:
 
 In 2014 the Bedford Borough Council Community Intelligence team profiled Bedford's libraries.  This included defining an '*all users main catchment area*', and an '*IT only catchment area*' - for each library.  Those areas were then profiled using the indices of deprivation and Mosaic.
 
-Although these are detailed profiles, they don't include a definition of how the area itself was defined.  On querying this, Bedford have said that the individual who did the work has left, and unfortunately that knowledge has left with them.  These things happen - it is clear though that the two catchment areas are based on usage data, and taken from member address information.  That membership has been analysed to define IT users, and All Users, in order to construct two different geographical areas.
+Although these are detailed profiles, they don't include how the area itself was defined.  Bedford said the individual who did the work has left, and that knowledge has left with them.  These things happen - it is clear though that the two catchment areas are based on usage data, and taken from member address information.  That membership has been analysed to define IT users, and All Users, in order to construct two different geographical areas.
 
-This is the opposite to the method used by Gloucestershire, who take the geography of the whole authority to split up the areas, regardless of current usage.  The profiles are worth reading for the disparity between the different types of catchment areas for a single library (IT Only/All users).
+This is the opposite to the method used by Gloucestershire, who take the geography of the whole authority to split up the areas, regardless of current usage.  The profiles are worth reading for the disparity between the different types of catchment area (IT Only/All users).
 
 To summarise, Bedford:
 
@@ -84,13 +84,15 @@ To summarise, Bedford:
 
 ## Sutton, consultation 2014.
 
-Sutton created profiles of each of their libraries, defining the catchment area of each library as:  *"all Lower Super Output Areas (LSOAs) where 5% or more of the population borrow from the library."*
+Sutton created profiles of each of their libraries, defining catchment as:
 
-This type of catchment area is purely based on 'borrower' members - a borrower being someone who has had an issue or renewal from the library (most often within a certain timeframe e.g. a year).
+> all Lower Super Output Areas (LSOAs) where 5% or more of the population borrow from the library.
 
-There are disadvantages to this idea of a catchment area.  It takes no account of users who use the computers, WiFi, or other materials.  It also does not guarantee that all areas of an authority will fall into the catchment of a library.  For providing a needs analysis across the borough, this can be questionable - regardless of current membership, the local authority provides a service for all residents.  It is reasonable to assume all residents should fall into the catchment of at least 1 library.
+A borrower is normally someone who has had an issue or renewal from the library (often filtered within a certain timeframe e.g. a year).
 
-The methodology does allow for catchment areas that overlap between libraries.  In this way, Sutton Central library catchment covers 91 of the 121 LSOAs in Sutton, showing that a Central library will likely be used by the whole authority, not just the residents closest to it.  This seems more realistic than an approach which neatly divides an authority into distinct areas, with each area served by a single library.  
+There are disadvantages to this method.  It takes no account of users who use the computers, WiFi, or other materials.  It doesn't guarantee that all areas of an authority will fall into the catchment of a library.  For providing a needs analysis across the borough, this can be questionable - regardless of current membership, the authority provides a service for all residents.  It is reasonable to assume everyone should fall into the catchment of at least one library.
+
+It does allow for catchment areas that overlap between libraries.  In this way, Sutton Central library catchment covers 91 of the 121 LSOAs in Sutton, showing that a Central library will likely be used by the whole authority.  This seems more realistic than an approach which neatly divides an authority into distinct areas.
 
 A problem occurs when a library does not have any LSOAs where 5% of the population are borrowers of that library, and therefore has no catchment.  This was the case for Beddington library.
 
@@ -98,26 +100,24 @@ A problem occurs when a library does not have any LSOAs where 5% of the populati
 
 That seems an arbitrary definition.  It pre-defines the population count that will be included, as 2 LSOAs will be around 3000 people.  This figure is then used later on in the analysis - that the population of the catchment area only amounts to 1% of the population of Sutton.  
 
-Beddington library was actually situated very close to the intersection of 3 LSOAs.  Because the decision only allowed for 2 LSOAs to be included, this meant a major third community was not defined as being part of the catchment area.  Looking at this on a map it leads to a situation where a location across the street from the library was not considered part of its catchment area.  This makes any profiling of the library catchment area less meaningful.
+Beddington library was actually situated very close to 3 LSOAs.  Because the decision only allowed for 2 to be included, this meant the third community was excluded.  Looking at this on a map it leads to a situation where a location across the street from the library was not considered part of its catchment.  This makes any demographic profiling catchment less meaningful.
 
-Sutton also do some data analysis around driving distances.  A '10 minute drive area' (a 2 mile radius around the library) is plotted around Beddington library to suggest alternative libraries that could be reached by car, of which there are 3.
-
-The suggestion is existing users of Beddington library could drive to 3 other libraries in 10 minutes.  It would be more appropriate to plot the drive radius from the centre of the library catchment area, to represent the distance required to travel by the population.  Because the library is actually at the edge of the catchment area, the majority of people would have to travel further than described.
+Sutton also do some driving distance analysis.  A '10 minute drive area' (2 mile radius) is plotted around Beddington library to suggest alternative libraries that could be reached by car, of which there are 3.  The suggestion is Beddington users could drive elsewhere in 10 minutes.  It would be more appropriate to plot the drive radius from the centre of the catchment area, to represent the distance required to travel by the population.  The majority of people would have to travel further than described.
 
 In September 2015 a proposal to Sutton residents was put on closing Beddington library.
 
 > Beddington library’s catchment area does not score highly on measures such as the indices of deprivation and the needs analysis. In particular, the area is well served by public transport and 84% of people in the area have access to a car/van.
 
-Beddington library was closed in 2016.  In December 2016, Sutton Borough Council were featured as a case study in the Libraries Taskforce [Ambition document](https://www.gov.uk/government/publications/libraries-deliver-ambition-for-public-libraries-in-england-2016-to-2021/libraries-deliver-ambition-for-public-libraries-in-england-2016-to-2021): 
+Beddington library was closed in 2016.  In December 2016, Sutton were featured as a case study in the [Libraries Taskforce Ambition document](https://www.gov.uk/government/publications/libraries-deliver-ambition-for-public-libraries-in-england-2016-to-2021/libraries-deliver-ambition-for-public-libraries-in-england-2016-to-2021): 
 
 > The consultation on changes to Sutton libraries was backed by research mapping demographic trends and needs analysis across the borough. This was so staff had a clear view of the communities the libraries serve.
 
 To summarise, Sutton:
 
 - Defined catchment based on 'borrrower' members
-- Created overlapping catchment areas, allowing for how the Central library is used by residents across the authority.
+- Created overlapping catchment areas, showing how the Central library is used by residents across the authority.
 - Used a definition of catchment area that did not work for all libraries - forcing inconsistent definitions within the same study.
-- Used a methodology which could exclude various areas of the authority from the analysis.
+- Used a methodology which could exclude various communities from the analysis.
 
 ### Sources
 
