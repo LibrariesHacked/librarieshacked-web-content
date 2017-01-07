@@ -8,9 +8,7 @@ Tags: catchment areas, consultations, geographic profiling
 Template: blogpage
 ---
 
-What is a library catchment area?  It's often used to describe the area covered by the locations of library users.
-
-Interpretations vary.  Is it the area where people are reasonably able to get to the library e.g. a certain mile radius or travel time?  Is it based on home locations of registered members of the library, or those who have been recent 'borrowers'?  Or, is it the area from which ALL visitors to the library may come (which for some tourist destinations could be very large)?
+What is a library catchment area?  Interpretations vary.  Is it the area where people are reasonably able to get to the library e.g. a certain mile radius or travel time?  Is it based on home locations of registered members of the library, or those who have been recent 'borrowers'?  Or, is it the area from which ALL visitors to the library may come (which for some tourist destinations could be very large)?
 
 For library services, defining catchment may depend on what they wish to achieve.
 
