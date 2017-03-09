@@ -96,7 +96,7 @@ The code needs the data from the CSV file.  [Papa Parse](http://papaparse.com/) 
                 // Add the library to the series array
                 // Because there are so many libraries, the visibility of the library is only set for the first two
                 // The user can then pick and choose which libraries to show.
-                series.push({ name: item[0], data: data, visible: (index <= 2) });
+                series.push({ name: item[0], data: data, visible: (index &lt;= 2) });
             });
 
             // Now we have the data setup, construct the chart with some text options.
