@@ -64,5 +64,11 @@ It's also worth removing the very first line as there are two header rows.
 
 Then repeating the process but selecting to upload a file instead of providing a URL it all gets loaded into Carto.  Effectively this is then creating a single database table.  Carto automatically adds a numeric ID and a 'the_geom' column:
 
-'the_geom is the column that will store the location (geometry) of each library.  
+'the_geom is the column that will store the location (geometry) of each library.  There is no recognised location field in the uploaded data so Carto shows these as 'null'.  What is needed is to use the address and postcode data to georeference the libraries.
+
+Carto offers a number of options for georeferencing data: Lon/Lat columns, 
+
+This is one thing that is not immediately clear in Carto, but to georeference using postcodes you need to select to use the postcode column, and specify United Kingdom as the country.  
+
+That will whirr away for a couple of mins
 
