@@ -77,12 +77,11 @@ One thing to watch out for when using files held on the web, you need to ensure 
 
 In the HTML a new file is also referenced, **script.js**.  This will contain the custom JavaScript code written in part 4.
 
-### 3. add the basic textbox html.
+### 3. add the basic textbox html
 
 The web page itself will just have a header and an input text box, and a space where details of the book will be added dynamically later.
 
-<pre class="prettyprint linenums">
-<code class="language-html">&lt;body&gt;
+<pre class="prettyprint linenums"><code class="language-html">&lt;body&gt;
     &lt;h1&gt;auto-complete book search example&lt;/h1&gt;
     &lt;p&gt;
         &lt;label for=&quot;txtBookSearch&quot;&gt;select a book&lt;/label&gt;
@@ -93,8 +92,7 @@ The web page itself will just have a header and an input text box, and a space w
 	&lt;script src=&quot;//code.jquery.com/jquery-1.10.2.js&quot;&gt;&lt;/script&gt;
 	&lt;script src=&quot;//code.jquery.com/ui/1.10.4/jquery-ui.js&quot;&gt;&lt;/script&gt;
 	&lt;script src=&quot;js/scripts.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;</code>
-</pre>
+&lt;/body&gt;</code></pre>
 
 ### 4. add the auto-complete JavaScript.
 The following code is added to the empty **script.js** file, providing a framework for the jQuery UI autocomplete functionality.

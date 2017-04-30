@@ -2,6 +2,7 @@
 Title: D3 libraries
 Description: an example of visualisation public libraries in the UK using D3.
 Type: ExampleVisualisation
+Keys: d3,library data,uk libraries
 Template: examplepaged3libraries
 ---
 

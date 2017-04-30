@@ -1,6 +1,7 @@
 ---
 Title: events
 Description: hack days, makerspaces, fab labs around the uk.
+Keys: hackathons,codefests,fab labs,hack days
 Template: eventindex
 ---
 

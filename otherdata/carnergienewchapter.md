@@ -1,5 +1,5 @@
 ---
-Title: carnegie trust report: a new chapter
+Title: carnegie trust report 'a new chapter'
 Description: full research report on public library services in the 21st century.
 Year: 2012
 Type: Download

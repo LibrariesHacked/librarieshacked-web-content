@@ -1,9 +1,15 @@
 ---
 Title: privacy policy
-Description: how { libraries: hacked } deals with your privacy concerns
-Keys: privacy,cookies
+Description: how your privacy is ensured using this website
+Keys: privacy,cookies,policy
 ---
 
-## cookies
+cookies
+-------
 
-no part of the site uses any kinds of cookies or tracks user data in any way.  if you have any concerns about the policy please contact **info** at **librarieshacked.org**.
+there are currently no cookies being used on this site.
+
+encryption
+----------
+
+this site is delivered over a HTTPS address, ensuring that traffic between you (the user) and the web server is encrypted.  the particular pages you access should therefore be private.

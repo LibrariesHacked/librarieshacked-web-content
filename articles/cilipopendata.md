@@ -3,12 +3,10 @@ Title: open data, libraries and hack events
 Description: an introduction to open data and library hacking
 Date:
 Type:
-Author: @librarieshacked
+Author: dave
 Tags: open data,libraries,hack events
 Template: blogpage
 ---
-
-## Open Data
 
 Open Data is data made public with a non-restrictive licence, allowing anyone to reuse it for any purpose.  The 5-star open data plan provides guidance on open data quality.  This includes just making stuff available (maybe a PDF - 1 star), to open formats linked to other datasets (linked open data - 5 stars!)[1].
 
@@ -24,7 +22,8 @@ It's easy to enthuse about all this, but where's the link to libraries?  Part of
 
 Articles often try to envisage a 'library of the future', imagining the changing role of libraries.  But the lack of library involvement in open data processes (which can often receive significant funding) is a departure from a historic role, not a future opportunity.  Addressing it is not a suggestion of any change in focus or existing skills.  Open data needs libraries, and professional library skills.  Local and national open data portals, such as data.gov.uk[7] are often a chaotic mess.  Few metadata standards, conflicting structures, poor categorisations, and no conventions.  They're not beyond hope, they just require those essential skills listed in CILIPs 'types of job' pages[8].
 
-## Library data
+Library data
+------------
 
 There is also a lack of open data about public libraries, such as catalogues, usage data, opening hours, or static and mobile library locations.
 
@@ -34,7 +33,8 @@ With a lack of official open data, library-related data can still appear in many
 
 Sue Lawson and Julia Chandler worked to produce a Google sheet that listed libraries, library authorities, and their twitter accounts.  Another project, a twitter gallery[11], provides a view of those accounts with information such as when the account was created, last tweeted, and number of tweets/followers.  It's been interesting to watch, @manclibraries started tweeting way back in 2007 while some authorities are still creating accounts.  @hull_libraries have a massive 60,000 tweets, well over double their nearest challengers, and compared to an average of .
 
-## Hacks
+Hacks
+-----
 
 Look around the Internet and you can find plenty of examples of engagement with library data and systems.  There are scripts to automatically renew library loans, library membership apps that allow for managing multiple library accounts (university/public), and much more.  These are small 'hacks' - hacking together systems and data with enthusiasm and a spirit of exploration, and not being too bothered if it doesn't work out.  They don't need to be serious policy-forming analysis.  Simply engaging with data, creating 'mashups' with other services is often enough to see where more sophisticated solutions could be created, and where better data is required.
 
@@ -44,7 +44,8 @@ To run community hack events you really just need community spaces that are suit
 
 The current situation is promising and exciting.  Newcastle Libraries have started an open data process, and started running hack events encouraging use of this data[13].  Libraries hacked aims to promote open data and hacks in libraries, as these activities don't feel like vague libraries of the future, but as making good use of all the skills and resources that libraries already have.
 
-## References
+References
+----------
 
 [1] 5 Star Open Data (http://5stardata.info/en/)
 [2] Open Data Barometer (http://opendatabarometer.org/2ndEdition/analysis/rankings.html)

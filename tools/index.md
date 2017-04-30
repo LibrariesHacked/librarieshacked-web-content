@@ -1,6 +1,7 @@
 ---
 Title: tools
 Description: tools for use in hacks - data visualisations, portals and query languages
+Keys: visualisation tools,data tools
 Template: toolsindex
 ---
 

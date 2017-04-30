@@ -1,6 +1,7 @@
 ---
 Title: international data
 Description: collecting global library statistics
+Keys: international library statistics,library data
 Template: internationalindex
 ---
 

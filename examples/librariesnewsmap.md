@@ -2,6 +2,7 @@
 Title: public libraries news map
 Description: an example of a leaflet map using open geocoding to plot uk local library news stories.
 Type: ExampleVisualisation
+Keys: public libraries news,libraries news map,leaflet js
 Template: examplepageplnmap
 ---
 
