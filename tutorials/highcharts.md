@@ -3,7 +3,7 @@ Title: making interactive web charts with Highcharts
 Description: linking to CSV data to quickly publish live charts on the web.
 Date: 2015/11/30
 Type: Tutorial
-Author: @librarieshacked
+Author: dave
 GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,Highcharts
@@ -28,17 +28,17 @@ These are downloadable as CSV files, but often in cases where datasets may be up
 
 This tutorial takes the library computer bookings dataset as an example and uses HighCharts to create a line chart visualisation, showing the computer bookings counts for each library from 2001 to 2014. An example of the chart, created with the same code and demonstrating the interactive features of HighCharts, is at the top of this page.
 
-## 1. set up the base HTML.
+Step 1.  Set up the base HTML
+-----------------------------
 
 To start from scratch (rather than embedding into an existing page), create a blank HTML file which will include:
 
-- *Bootstrap* CSS/JavaScript references, and *jQuery*.  This is optional but gives the page a bit of structure and automatically responsive design.  When quickly 'mocking up' pages it can be a useful first step to producing elegant pages before beginning extra design work.
-- A *&lt;div&gt;* container with a particular ID (in this case *chart*).  This is where Highcharts will create the chart.
-- A link to the *HighCharts* JavaScript file (hosted at highcharts.com).
-- A link to the *Papa Parse* JavaScript file (more on that later) - this is used to process the CSV data.
+- Bootstrap CSS/JavaScript references, and jQuery.  This is optional but gives the page a bit of structure and automatically responsive design.  When quickly 'mocking up' pages it can be a useful first step to producing elegant pages before beginning extra design work.
+- A &lt;div&gt; container with a particular ID (in this case 'chart').  This is where Highcharts will create the chart.
+- A link to the HighCharts JavaScript file (hosted at highcharts.com).
+- A link to the Papa Parse JavaScript file (more on that later) - this is used to process the CSV data.
 
-<pre class="prettyprint linenums">
-<code>&lt;!DOCTYPE html&gt;
+<pre class="prettyprint linenums"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
@@ -57,13 +57,13 @@ To start from scratch (rather than embedding into an existing page), create a bl
     &lt;script src="https://code.highcharts.com/highcharts.js"&gt;&lt;/script&gt;
     &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"&gt;&lt;/script&gt;
     &lt;script&gt;
-	// JavaScript code will go here
+    // JavaScript code will go here
     &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code>
-</pre>
+&lt;/html&gt;</code></pre>
 
-## 2. write JavaScript to create the chart
+Step 2.  Write JavaScript to create the chart
+---------------------------------------------
 
 Once the structure of the page is in place, there is some JavaScript code needed to create the chart when the page has loaded.
 
@@ -74,8 +74,7 @@ The code needs the data from the CSV file.  [Papa Parse](http://papaparse.com/) 
 - Create an array of series object that represent the data values for each library.
 - On the chart div container (*$('#chart')*) create the chart with some optional text values and the data.
 
-<pre class="prettyprint linenums">
-<code>$(function () {
+<pre class="prettyprint linenums"><code>$(function () {
     // PapaParse takes the link to the CSV file, hosted at Leeds Data Mill
     Papa.parse('https://aql.datapress.com/leeds/dataset/library-computer-bookings/library-it-use.csv', {
         download: true,
@@ -111,5 +110,4 @@ The code needs the data from the CSV file.  [Papa Parse](http://papaparse.com/) 
             });
         }
     });
-});</code>
-</pre>
+});</code></pre>

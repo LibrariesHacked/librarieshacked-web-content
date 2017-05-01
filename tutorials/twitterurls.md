@@ -1,9 +1,9 @@
 ---
 Title: extracting link data from twitter searches
-Description: creating a summary of links from twitter hashtags, for revisiting later.
+Description: creating a summary of links from twitter hashtags, for revisiting later
 Date: 2014/08/1
 Type: Tutorial
-Author: @librarieshacked
+Author: dave
 GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: JQuery,JavaScript,JSON,SQL
@@ -13,13 +13,11 @@ TutorialType: WebDevelopment
 Template: tutorialpagetwitterurls
 ---
 
-## what's the problem?
-
-When following hashtags on twitter for conferences or chats there are often a lot of links being thrown about.  With a stream of tweets going on it's normally necessary to save these for later.  You can favourite the tweets, although this relies on catching the tweet at the time.  Or search twitter later, although as far as a summary goes there may be loads of links - and the tweets don't always give a good enough context to show more information about what the link contains.
+When following hashtags on twitter for conferences or chats there are often a lot of links being thrown about.  With a stream of tweets going on it's normally necessary to save these for later.  You can favourite the tweets, although this relies on catching the tweet at the time.  Or search twitter later, although as far as a summary goes there may be loads of links.   And the tweets don't always give a good enough context to show more information about what the link contains.
 
 The web being as clever as it is though, it should be possible to list all the links shared through a hashtag, alongside additional information about them - gained directly from the web pages themselves, such as the page title and description.
 
-Yahoo query language (YQL) allows for directly searching the html of web pages, and also provides access to searching twitter.  This post will do the following (an example is at the top of the page):
+Yahoo Query Language (YQL) allows for directly searching the html of web pages, and also provides access to searching twitter.  This post will do the following (an example is at the top of the page):
 
 - use YQL to query twitter for a particular search term (e.g. a hashtag)
 - retrieve those tweets that contain URLs and compile them to remove duplicates, record the user, and other context such as the tweet text.
@@ -28,18 +26,17 @@ Yahoo query language (YQL) allows for directly searching the html of web pages, 
 
 It sounds quite a lot in terms of programming, but using YQL and jQuery to shorten the amount of JavaScript, it can be done in a very small amount of code.  If you are completely unfamiliar with YQL, it was partly covered in this example of [collecting global library stats](http://www.librarieshacked.org/tutorials/yqlstats).  There is also an excellent [developer resource](https://developer.yahoo.com/yql/).
 
-## step 1: search twitter for tweets and links
+Step 1.  Search twitter for tweets and links
+-------------------------------------------
 
-YQL comes with some *community tables*.  In [the YQL console](https://developer.yahoo.com/yql/console/) you can tick *show community tables* on the left hand side and you get access to all kinds of data: wikipedia, twitter, amazon, bbc, etc.  If you select the twitter tables and select *twitter.search.tweets* an example is generated of a twitter search. this appears as:
+YQL comes with some 'community tables'.  In [the YQL console](https://developer.yahoo.com/yql/console/) you can tick 'show community tables' on the left hand side and you get access to all kinds of data: wikipedia, twitter, amazon, bbc, etc.  If you select the twitter tables and select 'twitter.search.tweets' an example is generated of a twitter search. this appears as:
 
-<pre class="prettyprint linenums">
-<code>SELECT * FROM twitter.search.tweets 
-WHERE q="yahoo" 
-AND consumer_key="08ZNcNfdoCgYTzR7qcW1HQ" 
+<pre class="prettyprint linenums"><code>SELECT * FROM twitter.search.tweets
+WHERE q="yahoo"
+AND consumer_key="08ZNcNfdoCgYTzR7qcW1HQ"
 AND  consumer_secret="PTMIdmhxAavwarH3r4aTnVF7iYbX6BRfykNBHIaB8"
-AND access_token="1181240586-JIgvJe4ev3NHdHnAqnovHINWfpo0qB2S2kZtVRI" 
-AND access_token_secret="1nodv0LBsi7jS93e38KiW8cHOA5iUc6FT4L6De7kgk"</code>
-</pre>
+AND access_token="1181240586-JIgvJe4ev3NHdHnAqnovHINWfpo0qB2S2kZtVRI"
+AND access_token_secret="1nodv0LBsi7jS93e38KiW8cHOA5iUc6FT4L6De7kgk"</code></pre>
 
 In a production system those consumer keys and access tokens would be your own, provided by twitter when you create a developer account.  The following article gives instructions of how to create those keys and hide them when using YQL within a web page: [Twitter API v1.1 Front-end Access](http://stevezeidner.com/twitter-api-v1-1-front-end-access-with-yql/)
 
@@ -49,32 +46,31 @@ YQL then makes querying twitter quite straightforward, and after designing a que
 
 In one go that returns tweets matching that search term, any linked URLs, user data for whoever sent each tweet, and location if attached, etc.
 
-## step 2: get the metadata for the links within tweets
+Step 2.  Get the metadata for the links within tweets
+-----------------------------------------------------
+
 The data returned includes links from within tweets that are already separated from the text of the tweet, so there's no need to mess around detecting them or manipulating the text data to extract them.
 
 The next task is then to provide additional information for those links by querying YQL for meta tags within the html of pages.  A YQL query to return the meta and title tags from a web link would be:
 
-<pre class="prettyprint linenums">
-<code>SELECT *
+<pre class="prettyprint linenums"><code>SELECT *
 FROM html
 WHERE url = 'http://www.librarieshacked.org'
-AND xpath='//head/meta|//head/title'</code>
-</pre>
+AND xpath='//head/meta|//head/title'</code></pre>
 
 The *xpath* query there defines which parts of the html are queried.  In this case, the query will return data from any meta tags that appear in the head section of the html, and the title tag.  YQL also allows for combining many queries at a time, by specifying these in the following way:
 
-<pre class="prettyprint linenums">
-<code>SELECT *
+<pre class="prettyprint linenums"><code>SELECT *
 FROM yql.multi
 WHERE queries = "
-    SELECT * FROM html WHERE url = 'http://www.librarieshacked.org' AND xpath='//head/meta|//head/title';SELECT * FROM html WHERE url = 'http://www.librarieshacked.org/tutorials' AND xpath='//head/meta|//head/title'"</code>
-</pre>
+    SELECT * FROM html WHERE url = 'http://www.librarieshacked.org' AND xpath='//head/meta|//head/title';SELECT * FROM html WHERE url = 'http://www.librarieshacked.org/tutorials' AND xpath='//head/meta|//head/title'"</code></pre>
 
-## step 3: use JavaScript/jQuery to put it all together
+Step 3.  Use JavaScript/jQuery to put it all together
+-----------------------------------------------------
+
 To effectively use those two data sources, a tool needs to be created which will take a search term, find all the tweets that include links, use these to retrieve the webpage meta tags, and display this. Using the jQuery library, an example JavaScript function is:
 
-<pre class="prettyprint linenums">
-<code>function GetResults(search) {
+<pre class="prettyprint linenums"><code>function GetResults(search) {
     // empty out the results
     // divUrlResults is the 'output' container
     $('#divUrlResults').empty();
@@ -151,7 +147,6 @@ To effectively use those two data sources, a tool needs to be created which will
             }
         }
     });
-}</code>
-</pre> 
+}</code></pre>
 
-That JavaScript will then search twitter, find some additional information about the shared links, and populate a *div* on the page with that data.  It could used to populate a twitter style widget, showing links shared rather than tweets, with summary data.
+That JavaScript will then search Twitter, find some additional information about the shared links, and populate a *div* on the page with that data.  It could used to populate a twitter style widget, showing links shared rather than tweets, with summary data.

@@ -1,6 +1,7 @@
 ---
 Title: tutorials
 Description: how-to guides for data analysis, creating apps, and web services
+Keys: tutorials,how-to guides
 Template: tutorialsindex
 ---
 

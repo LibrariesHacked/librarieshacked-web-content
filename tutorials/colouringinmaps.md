@@ -3,7 +3,7 @@ Title: colouring-in open data maps
 Description: using QGIS to create colouring-in maps from OS open data.
 Date: 2015/09/18
 Type: Tutorial
-Author: @librarieshacked
+Author: dave
 GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: GIS,colouring
@@ -23,9 +23,8 @@ For a confusing read, the [Sharing derived data](https://www.ordnancesurvey.co.u
 
 The OS only supply a few cities though, it would be nice to be able to create maps for any area of the UK.  One area in which the OS have released some recent open data, is their [Open Maps Local product](https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-map-local.html), allowing anyone to use certain map layers for any purpose.
 
-## creating an OS colouring map
-
-### download the data
+Download the data
+-----------------
 
 Follow the links through the OS site to [download the open data](https://www.ordnancesurvey.co.uk/opendatadownload/products.html).  It involves selecting which National Grid reference squares you wish to download (e.g. ST), and some brief registration data as the link to download will be sent by email.
 
@@ -41,7 +40,8 @@ The data is in ESRI Shapefile data format.   A link to a guide for this data is 
 
 There are many GIS tools that will open shapefiles - ESRI's ArcGIS Desktop, Pitney Bowes' MapInfo, but the open source option is [QGIS](http://qgis.org/en/site/), a fully featured and free GIS tool.
 
-### open up in QGIS
+Open up in QGIS
+---------------
 
 The data folder from the OS looks full of files and it can be daunting trying to figure out what needs to be opened.  For example:
 
@@ -63,7 +63,8 @@ To get a decent map it can be enough just to load the following layers:
 
 There are then options that may be useful depending on the particular map area such as railways lines, stations, tidal water, roundabouts, etc.
 
-### style the map
+Style the map
+-------------
 
 Style each individual layer by right clicking the layer name in the layer pane window and selecting *properties*.  From there, style details can be customised such as:
 
@@ -72,7 +73,8 @@ Style each individual layer by right clicking the layer name in the layer pane w
  
 After a little tweaking a map suitable for colouring in can be created (no fill colours and suitable spacing between lines).  It can be useful to use differing light pattern fills (e.g. spots, dashed lines, etc) for buildings, woodland, and water.
 
-### print or save as image
+Print or save as image
+----------------------
 
 To export for printing QGIS has the *Print Composer* tool.  Selecting *Project > New Print Composer* will launch the tool, the current map can then be loaded into the print view by selecting *Layout > Add map*.  This then gives a selection tool to design the map area on the printed page (can be full screen for plain images).
 

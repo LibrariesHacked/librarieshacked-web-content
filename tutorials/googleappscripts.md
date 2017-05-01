@@ -1,9 +1,9 @@
 ---
 Title: use google apps scripts to schedule notifications
-Description: schedule loan checks using google scripting services and schedules.
+Description: schedule loan checks using google scripting services and schedules
 Date: 2015/02/07
 Type: Tutorial
-Author: @librarieshacked
+Author: dave
 GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,scripting,XML
@@ -13,27 +13,25 @@ TutorialType: WebDevelopment
 Template: tutorialpage
 ---
 
-Google is a useful place for working on collaborative documents, hosted in an environment that is fairly easy to control access to.  These include spreadsheets, docs, slides, fusion tables etc.  And also lesser known *Apps Scripts*.
+Google is a useful place for working on collaborative documents, hosted in an environment that is fairly easy to control access to.  These include spreadsheets, docs, slides, fusion tables etc.  And also, lesser known, Apps Scripts.
 
 The [Google Apps Script](https://developers.google.com/apps-script/) language is primarily JavaScript with a number of additions to simplify common scripting tasks, and integrate with other Google services.
 
-For example, if you have a Google Analytics account it supports [a set of script methods](https://developers.google.com/apps-script/advanced/analytics) to allow you to easily query that analytics data.
+For example, if you have a Google Analytics account it supports [a set of script methods](https://developers.google.com/apps-script/advanced/analytics) to allow you to easily query your data.
 
-Something like Analytics has already provided API access for a long time, but this makes accessing data from Google services a lot easier, and also removes authentication as a task.  If you write an apps script and host it on your Google account then it can be given automatic access to your Analytics data.  Similarly, it will provide easy read/write access to the data in documents and spreadsheets that are otherwise private but in the same account.
+Something like Analytics has already provided API access for a long time, but this makes accessing data from Google services a lot easier, and also removes authentication as a task.  If you write an apps script and host it on your Google account then it can be given automatic access to your Analytics data.  Similarly, it will provide easy read/write access to the data in documents and spreadsheets that are in the same account.
 
 When working on scripts it also offers a fairly good development environment - allowing you to debug and work through scripts (though debugging is noticeably slow).
 
-Scripts are able to send out emails (at a limit of 100 per day), and most importantly can be set to run as part of a schedule.  That makes it very useful as a notifications and alerts system, where otherwise any automation scripts would need to be hosted on a paid for server, or a PC that would be unlikely to be always on.
+Scripts are able to send out emails (at a limit of 100 per day), and can be set to run as part of a schedule.  That makes it very useful as a notifications and alerts system, where otherwise any automation scripts would need to be hosted on a paid for server, or a PC that would have to be kept on.
 
 As an example, the below script could be set to run as an automated task every day to check a library account loans data, and send an email if there is one due for return within a certain time frame (e.g. within a couple of days).  It uses the following Google script additions:
 
-- **MailApp.sendEmail** (to send our the alert email if loans are due).
-- **UrlFetchApp.fetch** (to fetch data from a URL.  in this case a web service that retrieves loan data)
-- **XmlService.parse** (to parse XML returned from the web service into an accessible object).
+- MailApp.sendEmail.  To send out the alert email if loans are due.
+- UrlFetchApp.fetch.  To fetch data from a URL.  in this case a web service that retrieves loan data.
+- XmlService.parse.  To parse XML returned from the web service into an accessible object.
 
-<pre class="prettyprint linenums">
-<code>function CheckLoans() {
-
+<pre class="prettyprint linenums"><code>function CheckLoans() {
     // user acount details
     var memberId = '';
     var PIN = '';
@@ -119,5 +117,4 @@ As an example, the below script could be set to run as an automated task every d
     if (sendEmail) {
         MailApp.sendEmail(emailAddress, 'library notification report', emailText);
     }
-}</code>
-</pre>
+}</code></pre>

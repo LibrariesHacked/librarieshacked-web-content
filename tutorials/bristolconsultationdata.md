@@ -1,9 +1,9 @@
 ---
 Title: data analysis during a library consultation
-Description: delving into the data used to close libraries.
+Description: delving into the data used to close libraries
 Date: 2015/04/19
 Type: Tutorial
-Author: @librarieshacked
+Author: dave
 GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: mapping,JavaScript,web services
@@ -18,7 +18,9 @@ https://www.bristol.gov.uk/committee/2015/ua/ua000/0303_5.pdf) that aims to (amo
 
 Along with survey data from a preliminary 'Bristol library futures' public consultation, the proposal draws from a number of data sources, including some geographical (GIS) data.
 
-## GIS data
+GIS data
+--------
+
 Locations of the libraries and the Bristol authority boundary lines are used to visualise library coverage: the libraries are plotted with circular radius of 1.5 miles to show the plans still give majority coverage across the authority.  Using a radius as a measure comes with various issues:
 
 - For non-walking access it is largely irrelevant.  Travel to a nearest library needs to be measured in journey time, accessibility and expenditure.
@@ -45,8 +47,10 @@ In this case the distance was assessed with the following qualifying factors (al
 - Public transport links
 - Support for the elderly and disabled
 
-## visualising the map data
-The basic map within the PDF provided by Bristol council provides a visualisation of coverage, but doesn't allow residents to see (for example) what a 1 mile radius for each library would look like, or explore in detail which areas get the highest coverage - or to see the effect on coverage that closing 7 of the libraries would have. 
+Visualising the map data
+------------------------
+
+The basic map within the PDF provided by Bristol council provides a visualisation of coverage, but doesn't allow residents to see (for example) what a 1 mile radius for each library would look like, or explore in detail which areas get the highest coverage - or to see the effect on coverage that closing 7 of the libraries would have.
 
 To independently visualise these variations on the map data, a couple of datasets need to be used:
 
@@ -59,19 +63,21 @@ The associated map is shown below, with the code sample underneath.
 
 <div class="btn-toolbar">
   <div class="btn-group">
-    <a class="btn btn-primary" href="javascript:showProposedLibraries()">proposed libraries</a>
-    <a class="btn btn-primary" href="javascript:showAllLibraries()">all libraries</a>
+    <a class="btn" href="javascript:showProposedLibraries()">Proposed Libraries</a>
+    <a class="btn" href="javascript:showAllLibraries()">All Libraries</a>
   </div>
   <div class="btn-group">
-    <a class="btn btn-success" href="javascript:changeRadius(1609)">1 mile radius</a>
-    <a class="btn btn-success" href="javascript:changeRadius(2413.5)">1.5 mile radius</a>
-    <a class="btn btn-success" href="javascript:changeRadius(3218)">2 mile radius</a>
+    <a class="btn" href="javascript:changeRadius(1609)">1 mile radius</a>
+    <a class="btn" href="javascript:changeRadius(2413.5)">1.5 mile radius</a>
+    <a class="btn" href="javascript:changeRadius(3218)">2 mile radius</a>
   </div>
 </div>
 <br/>
 <div id="map"></div>
 
-## plugins used
+Plugins used
+------------
+
 The HTML below uses a number of JavaScript scripts.  These are:
 
 - Leaflet maps: to provide the mapping engine
@@ -80,9 +86,10 @@ The HTML below uses a number of JavaScript scripts.  These are:
 - Proj4JS: provides an easy way to convert from the northing/easting values usually used by local authorities, and the latitude/longitude values preferred by online mapping engines.
 - MapFunctions: JavaScript to generate the map, code included below the HTML.
 
-## HTML code
-<pre class="prettyprint linenums">
-<code>&lt;!DOCTYPE html&gt;
+HTML code
+---------
+
+<pre class="prettyprint linenums"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" /&gt;
@@ -112,9 +119,10 @@ The HTML below uses a number of JavaScript scripts.  These are:
 &lt;/html&gt;</code>
 </pre>
 
-## map functions JavaScript
-<pre class="prettyprint linenums">
-<code>var closingCircles, libraryCircles, map, closingDisplayed = false;
+Map functions JavaScript
+------------------------
+
+<pre class="prettyprint linenums"><code>var closingCircles, libraryCircles, map, closingDisplayed = false;
 
 $(document).ready(function () {
     // set up the leaflet map.  initial view of Bristol centre.
@@ -123,14 +131,14 @@ $(document).ready(function () {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OSM</a> contributors, <a href="http://cartodb.com/attributions">CartoDB</a>'
     }).addTo(map);
 
-    // add the boundary layer for Bristol.
+    // add the boundary layer for Bristol
     L.geoJson(bristolBoundary, {
         weight: 2, fill: true, fillOpacity: 0.7, fillColor: '#FFF', color: '#999999', clickable: false,
         pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng, { opacity: 0, fillOpacity: 0, clickable: false });
         }
     }).addTo(map);
-    // By default use 1609 metres.  
+    // By default use 1609 metres
     addLayers(1609);
 });
 
@@ -184,5 +192,4 @@ function NEToLL(east, north) {
     proj4.defs("NationalGrid", "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs");
     var res = proj4('NationalGrid', 'WGS84', [east, north]);
     return { latitude: res[1], longitude: res[0] };
-}</code>
-</pre>
+}</code></pre>

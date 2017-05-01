@@ -3,7 +3,7 @@ Title: encryption, library catalogues, and security testing
 Description: how seriously are UK public libraries taking web security, and how can it be tested?
 Date: 2016/07/18
 Type: Tutorial
-Author: @librarieshacked
+Author: dave
 GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: encryption, HTTPS, penetration testing, security
@@ -12,8 +12,6 @@ TutorialTime: 1 hour
 TutorialType: WebDevelopment
 Template: tutorialpagehttpsgrading
 ---
-
-## what is HTTPS and why is it important?
 
 You want to talk in confidence with an individual.  To do this you need to:
 
@@ -24,15 +22,16 @@ Perhaps they would show some ID.  You may even shake hands, and in a secret hand
 
 Information Technology often uses real-world terminology to describe tech processes.  The above situation is played out whenever you visit a website using encrypted communication, preceded with the <abbr title="HyperText Transfer Protocol Secure">HTTPS</abbr> (**https://**) protocol.  This encryption is often described as <abbr title="Secure Sockets Layer">SSL</abbr> encryption.
 
-- **SSL certificate:** *SSL Certificates are small data files that digitally bind a cryptographic key to an organization’s details.*[^1]
-- **Handshake:** *During this handshake, the client and server agree on various parameters used to establish the connection's security: The client sends the server the client's SSL version number, cipher settings, session-specific data, and other information that the server needs to communicate with the client using SSL.*[^2]
-- **Man in the middle:** *In cryptography and computer security, a man-in-the-middle attack is an attack where the attacker secretly relays and possibly alters the communication between two parties who believe they are directly communicating with each other.*[^3]
+- SSL certificate. *SSL Certificates are small data files that digitally bind a cryptographic key to an organization’s details.*[^1]
+- Handshake. *During this handshake, the client and server agree on various parameters used to establish the connection's security: The client sends the server the client's SSL version number, cipher settings, session-specific data, and other information that the server needs to communicate with the client using SSL.*[^2]
+- Man in the middle. *In cryptography and computer security, a man-in-the-middle attack is an attack where the attacker secretly relays and possibly alters the communication between two parties who believe they are directly communicating with each other.*[^3]
 
-Using encryption on the web has been regarded as essential for login and payment transactions, but is more frequently being used for all online communications. 
+Using encryption on the web has been regarded as essential for login and payment transactions, but is now frequently being used for all online communications.
 
 It's important to assess the requirement for encryption not just in the context of risk to the data for that service.  Many recent hacks against individuals have been a result of credentials leaked from insecure accounts, used to gain access to more secure services.  Facebook CEO Mark Zuckerberg had his Twitter and Pinterest accounts hacked as a result of leaked LinkedIn credentials[^4].  Twitter CEO Jack Dorney and Google CEO Sundar Pichai have had similar experiences.  If a service requires login, the likelihood is those credentials will be securing data elsewhere.  Protecting them is essential.
 
-## UK libraries
+UK libraries
+------------
 
 In a library context, patron credentials that need protecting are often a user ID and PIN/Password.  An individual's library account may then hold information such as email address, house address, date of birth, and even equalities information on an individual.  How well do UK library services protect that formation, and ensure security?  Logging in to a web catalogue should only be offered over a good standard of encryption.  Anything else would compromise that organisation's credibility to store personal data.
 
@@ -50,22 +49,22 @@ Current UK public web catalogues are shown below, with an indicator as to whethe
 
 The majority of these can be tested simply by visiting the site, but for further methodology see **what to do** suggestions below.
 
-<div class="table-responsive">
-    <table id="tblCatalogues"></table>
-</div>
+<div class="table-responsive"><table id="tblCatalogues"></table></div>
 
-## updating post
+Updating post
+-------------
 
 This post will be updated regularly to reflect changes.
 
-- Original tests completed: **July 2016**.
-- **1st September 2016**.  Replaced older catalogue listings for Welsh library authorities moving over to combined LMS.
-- **6th September 2016**. Warrington [moved to Koha LMS](https://livewirewarrington.co.uk/news/library/1025-livewire-introduce-new-library-management-system) in August 2016.
-- **1st November 2016**. Sutton moved to Axiell Arena with HTTPS security.  Tameside move to Spydus (HTTPS but with mixed content).
-- **15th November 2016**.  Darlington apply SSL certificate to their Arena site.
-- **31st December 2016**.  Cumbria have implemented encryption although there is mixed HTTP/HTTPS content.  North Lincolnshire, and Lincolnshire have also upgraded to include encryption.
+- Original tests completed July 2016.
+- 1st September 2016.  Replaced older catalogue listings for Welsh library authorities moving over to combined LMS.
+- 6th September 2016. Warrington [moved to Koha LMS](https://livewirewarrington.co.uk/news/library/1025-livewire-introduce-new-library-management-system) in August 2016.
+- 1st November 2016. Sutton moved to Axiell Arena with HTTPS security.  Tameside move to Spydus (HTTPS but with mixed content).
+- 15th November 2016. Darlington apply SSL certificate to their Arena site.
+- 31st December 2016. Cumbria have implemented encryption although there is mixed HTTP/HTTPS content.  North Lincolnshire, and Lincolnshire have also upgraded to include encryption.
 
-## what to do?
+What to do?
+-----------
 
 Are you part of a local authority?  Firstly try to ensure your IT department include the web catalogue in any annual **penetration tests** as part of their <abbr title="Public Services Network">PSN</abbr> accreditation.  Not only will the tests be carried out by external, accredited professionals, but negative results will be dealt with urgently.  For those library services that are outsourced from the local authority, this is not a reason to not have strict IT security standards.  The same tests should be completed on an annual basis.
 
@@ -75,7 +74,8 @@ Some basic testing of web security doesn't need experienced penetration testers 
 2. If already using HTTPS, can the login be accessed by HTTP instead? Try changing the address to HTTP and check it redirects back to HTTPS.
 3. If you're the site owner, check the site against an online SSL checker such as SSL Labs[^6].  This will give detailed and complex results, but also a simple grade of quality.  You should ideally be getting an A grade, anything lower report to supplier and IT to investigate.
 
-## references
+References
+----------
 
 [^1]: GlobalSign: [SSL Information Center](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/)
 [^2]: Wikipedia: [Transport Level Security](https://en.wikipedia.org/wiki/Transport_Layer_Security)

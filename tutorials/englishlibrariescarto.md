@@ -1,13 +1,13 @@
 ---
 Title: english public libraries web mapping
-Description: Using the Libraries Taskforce dataset to start creating visualisations
-Date: 2017/04/06
+Description: using the libraries taskforce dataset to start creating visualisations
+Date: 
 Type: Tutorial
-Author: @librarieshacked
+Author: dave
 GitHub: 
 TutorialComplexity: medium
 TutorialSkillsRequired: GIS,SQL
-TutorialNeeded: web browser, Carto
+TutorialNeeded: web browser,Carto
 TutorialTime: 1 hour
 TutorialType: Maps
 Template: tutorialpage
@@ -15,7 +15,8 @@ Template: tutorialpage
 
 On 30th March the Libraries Taskforce
 
-## 1.  Signup or login to Carto
+Step 1. Signup or login to Carto
+--------------------------------
 
 Carto (previously known as CartoDB) is a free online map mapping service, though the free tier of membership restricts how much data you can store, and doesn't allow private data, unless you use a paid subscription.
 
@@ -23,10 +24,10 @@ It works by uploading data into it's web interface.  As long as this data then h
 
 The [signup](https://carto.com/signup) is quite simple, and does not ask for too many details.
 
-## 2.  Upload first dataset.
+Step 2.  Upload first dataset
+-----------------------------
 
 In the Carto dashboard change 'Your maps' to 'Your datasets'
-
 
 Select to 'Add Dataset'.  This will bring up a form that provides many options for importing data - Upload, Google Drive, Dropbox.  If the data is available online you can simply enter a URL here.  The Libraries Taskforce dataset is at:
 
