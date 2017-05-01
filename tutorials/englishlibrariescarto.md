@@ -50,7 +50,7 @@ dave,bloggs
 cath,jones
 ```
 
-The Taskforce dataset looks this this.
+The Taskforce dataset looks like this.
 
 ```
 Static Public Libraries (open at 1 July 2016),,Location,,,
@@ -65,11 +65,57 @@ It's also worth removing the very first line as there are two header rows.
 
 Then repeating the process but selecting to upload a file instead of providing a URL it all gets loaded into Carto.  Effectively this is then creating a single database table.  Carto automatically adds a numeric ID and a 'the_geom' column:
 
-'the_geom is the column that will store the location (geometry) of each library.  There is no recognised location field in the uploaded data so Carto shows these as 'null'.  What is needed is to use the address and postcode data to georeference the libraries.
+'the_geom is the column that will store the location (geometry) of each library.  There is no recognised location field in the uploaded data so Carto shows these as 'null'.
 
-Carto offers a number of options for georeferencing data: Lon/Lat columns, 
 
-This is one thing that is not immediately clear in Carto, but to georeference using postcodes you need to select to use the postcode column, and specify United Kingdom as the country.  
+Geocoding the data
+------------------
 
-That will whirr away for a couple of mins
+Carto offers some geocoding facilities 'out of the box' which would allow for geocoding from address data (such as ).  In the UK
+
+Also, it's more fun doing it with open data.
+
+
+Step 3.  Upload Code Point Open
+-------------------------------
+
+Code Point Open is one of the Ordnance Survey Open Data products.
+
+The data comes in a zip file with a set of files for each postcode area (e.g. BA.csv).  We just want to upload everything in one go so you can combine the files ibto one using a classic command prompt in windows (cmd.exe).
+
+For Windows, while in the directory run:
+
+
+copy *.csv postcodes.csv
+
+
+(Linux alternatives will be available).
+
+The data is then a little large, and on the free version of Carto we're 
+
+To save time, the associated GitHub repository for this tutorial includes a copy of the final postcodes.csv file that can be uploaded straight to Carto.
+
+Upload that CSV into Carto.
+
+
+
+Step 4.  Data checking
+----------------------
+
+So with libraries and official postcodes uploaded some data checking can be done.
+
+
+select * from libraries where replace(postcode, ' ', '') not in (select replace(postcode, ' ', '') from postcodes)
+
+The replace() function around each postcode just removes the spaces when checking for matching postcodes.  This just allows for any situations where the spacing may be different between the postcodes in the libraries and code point open dataset.
+
+
+
+
+
+
+
+
+
+
 
