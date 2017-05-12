@@ -216,7 +216,7 @@ Full JavaScript code:
             // and title, author, and year
             $('#divDescription').append('&lt;p&gt;&lt;b&gt;Title:&lt;/b&gt; ' + ui.item.title  + '&lt;/p&gt;');
             $('#divDescription').append('&lt;p&gt;&lt;b&gt;Author:&lt;/b&gt; ' + ui.item.author  + '&lt;/p&gt;');
-            $('#divDescription').append('&lt;p&gt;&lt;b&gt;First published year:&lt;/b&gt; ' + ui.item.publishedDate  + '&lt;/p&gt;');			
+            $('#divDescription').append('&lt;p&gt;&lt;b&gt;First published year:&lt;/b&gt; ' + ui.item.publishedDate  + '&lt;/p&gt;';
             // and the usual description of the book
             $('#divDescription').append('&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt; ' + ui.item.description  + '&lt;/p&gt;');
             // and show the link to oclc (if we have an isbn number)
