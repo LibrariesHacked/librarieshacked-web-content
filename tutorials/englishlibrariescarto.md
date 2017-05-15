@@ -13,14 +13,32 @@ TutorialType: Maps
 Template: tutorialpage
 ---
 
-On 30th March the Libraries Taskforce
+On 30th March the Libraries Taskforce released [Public libraries in England: basic dataset](https://data.gov.uk/dataset/public-libraries-in-england-basic-dataset).  This listed all libraries in England (statutory and non-statutory).
+
+- Service (e.g. Gloucestershire)
+- Name (e.g. Ashby-De-La-Zouch)
+- Address
+- Postcode
+- Email
+- Website
+
+Not necessarily as much as could have been hoped, but a dataset nonetheless.  One limiting factor in the data is there is no good location data for the libraries.  For each property in the UK Ordnance Survey hold detailed address, location coordinates, and a reference - UPRN.  This data is not open data.  It is available as part of an OS product called AddressBase, which is free to use for any public sector organisation, but expensive for others.  However the Ordnance Survey have a presumption to public policy for open data, so with the right requests made (perhaps by the taskforce) it would 
+
+This tutorial will attempt to map those libraries using freely available open data.  This is surprisingly difficult.  Those familiar with mapping tools, perhaps Google fusion tables or MapData, may find this difficult to believe.  Just upload the CSV file into those products and it gives you a map.  That is true, but is it open data?
+
+| Google Fusio Tables |
+| MapData |
+
+
+
+
 
 Step 1. Signup or login to Carto
 --------------------------------
 
-Carto (previously known as CartoDB) is a free online map mapping service, though the free tier of membership restricts how much data you can store, and doesn't allow private data, unless you use a paid subscription.
+Carto (previously known as CartoDB) is a free online map mapping service, though the free tier of membership restricts how much data you can store and doesn't allow private data.
 
-It works by uploading data into it's web interface.  As long as this data then has some kind of spatial component (such as co-ordinates, or even addresses) you can visualise these on a map, and embed that map into websites, or as standalone link.
+It works by a process of uploading data into it's web interface.  As long as this data then has some kind of spatial component (such as co-ordinates, or even addresses) you can visualise the data in map form, and optionally embed that map into websites.
 
 The [signup](https://carto.com/signup) is quite simple, and does not ask for too many details.
 
@@ -42,7 +60,7 @@ In this case you can leave it checked and click, which presents this error.
 
 
 
-Oh dear.  Malformed CSV?  CSV (comma separated values) files are a text format for storing data that uses commas to separate out columns.  It is customary, though not manadatory, for the first row to contain the column headers, for example:
+Oh dear.  Malformed CSV?  CSV (comma separated values) files are a text format for storing data that uses commas to separate out columns.  It is customary, though not mandatory, for the first row to contain the column headers, for example:
 
 ```
 firstname,surname
@@ -55,18 +73,18 @@ The Taskforce dataset looks like this.
 ```
 Static Public Libraries (open at 1 July 2016),,Location,,,
 Library service,Library name,Postal address,Postcode,Contact email,URL of library website
-Barking and Dagenham,Barking,"2 Town Square, Barking",IG11 7NB,barking.library@lbbd.gov.uk,www.lbbd.gov.uk/libraries 
-...more rows of data
+Barking and Dagenham,Barking,"2 Town Square, Barking",IG11 7NB,barking.library@lbbd.gov.uk,www.lbbd.gov.uk/libraries
 ```
 
-On the face of it, it looks OK.  Downloading it and trying to upload into Carto doesn't work but after saving it as UTF-8 encoding rather than ANSI, it then seems to work fine.  The lesson here is that data processes rarely go to plan!  Be prepared to do some messing about with data.
+On the face of it, it looks OK.  Downloading it and trying to upload into Carto doesn't work but after converting and saving it as UTF-8 encoding rather than ANSI, it then seems to work fine.  This can be done in a tool like notepad  The lesson here is that data processes rarely go to plan!  Be prepared to do some messing about with data.
 
-It's also worth removing the very first line as there are two header rows.
+It's also worth removing the very first line before uploading as there are two header rows.
 
-Then repeating the process but selecting to upload a file instead of providing a URL it all gets loaded into Carto.  Effectively this is then creating a single database table.  Carto automatically adds a numeric ID and a 'the_geom' column:
+Then repeating the process but selecting to upload a file instead of providing a URL it all gets loaded into Carto.  This is effectively creating a new database table in Carto. Carto automatically adds columns for numeric ID and 'the_geom'.
 
-'the_geom is the column that will store the location (geometry) of each library.  There is no recognised location field in the uploaded data so Carto shows these as 'null'.
 
+
+'the_geom is the column that will store the location (geometry) of each library.  There is no recognised location field in the uploaded data so Carto will currently show these as 'null'.
 
 Geocoding the data
 ------------------
@@ -79,17 +97,16 @@ Also, it's more fun doing it with open data.
 Step 3.  Upload Code Point Open
 -------------------------------
 
-Code Point Open is one of the Ordnance Survey Open Data products.
+Code Point Open is an Ordnance Survey Open Data product.  It provides a list of all valid postcode in 
 
-The data comes in a zip file with a set of files for each postcode area (e.g. BA.csv).  We just want to upload everything in one go so you can combine the files ibto one using a classic command prompt in windows (cmd.exe).
-
-For Windows, while in the directory run:
+The data comes in a zip file with a file for each postcode area (e.g. BA.csv).  We just want to upload everything in one go so need to combine the files into one.  This can be done using a classic command prompt in windows (cmd.exe).
 
 
 copy *.csv postcodes.csv
 
 
-(Linux alternatives will be available).
+In Linux this could be done
+
 
 The data is then a little large, and on the free version of Carto we're 
 

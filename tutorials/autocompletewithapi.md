@@ -13,24 +13,21 @@ TutorialType: WebDevelopment
 Template: tutorialpageautocomplete
 ---
 
-The number of freely available web APIs gives plenty of opportunity to create a wide variety of web applications.  But sometimes these services can also be used in the background to provide small user experience improvements.  This tutorial will cover using an API to provide auto-complete functionality for a website text box.
+Open Web APIs give plenty of opportunity to create a wide variety of applications, reusing systems and data for new tools.  But sometimes these services can also be used to provide small user-experience improvements.  This tutorial will cover using an API to provide auto-complete functionality on a website.
 
 Why use auto-complete?
 ----------------------
 
-A book search is a good example where auto-complete functionality can be useful.  When using the catalogue searches on library sites, the steps to search for a book may be:
+A book search is a good example where auto-complete functionality can be useful.  When using the catalogue search on library sites the steps may be:
 
 1. Enter the search term either for an author, or a title.  If author it must be in the form **surname, first name**.  Hit search.
 2. Scroll through list of search results (**page 3 of 180...**).  If too many results you can go back the original screen and modify your search.  If no results the results page will be empty.
 
-That doesn't give users a speedy experience.  Using auto-complete allows you to show results as the user types.  As they type more, the results are refined by the increased detail.  Once the user sees the option they want, they can select it.
+That doesn't give users a speedy experience.  Using auto-complete allows you to show data as the user types.  As they type more, the results are refined by the increased detail.  Once the user sees the option they want, they can select it.  The underlying data could come from many sources.  Sometimes (like in Google) it's common searches that other people have performed.  Other times, it's actually looking at the underlying database being searched and giving an indication if there are any matches.
 
-This kind of dynamic search information can prompt the user for what they're looking for (if they have half a title in their mind).  It can also be used to provide them details of their search results before they've even pressed search.  There is often no point in showing a results page of zero results, unless an easy option to adjust the search is provided, or other useful information such as similar words and spelling corrections.
+This kind of dynamic search information can prompt the user for what they're looking for (if they have half a title in their mind).  It can also be used to provide them details of their search results before they've even pressed search.  There is often no point in showing a results page of zero results, unless an easy option to adjust the search is provided.  Could the user be informed before they have run the search that no results will be returned?
 
-Services to use
----------------
-
-The [Google Books API](http://books.google.co.uk/) is one option to look up books.  There are plenty of others though, [open library](http://openlibrary.org) for example.  The Google Books API should normally be used with an API key, which is granted by Google and needs to be included in the URL when a search is made.
+The [Google Books API](http://books.google.co.uk/) is one API to provide book searching.  There are plenty of others though, [open library](http://openlibrary.org) for example.  The Google Books API should normally be used with an API key, which is granted by Google and needs to be included in the URL when a search is made.
 
 Step 1. Start with a basic HTML5 template
 -----------------------------------------
@@ -49,7 +46,7 @@ The example will be done within a single web page, so the following is a basic H
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-Step 2. Add the required references to JavaScript and CSS files
+Step 2. Add references to JavaScript and CSS files
 ---------------------------------------------------------------
 
 For this tutorial we need jQuery and jQuery UI to provide the auto-complete functionality.  These are JavaScript **libraries**, created to simplify common JavaScript tasks, making them quicker and easier to code.  They are added to the page as shown below:
@@ -71,16 +68,16 @@ The files referred to here are held at **code.jquery.com**.  These could be down
 
 - Users already having visited a site referencing those same JavaScript/CSS files won't need to download them again.  Their browser will cache them, effectively speeding up your site and saving the user time and data usage.
 - The files are hosted on web servers where performance is optimised, likely faster than your web server.
-- Less file space is used on your web server and less cost to your bandwidth allowances.
+- Less file space is used on your web server, and less cost to your bandwidth allowances.
 
-One thing to watch out for when using files held on the web, you need to ensure you have a web connection when running the page on your local computer.  In this case the tutorial will need web access anyway to communicate with the API.
+You do need to ensure you have a web connection when running the page on your own computer.  In this case the tutorial will need web access anyway to communicate with the API.
 
-In the HTML a new file is also referenced, **script.js**.  This will contain the custom JavaScript code written in part 4.
+In the HTML a new file is also referenced, **script.js**.  This will contain the custom JavaScript code, to be written in part 4.
 
 Step 3. Add the basic textbox HTML
 ----------------------------------
 
-The web page itself will just have a header and an input text box, and a space where details of the book will be added dynamically later.
+The web page will just have a header and an input text box, and a space where details of the book will be added dynamically later.
 
 <pre class="prettyprint linenums"><code class="language-html">&lt;body&gt;
     &lt;h1&gt;auto-complete book search example&lt;/h1&gt;
