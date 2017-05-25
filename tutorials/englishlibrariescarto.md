@@ -127,9 +127,24 @@ select * from libraries where replace(postcode, ' ', '') not in (select replace(
 The replace() function around each postcode just removes the spaces when checking for matching postcodes.  This just allows for any situations where the spacing may be different between the postcodes in the libraries and code point open dataset.
 
 
-
-
-
+| Library name | Original postcode | Actual postcode | Reason |
+| ------------ | ----------------- | --------------- | ------ |
+| Paulton | BS29 7QG | BS39 7QG | Typo.  Should be 39, not 29. |
+| Shard End Library | B34 7AG | ? | Mystery.  Postcode is no longer in use but still listed.
+| Boscombe | BH1 1BY | BH5 1BY |  |
+| Bingley | BD16 1AW | ?
+| Keighley | BD21 3SX | BD21 2AT | Incorrect on library website.
+| Preston Community | HA9 8PL | ? |
+| Winslow Community| MK18 3RB | MK18 3DL |  |
+| Appleby | CA16 1QP | CA16 6QP | 1 should have been a 6. |
+| Brampton | CA8 8NX | CA8 1NW | 
+| Burton Book Drop | LA6 7NA | LA6 1NA | Incorrect on library website.  Postcode for Burton Memorial Hall is LA6 1NA. |
+| Consett | DH8 5AT | ? | Postcode no longer exists.
+| Newton Aycliffe | DL5 5QG | DL5 4EH | Postcode no longer exists.  Library relocated to Newton Aycliffe Leisure Centre. |
+| Crowborough | TN6 1DH | ? | Postcode no longer exists.  Incorrect on library website.  
+| Chelmsford | CM1 1LH | CM1 1QH | Typo.  L should have been a Q. |
+| Frinton | C013 9DA | CO13 9DA | Typo.  0 should have been O. |
+| Alresford | S024 9AQ | SO24 9AQ | Typo. 0 should have been O. |
 
 
 
