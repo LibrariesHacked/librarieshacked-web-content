@@ -1,11 +1,11 @@
 ---
 Title: website launched 13th june
 Description: introduction to libraries hacked
-Date: 2014/06/13
 Type: Article
-Author: dave
 Tags: introduction,hacking,web services,analysis,library data
 Template: blogpage
+Author: dave
+Date: 2014/06/13
 ---
 
 { libraries: hacked } is a website designed to promote open-source technology hacks and projects in libraries.

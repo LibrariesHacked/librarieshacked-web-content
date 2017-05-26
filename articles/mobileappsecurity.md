@@ -1,11 +1,11 @@
 ---
 Title: mobile app security testing
 Description: investigating the security of mobile apps.
-Date: 2015/05/31
 Type: Article
-Author: dave
 Tags: mobile apps,library apps,HTTPS,security,personal data
 Template: blogpage
+Author: dave
+Date: 2015/05/31
 ---
 
 Web app security and architecture

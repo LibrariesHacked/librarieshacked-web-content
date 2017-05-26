@@ -1,11 +1,11 @@
 ---
 Title: world library rankings
 Description: ranking literacy by using global library provision
-Date: 2016/05/23
 Type: Article
-Author: dave
 Tags: library rankings,OCLC global stats,literacy
 Template: blogpage
+Author: dave
+Date: 2016/05/23
 ---
 
 The [OCLC global library stats](https://www.oclc.org/global-library-statistics.en.html) were an attempt by the OCLC to collect global stats for libraries.  These include number of libraries, volumes, members, and librarians in public/academic/school/special libraries.  The stats were manually collected and the relevant sources listed for each entry.  The sources range from latest national stats, to decades-old library travel guides.

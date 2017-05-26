@@ -1,14 +1,14 @@
 ---
 Title: IP data - mapping applicant postcodes
 Description: Looking at intellectual property trademark and patent location data to produce interactive maps.
-Date: 2016/03/07
 Type: Article
-Author: dave
 Tags: mapping,intellectual property,patents,postcodes
 Template: blogpage
+Author: dave
+Date: 2016/03/07
 ---
 
-**This is the first of two posts on Intellectual Property data in preparation for a hackathon at Manchester Library on 12th March 2016.  Rather than a detailed tutorial post, this is an overview of the datasets and process for mapping currently available IP data.**
+This is the first of two posts on Intellectual Property data in preparation for a hackathon at Manchester Library on 12th March 2016.  Rather than a detailed tutorial post, this is an overview of the datasets and process for mapping currently available IP data.
 
 To take part in the event at Manchester library visit [EventBrite - IP Magnet Challenge](https://www.eventbrite.co.uk/e/the-ip-magnet-challenge-intellectual-property-data-hackathon-tickets-21674235221).
 
@@ -26,9 +26,9 @@ For data analysis, these services aren't ideal - web seaches find specific infor
 There are a couple of datasets listed on Gov.uk, where the data has been compiled into snapshots in order for statistical research to be undertaken.  A full description of the fields is available on the pages for each dataset.
 
 - [Gov.UK IPO: Patent data](https://www.gov.uk/government/publications/ipo-patent-data) (updated 26th October 2015) A snapshot of patent applications received and subsequently published by the Intellectual Property Office.
-- [Gov.UK IPO: Trade mark data](https://www.gov.uk/government/publications/ipo-trade-mark-data-release) (published 23rd February 2015) A snapshot of trade mark applications received by the Intellectual Property Office. 
+- [Gov.UK IPO: Trade mark data](https://www.gov.uk/government/publications/ipo-trade-mark-data-release) (published 23rd February 2015) A snapshot of trade mark applications received by the Intellectual Property Office
 
-**Licence: The data is released under an Open Government Licence**
+Licence: The data is released under an Open Government Licence.
 
 Patents data
 ------------

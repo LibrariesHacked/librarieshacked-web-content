@@ -1,16 +1,16 @@
 ---
 Title: open data, libraries and hack events
 Description: an introduction to open data and library hacking
-Date:
 Type:
-Author: dave
 Tags: open data,libraries,hack events
 Template: blogpage
+Author: dave
+Date:
 ---
 
 Open Data is data made public with a non-restrictive licence, allowing anyone to reuse it for any purpose.  The 5-star open data plan provides guidance on open data quality.  This includes just making stuff available (maybe a PDF - 1 star), to open formats linked to other datasets (linked open data - 5 stars!)[1].
 
-The UK is currently top ranked for open data by the Open Data Barometer[2], and 2nd by the Open Knowledge Foundation[3].  This is a partly due to open data enthusiasts pushing for more national and local data, and how organisations have responded to that demand. 
+The UK is currently top ranked for open data by the Open Data Barometer[2], and 2nd by the Open Knowledge Foundation[3].  This is a partly due to open data enthusiasts pushing for more national and local data, and how organisations have responded to that demand.
 
 Why make data open?  Studies point to wider economic benefit, such as an Open Data Institute (ODI) and Nesta report suggesting a 5 to 10-fold return on investment over 3 years[4].  But for an organisation, benefits can be imagined by asking very simple questions.  Are we using data to it's full potential? Could it be merged with data from elsewhere?  Are those sources open and available?  Do we have the time and skills to do all these things, or should we let other people have a go?
 

@@ -1,11 +1,11 @@
 ---
 Title: wuthering hacks
 Description: newcastle libraries open data process and library hack day 
-Date: 2016/05/11
 Type: Article
-Author: dave
 Tags: newcastle libraries,library hacks,open data
 Template: blogpage
+Author: dave
+Date: 2016/05/11
 ---
 
 Newcastle Libraries held a hack day on 9th April: Wuthering Hacks.

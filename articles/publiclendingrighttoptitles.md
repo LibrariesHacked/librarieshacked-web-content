@@ -2,10 +2,10 @@
 Title: public lending right top titles
 Description: UK most borrowed titles against different regions in 2014
 Type: Article
-Date: 2015/02/18
-Author: @librarieshacked
-Template: blogpagepubliclendingright
 Tags: public lending right,top titles
+Template: blogpagepubliclendingright
+Author: dave
+Date: 2015/02/18
 ---
 
 Every year Public Lending Right release data on the most popular books and authors in UK libraries.  This data is made up from select contributing authorities.  There is a system for accessing PLR data ([LEWIS](https://www.plr.uk.com/lewis/lewis.aspx)), but only accessible with a qualifying library account.

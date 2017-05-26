@@ -1,11 +1,11 @@
 ---
 Title: CIPFA library stats - a race to the bottom?
 Description: issues with the annual UK library performance measures
-Date: 2016/01/05
 Type: Article
-Author: dave
 Tags: public libraries,performance indicators,CIPFA stats,accountability
 Template: blogpage
+Author: dave
+Date: 2016/01/05
 ---
 
 Many public libraries authorities in the UK submit <abbr title="Chartered Institute of Public Finance and Accounting">CIPFA</abbr> returns each year, answering a set of pre-defined performance measures.  These include counts of loans, visits, service points, expenditure, and more.  These are sent to the Chartered Institute of Public Finance and Accounting, compiled, and released as annual library reports.  These are available to subscribers, or for £475 + VAT.

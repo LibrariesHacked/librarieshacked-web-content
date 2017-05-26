@@ -1,14 +1,14 @@
 ---
 Title: mobile libraries map
 Description: visualising the importance of mobile libraries.
-Date: 2015/01/11
 Type: Article
-Author: dave
 Tags: mobile libraries,library coverage,bath and north east somerset
 Template: blogpagemobilelibraries
+Author: dave
+Date: 2015/01/11
 ---
 
-**Everyone should expect to live within a reasonable distance of their library service.**  
+Everyone should expect to live within a reasonable distance of their library service.
 
 While that may seem like a luxury, mobile library services are a good method for councils to provide a service that spans across the whole authority.
 

@@ -1,11 +1,11 @@
 ---
 Title: hybrid events
 Description: exploring hybrid events within hacks and code events.
-Date: 2014/09/09
 Type: Article
-Author: dave
 Tags: hack events,hybrid events,code collaboration,twitter walls,screen sharing
 Template: blogpage
+Author: dave
+Date: 2014/09/09
 ---
 
 A hybrid event, as currently described on wikipedia is

@@ -1,11 +1,11 @@
 ---
 Title: make it open
 Description: a cuture of open by default for 2017
-Date: 2017/01/02
 Type: Article
-Author: dave
 Tags: library resolutions, open data
 Template: blogpage
+Author: dave
+Date: 2017/01/02
 ---
 
 There are good reasons for publishing open data, which is why it has such support from community open data groups, is [encouraged by the government](https://www.gov.uk/government/publications/open-data-white-paper-unleashing-the-potential), and by organisations such as the [Open Data Institute](http://theodi.org/).
