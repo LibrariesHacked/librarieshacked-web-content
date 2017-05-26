@@ -1,16 +1,17 @@
 ---
 Title: a british national bibliography smartwatch app
 Description: creating a smartwatch app to show books published and set in the current location
-Date: 2015/07/30
 Type: Tutorial
+Tags: 
+Template: tutorialpage
 Author: dave
+Date: 2015/07/30
 GitHub: bnb-books-pebble
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,SPARQL,PebbleJS
 TutorialNeeded: web browser
 TutorialTime: 1 hour
 TutorialType: WebDevelopment
-Template: tutorialpage
 ---
 
 With the Apple watch, various Android watches, and Microsoft [releasing the Band](https://www.microsoft.com/microsoft-band/en-gb), 2015 may still be set to be the year of the smart watch (though this telegraph article suggests in terms of **wearables** it is the [year of the smart bra](http://www.telegraph.co.uk/news/predictions/technology/11306735/wearable-technology-trend.html)).

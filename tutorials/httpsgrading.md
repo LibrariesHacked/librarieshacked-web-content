@@ -1,16 +1,17 @@
 ---
 Title: encryption, library catalogues, and security testing
 Description: how seriously are UK public libraries taking web security, and how can it be tested?
-Date: 2016/07/18
 Type: Tutorial
+Tags:
+Template: tutorialpagehttpsgrading
 Author: dave
+Date: 2016/07/18
 GitHub: 
+TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: encryption, HTTPS, penetration testing, security
 TutorialNeeded: web browser
 TutorialTime: 1 hour
-TutorialType: WebDevelopment
-Template: tutorialpagehttpsgrading
 ---
 
 You want to talk in confidence with an individual.  To do this you need to:

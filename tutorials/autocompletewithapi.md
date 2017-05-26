@@ -1,16 +1,17 @@
 ---
 Title: book search auto-complete textbox
 Description: a tutorial on creating an auto-completing text box for providing book search suggestions
-Date: 2014/07/05
 Type: Tutorial
+Tags: 
+Template: tutorialpageautocomplete
 Author: dave
+Date: 2014/07/05
 GitHub: tutorial_autocomplete
+TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: HTML,JavaScript,jQuery,JSON
 TutorialNeeded: an HTML text editor of your choice
 TutorialTime: 1 hour
-TutorialType: WebDevelopment
-Template: tutorialpageautocomplete
 ---
 
 Open Web APIs give plenty of opportunity to create a wide variety of applications, reusing systems and data for new tools.  But sometimes these services can also be used to provide small user-experience improvements.  This tutorial will cover using an API to provide auto-complete functionality on a website.

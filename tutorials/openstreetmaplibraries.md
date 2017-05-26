@@ -1,16 +1,17 @@
 ---
 Title: open street map and libraries
 Description: using open street map to find a list of libraries
-Date: 
 Type: Tutorial
+Tags:
+Template: tutorialpage
 Author: dave
+Date: 
 GitHub:
+TutorialType: Maps
 TutorialComplexity: low
 TutorialSkillsRequired: GIS
 TutorialNeeded: Web broswer
 TutorialTime: 1 hour
-TutorialType: Maps
-Template: tutorialpage
 ---
 
 This is the first in a series of posts on finding data listings of UK libraries.  These will not necessarily be open data sources (which would be ideal), but any licensing restrictions will be covered.  The first one is Open Street Map.

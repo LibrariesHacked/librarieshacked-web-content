@@ -1,6 +1,6 @@
 ---
-Title: guardian datablog lending figures
-Description: library lending figures from 2011, analysed by the guardian.  lots of visualisations and link to download spreadsheet
+Title: guardian datablog. lending figures
+Description: library lending figures, analysed by the guardian.  lots of visualisations and link to download spreadsheet
 Type: Spreadsheet
 Format: google docs, HTML
 Year: 2011

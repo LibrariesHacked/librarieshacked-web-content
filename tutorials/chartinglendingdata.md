@@ -1,16 +1,17 @@
 ---
 Title: creating data driven dashboards
 Description: creating interactive charts that cross filter data to provide dashboards.
-Date: 2015/05/05
 Type: Tutorial
+Tags: 
+Template: tutorialpagedcjslending
 Author: dave
+Date: 2015/05/05
 GitHub: 
+TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,DCJS,D3
 TutorialNeeded: web browser,a text editor of your choice
 TutorialTime: 1 hour
-TutorialType: WebDevelopment
-Template: tutorialpagedcjslending
 ---
 
 Creating charts from data is a standard process using tools such as Excel, and there are many web publishing tools to create charts for the web (like [Highcharts](http://www.highcharts.com/), [Google Charts](https://developers.google.com/chart/), and [Dimple](http://dimplejs.org/)).

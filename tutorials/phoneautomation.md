@@ -1,16 +1,17 @@
 ---
 Title: automation on mobile operating systems
 Description: using SL4A to make use of mobile device features and automate tasks.
-Date: 2014/07/25
 Type: Tutorial
+Tags:
+Template: tutorialpage
 Author: dave
+Date: 2014/07/25
 GitHub: 
+TutorialType: MobileDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: python,scripting
 TutorialNeeded: an android device, a python text editor of your choice
 TutorialTime: 1 hour
-TutorialType: MobileDevelopment
-Template: tutorialpage
 ---
 
 The shift to using mobile operating systems like Android and iOS has led to an increased use of phones and tablets as mini-PCs, with the ability to perform the same productivity tasks PCs are used for.  The keyboards are more fiddly, the screens smaller (although often with greater resolutions than many monitors), but it's easy enough to cast the display onto a TV and add a bluetooth mouse/keyboard.  For many people mobile tech is able to replace their old PC, with add on devices only used when necessary.

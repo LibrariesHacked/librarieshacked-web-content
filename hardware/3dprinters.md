@@ -4,5 +4,5 @@ Description: printing objects, not just words and images.  3D printers are the m
 Type: HardwarePrinting
 HardwareUrl: http://www.makerbot.com/
 HardwareUrlTitle: makerbot 3D printers
-Price: £1000-£5000.
+Price: £1000-£5000
 ---

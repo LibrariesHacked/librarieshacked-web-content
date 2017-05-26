@@ -1,16 +1,17 @@
 ---
 Title: YQL and global library stats
 Description: using YQL to query and merge OCLC global library stats
-Date: 2014/07/11
 Type: Tutorial
+Tags:
+Template: tutorialpageyqlstats
 Author: dave
+Date: 2014/07/11
 GitHub: 
+TutorialType: DataAnalysis
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,XML,JSON,SQL
 TutorialNeeded: nothing
 TutorialTime: 1 hour
-TutorialType: DataAnalysis
-Template: tutorialpageyqlstats
 ---
 
 YQL is a query language developed by Yahoo, and used for querying and combining data from around the web.  There is more information at the Yahoo Developer Pages, and it's worth exploring for anyone involved in web/app development and web services:

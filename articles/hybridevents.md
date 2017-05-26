@@ -22,17 +22,17 @@ Virtual attendance allows more people to be involved but also a more diverse gro
 
 A number of useful solutions can be used for this.
 
-twitter walls
+Twitter walls
 -------------
 
 Online solutions such as [live tweet app](https://www.livetweetapp.com/en/) and [twitter fall](http://www.twitterfall.com/) allow for display of tweets (from a particular hashtag or other search terms) on a dedicated broadcast screen. These can also allow for event photographs to be shown by encouraging participants to tweet pictures alongside hashtags.  These are then shown on the twitter wall.
 
-screen sharing with audio
+Screen sharing with audio
 -------------------------
 
 During presentations and demos, online screen sharing can be used, with options for remote control, meaning an online participant could either follow, or lead, a presentation.
 
-private discussion and social media
+Private discussion and social media
 -----------------------------------
 
 [MoreConference](http://www.moreconference.com) provide a private social network for conferences and events, and there are many alternatives (not necessarily conference based), to provide discussions forums, and profiles for groups.
@@ -42,7 +42,7 @@ GitHub or other source control solutions
 
 Github is already widely used in hack events, but any online source control will enable [collaboration](https://help.github.com/categories/63/articles) between virtual and physical participants working on code projects.  Having official GitHub [organisation accounts](https://help.github.com/articles/creating-a-new-organization-account) and giving access to all participants can help encourage online participation.
 
-tickets and registration
+Tickets and registration
 ------------------------
 
 The practicalities of a physical event usually require registration and a limited number of places, but having online participants, and not involving these in a registration process could create an unnecessary divide.  Often event solutions such as [meetup](http://www.meetup.com/) and [eventbrite](http://www.eventbrite.co.uk/) offer more than just registration for events - they send out reminders of what events individuals are attending, provide discussion forums, and mailing lists.  It would be useful to have all attendees registered with these solutions.

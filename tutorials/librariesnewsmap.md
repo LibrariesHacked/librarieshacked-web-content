@@ -1,16 +1,17 @@
 ---
 Title: turning RSS WordPress posts into tabular data
 Description: accessing public libraries news posts and parsing into individual news items
-Date: 2015/01/26
 Type: Tutorial
+Tags: 
+Template: tutorialpagelibrariesnews
 Author: dave
+Date: 2015/01/26
 GitHub: 
+TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,jQuery,AJAX,YQL 
 TutorialNeeded: an HTML/script editor
 TutorialTime: 1 hour
-TutorialType: WebDevelopment
-Template: tutorialpagelibrariesnews
 ---
 
 [Public Libraries News](http://www.publiclibrariesnews.com/) is the leading source for libraries news in the UK, providing regular posts via a WordPress site which also feeds out to email subscribers and RSS readers.  One particularly impressive aspect is that each news post has a uniform layout with a regular HTML structure - an editorial, changes, ideas, national, international, and local news.  Being structured in this way effectively makes it queryable like a database, with the ability to split up the details of the posts into datasets.

@@ -1,16 +1,17 @@
 ---
 Title: data analysis during a library consultation
 Description: delving into the data used to close libraries
-Date: 2015/04/19
 Type: Tutorial
+Tags: 
+Template: tutorialpagebristollibraries
 Author: dave
+Date: 2015/04/19
 GitHub: 
+TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: mapping,JavaScript,web services
 TutorialNeeded: a text editor
 TutorialTime: 2 hours
-TutorialType: WebDevelopment
-Template: tutorialpagebristollibraries
 ---
 
 Bristol have entered a period of consultancy [with a proposal](

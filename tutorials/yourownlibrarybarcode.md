@@ -1,16 +1,17 @@
 ---
 Title: making your own library account barcode
 Description: a new library app advertises an on screen barcode - but you can do your own
-Date: 2015/01/06
 Type: Tutorial
+Tags:
+Template: tutorialpageyourownbarcode
 Author: dave
+Date: 2015/01/06
 GitHub: 
+TutorialType: WebDevelopment
 TutorialComplexity: low
 TutorialSkillsRequired: JavaScript
 TutorialNeeded: a mobile device
 TutorialTime: 30 mins
-TutorialType: WebDevelopment
-Template: tutorialpageyourownbarcode
 ---
 
 A recent news story announced that Calgary Public Library were about to release a new smartphone app to replace membership cards.  By displaying a barcode on a phone.

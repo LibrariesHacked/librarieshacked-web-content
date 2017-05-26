@@ -1,16 +1,17 @@
 ---
 Title: making interactive web charts with Highcharts
 Description: linking to CSV data to quickly publish live charts on the web.
-Date: 2015/11/30
 Type: Tutorial
+Tags: 
+Template: tutorialpagehighcharts
 Author: dave
+Date: 2015/11/30
 GitHub: 
+TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: JavaScript,Highcharts
 TutorialNeeded: web browser
 TutorialTime: 1 hour
-TutorialType: WebDevelopment
-Template: tutorialpagehighcharts
 ---
 
 The [tools page](https://www.librarieshacked.org/tools) on this site gives some examples of tools for data analysis and data visualisation.  There are too many to list, but [HighCharts](http://www.highcharts.com/) is an especially easy charting library to create a wide variety of interactive charts with relatively little coding knowledge or time required.

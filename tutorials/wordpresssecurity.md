@@ -1,16 +1,17 @@
 ---
 Title: making sure your hack sites can't be hacked
 Description: WordPress is a popular platform for hack sites - but it leaves security to the administrator.
-Date: 2014/07/07
 Type: Tutorial
+Tags:
+Template: tutorialpage
 Author: dave
+Date: 2014/07/07
 GitHub: 
+TutorialType: WebDevelopment
 TutorialComplexity: low
 TutorialSkillsRequired: WordPress,security
 TutorialNeeded: a WordPress site
 TutorialTime: 30 mins
-TutorialType: WebDevelopment
-Template: tutorialpage
 ---
 
 It's difficult to know how many websites use WordPress, but various reports suggest it's around 20% of all sites:

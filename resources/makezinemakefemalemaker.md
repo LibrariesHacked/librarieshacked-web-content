@@ -1,5 +1,5 @@
 ---
-Title: make: make a female maker
+Title: make. make a female maker
 Description: case study of how to get more girls involved in maker spaces and maker faires.
 Type: ResourcesDiversity
 Year: 2014

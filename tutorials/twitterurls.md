@@ -1,16 +1,17 @@
 ---
 Title: extracting link data from twitter searches
 Description: creating a summary of links from twitter hashtags, for revisiting later
-Date: 2014/08/1
 Type: Tutorial
+Tags:
+Template: tutorialpagetwitterurls
 Author: dave
+Date: 2014/08/1
 GitHub: 
+TutorialType: WebDevelopment
 TutorialComplexity: medium
 TutorialSkillsRequired: JQuery,JavaScript,JSON,SQL
 TutorialNeeded: an HTML editor of your choice
 TutorialTime: 2 hours
-TutorialType: WebDevelopment
-Template: tutorialpagetwitterurls
 ---
 
 When following hashtags on twitter for conferences or chats there are often a lot of links being thrown about.  With a stream of tweets going on it's normally necessary to save these for later.  You can favourite the tweets, although this relies on catching the tweet at the time.  Or search twitter later, although as far as a summary goes there may be loads of links.   And the tweets don't always give a good enough context to show more information about what the link contains.

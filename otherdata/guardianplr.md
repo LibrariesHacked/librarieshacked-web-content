@@ -1,5 +1,5 @@
 ---
-Title: guardian datablog public lending right 2012 - 2013
+Title: guardian datablog. public lending right
 Description: public lending right data from 2013, analysed by the guardian.  visualisations and link to download spreadsheet
 Type: Spreadsheet
 Format: google docs,HTML

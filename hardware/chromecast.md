@@ -4,5 +4,5 @@ Description: the dongle sized receiver that plugs into a tv and allows content s
 Type: HardwarePresenting
 HardwareUrl: http://www.google.co.uk/intl/en_uk/chrome/devices/chromecast/
 HardwareUrlTitle: chromecast google site
-Price: £30.
+Price: £30
 ---
