@@ -25,7 +25,7 @@ On 30th March 2017 the Libraries Taskforce released [Public libraries in England
 
 Not as much as could have been hoped, but a dataset nonetheless.  One limiting factor in the data is there isn't good location data for the libraries.  For each property in the UK Ordnance Survey hold detailed address, location coordinates, and a reference: UPRN.  This data is not open data.  It is available as part of an OS product called AddressBase, which is free to use for any public sector organisation, but expensive for others.  However, the Ordnance Survey have a [presumption to publish]() policy for open data.  For datasets regarding public assets they are likely to allow these to be published as open data as long as it does not damage their own commercial interests. In the case of locations of around 4000 libraries, it is unlikely that making those open data would affect the commercial viability of the AddressBase product.
 
-This tutorial will attempt to map those libraries using freely available open data.  This is surprisingly difficult.  Those familiar with mapping tools, perhaps Google fusion tables or MapData, may find this difficult to believe.  Just upload the CSV file into those products and it gives you a map.  That is true, but is it open data?
+This tutorial will attempt to map those libraries using freely available open data.  This is surprisingly difficult.  Those familiar with mapping tools, perhaps Google fusion tables or MapData, may find this difficult to believe.  Just upload the CSV file into those products and it gives you a map.  That's true, but is it open data?
 
 | Google Fusio Tables |
 | MapData |
