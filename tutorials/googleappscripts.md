@@ -14,29 +14,44 @@ TutorialNeeded: a google account
 TutorialTime: 1 hour
 ---
 
-Google is a useful place for working on collaborative documents, hosted in an environment that is fairly easy to control access to.  These include spreadsheets, docs, slides, fusion tables etc.  And also, lesser known, Apps Scripts.
+Google is a useful place for working on collaborative documents, in an environment that's easy to control access to.  These include spreadsheets, docs, slides, fusion tables etc.  And also the lesser known 'Apps Scripts'.
 
 The [Google Apps Script](https://developers.google.com/apps-script/) language is primarily JavaScript with a number of additions to simplify common scripting tasks, and integrate with other Google services.
 
 For example, if you have a Google Analytics account it supports [a set of script methods](https://developers.google.com/apps-script/advanced/analytics) to allow you to easily query your data.
 
-Something like Analytics has already provided API access for a long time, but this makes accessing data from Google services a lot easier, and also removes authentication as a task.  If you write an apps script and host it on your Google account then it can be given automatic access to your Analytics data.  Similarly, it will provide easy read/write access to the data in documents and spreadsheets that are in the same account.
+Analytics already provided API (Application Programming Interface) access for a long time, but this makes accessing data from Google services a lot easier, and removes authentication as a task.  If you write an apps script and host it on your Google account then it can be given automatic access to your Analytics data.  Similarly, it will provide easy read/write access to the data in documents and spreadsheets that are in the same account.  So you could query your Analytics account and update a shared Google Sheet with the data (if you wanted to).
 
-When working on scripts it also offers a fairly good development environment - allowing you to debug and work through scripts (though debugging is noticeably slow).
+When working on scripts it also offers a decent development environment. This allows you to debug and work through scripts (though debugging is noticeably slow).
 
-Scripts are able to send out emails (at a limit of 100 per day), and can be set to run as part of a schedule.  That makes it very useful as a notifications and alerts system, where otherwise any automation scripts would need to be hosted on a paid for server, or a PC that would have to be kept on.
+Scripts are able to send out emails (at a limit of 100 per day), and can be set to run as part of a schedule.  That also makes it useful as a notifications and alerts system, where otherwise any automation scripts would need to be hosted on a server.
 
-As an example, the below script could be set to run as an automated task every day to check a library account loans data, and send an email if there is one due for return within a certain time frame (e.g. within a couple of days).  It uses the following Google script additions:
+As an example, the below script could be set to run as an automated task every day to check a library account, and send you an email if a loan is due for return within a certain time frame (e.g. within a couple of days).  It uses the following Google script additions:
 
 - MailApp.sendEmail.  To send out the alert email if loans are due.
 - UrlFetchApp.fetch.  To fetch data from a URL.  in this case a web service that retrieves loan data.
 - XmlService.parse.  To parse XML returned from the web service into an accessible object.
 
+The script is tailored for Axiell Arena web services, just doing the same thing as if you were using the library app and renewing a loan manually.  The following UK public library authorities are supported.
+
+| Service | URL | Library ID |
+| ------- | --- | ---------- |
+| Hounslow | https://www.hounslowlibraries.org/arena.pa.palma/loans | 219001 |
+| Wakefield | https://libraries.wakefield.gov.uk/arena.pa.palma/loans |  |
+| Wiltshire | https://libraries.wiltshire.gov.uk/arena.pa.palma/loans | 400001 |
+
+Instructions to install are as follows:
+
+1. In your [Google drive account](https://drive.google.com/drive/my-drive) select **New > More > Google Apps Script**
+2. In the script body paste all of the below scripts, overwriting anything that may be there already.
+3. You will need to then replace the placeholder details: your member ID, PIN, and your email address.
+4. Change the Library ID, and Library URL to be the ones for your library service (see above).
+
 <pre class="prettyprint linenums"><code>function CheckLoans() {
     // user acount details
-    var memberId = '';
-    var PIN = '';
-    var emailAddress = '';
+    var memberId = '12345678';
+    var PIN = '1234';
+    var emailAddress = 'email@email@com';
 
     // library details - in this case an id and web service for Wiltshire libraries
     var libraryId = '400001';
@@ -58,11 +73,11 @@ As an example, the below script could be set to run as an automated task every d
     var loansOptions = { 'method': 'POST', 'content-type': 'application/xml; charset=utf-8', 'payload': checkLoanPayload };
     var renewOptions = { 'method': 'POST', 'content-type': 'application/xml; charset=utf-8', 'payload': renewPayload };
 
-    // start - get loans data
+    // Start: Get Loans data
     var getLoans = UrlFetchApp.fetch(libraryUrl, loansOptions);
     var responseText = getLoans.getContentText();
 
-    // do the XML parsing to get a list of loans
+    // Extract a list of loans from the XML returned
     var docRoot = XmlService.parse(responseText).getRootElement();
     var ns = docRoot.getNamespace();
     var loansRequest = docRoot.getChildren('Body', ns)[0].getChildren()[0].getChildren()[0];
@@ -70,11 +85,11 @@ As an example, the below script could be set to run as an automated task every d
     var loans = loansRequest.getChild('loans', ns);
     var loanItems = loans.getChildren();
 
-    var emailText = 'hi libraries hacked,\n';
+    var emailText = 'Hello,\n';
     var sendEmail = false;
     var renew = false;
 
-    // loop through each loan and construct the email body (if necessary)
+    // Loop through each loan and construct the email body (if necessary)
     for (var x in loanItems) {
         var loan = loanItems[x];
         ns = loan.getNamespace();
@@ -98,12 +113,12 @@ As an example, the below script could be set to run as an automated task every d
             if (dateDifference &lt;= daysToRenew) {
                 // it's so late we need to renew, but say this in the email.
                 renew = true;
-                emailText += 'items has been renewed ' + title + ', ' + author + ' reserved on ' + reservedDate + '.  remember to finish and return soon.\n';
+                emailText += 'The following item has been renewed: ' + title + ', ' + author + ' .  This was checked out on: ' + reservedDate + '.  Please remember to finish and return soon.\n';
                 renewals += '&lt;loan1:id&gt;' + id + '&lt;/loan1:id&gt;'
             }
             else {
                 // less than five days to go, will send an email each day.
-                emailText += 'your loan of ' + title + ', ' + author + ' reserved on ' + reservedDate + ', is due back on: ' + renewalDate + '.\n';
+                emailText += 'Your loan of ' + title + ', ' + author + ' , checked out on ' + reservedDate + ', is due back on: ' + renewalDate + '.\n';
             }
         }
     }
@@ -116,6 +131,6 @@ As an example, the below script could be set to run as an automated task every d
 
     // send out the email
     if (sendEmail) {
-        MailApp.sendEmail(emailAddress, 'library notification report', emailText);
+        MailApp.sendEmail(emailAddress, 'Library Notification Report', emailText);
     }
 }</code></pre>

@@ -7,5 +7,5 @@ Tutorial:
 ApiUrl: https://openlibrary.org/developers/api
 ApiKey:
 ApiExampleUrl: http://koha-community.org/
-ApiExampleText: used by koha
+ApiExampleText: koha
 ---

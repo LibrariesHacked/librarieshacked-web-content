@@ -55,8 +55,8 @@ The basic map within the PDF provided by Bristol council provides a visualisatio
 
 To independently visualise these variations on the map data, a couple of datasets need to be used:
 
-- The Bristol authority and ward boundaries.  Available on the Bristol open data portal: [https://opendata.bristol.gov.uk/Government/WD-2011-BFE-South-West/fgti-bng9](https://opendata.bristol.gov.uk/Government/WD-2011-BFE-South-West/fgti-bng9)
-- The locations of Bristol libraries: available by accessing layer data from the Bristol council site. [my neighbourhood page](http://www.bristol.gov.uk/page/my-neighbourhood) and the [libraries data layer](http://maps.bristol.gov.uk/arcgis/rest/services/ext/localinfo/MapServer/61/query?where=SDO_NN%28SHAPE%2C%20MDSYS.SDO_GEOMETRY%282001%2CNULL%2CMDSYS.SDO_POINT_TYPE%28353602%2C176781%2C0%29%2CNULL%2CNULL%29%2C%20%27sdo_batch_size%3D0%27%29%20%3D%20%27TRUE%27%20AND%20ROWNUM%20%3C%3D%2010&returnGeometry=true&outFields=*&f=json)
+- The Bristol authority and ward boundaries.  Available on the [Bristol open data portal]https://opendata.bristol.gov.uk/Government/WD-2011-BFE-South-West/fgti-bng9)
+- The locations of Bristol libraries: available by accessing layer data from the Bristol council site [my neighbourhood page](http://www.bristol.gov.uk/page/my-neighbourhood) and the [libraries data layer](http://maps.bristol.gov.uk/arcgis/rest/services/ext/localinfo/MapServer/61/query?where=SDO_NN%28SHAPE%2C%20MDSYS.SDO_GEOMETRY%282001%2CNULL%2CMDSYS.SDO_POINT_TYPE%28353602%2C176781%2C0%29%2CNULL%2CNULL%29%2C%20%27sdo_batch_size%3D0%27%29%20%3D%20%27TRUE%27%20AND%20ROWNUM%20%3C%3D%2010&returnGeometry=true&outFields=*&f=json)
 
 With those two layers, the data can be plotted on a web based map, with some fairly short HTML and JavaScript.  A couple of HTML buttons and functions provide the means to change the radius based on pre-defined values (in this case 1 mile, 1.5 miles, and 2 miles).
 

@@ -3,7 +3,7 @@ Title: a single view of library services
 Description: portals to interact with and combine library catalogue services across authorities and sectors
 Type: Article
 Tags: library catalogues,web services,library management systems
-Template: blogpagecatalogue
+Template: blogpagecatalogues
 Author: dave
 Date: 2015/01/21
 ---
@@ -12,12 +12,12 @@ There is a mobile app on the Google Play store that combines many library servic
 
 [Library Reminder - Google Play store](https://play.google.com/store/apps/details?id=uk.co.fk33.lr.uk.free)
 
-Web scraping/automation
------------------------
+Web scraping and automation
+----------------------------
 
 The app currently covers around 300 UK college, health, university, and public libraries.  Library systems do offer integration options that are used by third parties, but these aren't available to public developers. In this case, the integration has been developed purely from automating publicly available web-based functions (using code to mimic the actions of a user on a website).
 
-It's possible for the app to provide so many libraries because there aren't that many types of web catalogues.  With a list of libraries, which portal they use, and code to interact with the different types of portal, code is reused across multiple services.  Not a bad prospect if a user is member of a number of different libraries and wants somewhere to manage all their accounts.  Just enter the library credentials and let the app access the different sites.  The app just needs to know the catalogue type, and URL.
+It's possible for the app to provide so many libraries because there aren't that many types of web catalogues.  With a list of libraries, which portal they use, and code to interact with the different types of portal, code can be reused across multiple services.  Not a bad prospect if a user is member of a number of different libraries and wants somewhere to manage all their accounts.  Just enter the library credentials and let the app access the different sites.  The app just needs to know the catalogue type, and URL.
 
 | Library | Catalogue type | Link |
 | ------- | -------------- | ---- |

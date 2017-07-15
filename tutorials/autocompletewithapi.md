@@ -1,6 +1,6 @@
 ---
 Title: book search auto-complete textbox
-Description: a tutorial on creating an auto-completing text box for providing book search suggestions
+Description: auto-completing text boxes for book search suggestions
 Type: Tutorial
 Tags: 
 Template: tutorialpageautocomplete
@@ -14,7 +14,7 @@ TutorialNeeded: an HTML text editor of your choice
 TutorialTime: 1 hour
 ---
 
-Open Web APIs give plenty of opportunity to create a wide variety of applications, reusing systems and data for new tools.  But sometimes these services can also be used to provide small user-experience improvements.  This tutorial will cover using an API to provide auto-complete functionality on a website.
+Open <abbr title="Application Programming Interfaces">APIs</abbr> (Application Programming Interfaces) give plenty of opportunity to create a wide variety of applications, reusing systems and data for new tools.  But sometimes these can just be used to provide small user-experience improvements.  This tutorial will cover using an API to provide auto-complete functionality on a website.
 
 Why use auto-complete?
 ----------------------
