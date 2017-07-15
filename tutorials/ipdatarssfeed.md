@@ -14,40 +14,40 @@ TutorialTime: 2 hours
 TutorialType: WebDevelopment
 ---
 
-**This is a post in preparation for an IP data hack event being held at Manchester Library on 12th March 2016.  The event is being held in a Google Garage so this uses Google Apps Scripts to query the weekly published IP patents journal.**
+This is a post in preparation for an IP data hack event being held at Manchester Library on 12th March 2016.  The event is being held in a Google Garage, this uses Google Apps Scripts to query the weekly published IP patents journal.
 
 Output of tutorial: [IP Patents Jounal - Patents Granted RSS](https://script.google.com/macros/s/AKfycbxkCkH7g4sbq6v0E3w-C8h9k1znobdrOjXl1O142YF0Ta0Gh2cP/exec)
 
-## Google Apps Scripts
+### Google Apps Scripts
 
-Google Apps Scripts can be created by Google account holders as part of their Google Drive documents.  The [Google Apps Script](https://developers.google.com/apps-script/) language is JavaScript with a number of additional methods available to simplify common scripting tasks, and integrate with other Google services. For example, you could write a Google apps script that queried your Google calendar and sent you customised alerts  (if you needed more than the built-in functionality).
+Google Apps Scripts can be created by Google account holders as part of their Google Drive documents.  The [Google Apps Script](https://developers.google.com/apps-script/) language is JavaScript with a number of additional methods to simplify common scripting tasks, and integrate with other Google services. For example, you could write a Google apps script that queried your Google calendar and sent you customised alerts (if you needed more than the built-in functionality).
 
-Apps scripts can also be deployed as [Web Apps](https://developers.google.com/apps-script/guides/web).  These are designed to be shared to others as a URL and will serve content to the user, this could either be HTML, or plain text.
+Apps scripts can also be deployed as [Web Apps](https://developers.google.com/apps-script/guides/web).  These are designed to be shared to others as a URL and will serve content to the user. This could either be HTML, or plain text.
 
-## IP XML Weekly List
+### IP XML Weekly List
 
 The Intellectual Property Office (IPO) publish the Patent Journal as a weekly list, downloadable either in PDF or XML format.
 
-- [IPO Patent Journal Weekly List](https://www.ipo.gov.uk/types/patent/p-os/p-journal/p-pj-download.htm)
+[IPO Patent Journal Weekly List](https://www.ipo.gov.uk/types/patent/p-os/p-journal/p-pj-download.htm)
 
-The XML download is more useful than the PDF.  PDF is a useful format for reports designed to be read (and even then primarily in A4 printed format), but given that each week can amount to hundreds of pages it seems unlikely anyone will read it.   Any automated usage of the data would be easier done via the XML.
+The XML download is more useful than the PDF.  PDFs are useful for reports designed to be read (and even then primarily in A4 printed format), but given that each week can amount to hundreds of pages it seems unlikely anyone will read it. Any automated usage of the data would be easier done with the XML.
 
-## RSS Feeds
+### RSS Feeds
 
-An RSS Feed (Really Simply Syndication) is an XML format for web based content syndication.  There is also Atom, which is an alternative format.  Both are typically used as a way of following the publishing of content on websites, e.g. for news stories or blog posts.
+An RSS Feed (Really Simply Syndication) is an XML format for web based content.  There is also Atom, which is an alternative format.  Both are typically used as a way of following the publishing of content on websites e.g. news stories or blog posts.
 
 - [RSS 2.0 Specification](http://cyber.law.harvard.edu/rss/rss.html)
 - [Atom specification](http://www.atomenabled.org/developers/syndication/)
 
-Regardless of these differing specs, most RSS readers will be able to interpret RSS/Atom feeds that follow any standard specifications. 
+Regardless of these differing specs, most RSS readers will be able to interpret either RSS or Atom feeds.
 
-## Tutorial steps
+### Tutorial steps
 
-This tutorial will use a Google Apps Script to query the XML weekly list and convert it into a format that web users are more familiar with consuming - RSS.  The apps script will then be deployed as a web app, allowing it to be shared and accessed as a traditional RSS feed.
+This tutorial will use a Google Apps Script to query the XML weekly list and convert it into a format that web users are more familiar with consuming: RSS.  The script will then be deployed as a web app, allowing it to be shared and accessed as a traditional RSS feed.
 
 To create an apps script you need a Google account.
 
-### 1. Create a new Google apps script file.
+#### Step 1. Create a new Google apps script file.
 
 - In your browser, access [Google Drive](https://drive.google.com/drive)
 - Select to create a new file by **New > More > Google Apps Script**.
@@ -61,7 +61,7 @@ To deploy the script as a webapp it needs to have a method called doGet().  Modi
 
 The code for the script will all be put within the doGet function.
 
-### 2. Grab the patent data XML
+#### Step 2. Grab the patent data XML
 
 A refreshed XML file is created each week by the IPO and is accessible from a direct URL such as:
 
@@ -69,7 +69,7 @@ A refreshed XML file is created each week by the IPO and is accessible from a di
 
 Each week the journal will have a new number (in the case above this is **6616**).
 
-Any code trying to access the latest list needs to calculate what the current list number is.  For this to be done it needs a reference value.  If we take 6616 as being from Wednesday 10th March, then for any future dates we just need to plus 1 to that number for every full week passed.
+Any code trying to access the latest list needs to calculate what the current number is.  For this to be done it needs a reference value.  If we take 6616 as being from Wednesday 10th March, then for any future dates we just need to plus 1 to that number for every full week passed.
 
 When the code has the current Journal ID it can then access the data using the built in method **UrlFetchApp.fetch**.
 
@@ -84,7 +84,7 @@ var journalId = parseInt(6616 + weeks);
 var latestJournalText = UrlFetchApp.fetch('https://www.ipo.gov.uk/p-pj-fullfile/xml/' + journalId + '/' + journalId +'.xml').getContentText();</code>
 </pre>
 
-### 3. Parse and filter the XML data
+#### Step 3. Parse and filter the XML data
 
 The XML is split into a number of headings and sections.  The headings are: 
 
@@ -92,7 +92,7 @@ The XML is split into a number of headings and sections.  The headings are:
 - Other Proceedings under the Patents Act 1977
 - Supplementary Protection Certificates.
 
-Each of these headings is split into sections summarised in the following table (**note: this table is not essential reading!**)
+Each of these headings is split into sections summarised in the following table.  **Note: this table is not essential reading!**
 
 | Heading | Section |
 | ------- | ------- |
@@ -125,8 +125,7 @@ Each of these headings is split into sections summarised in the following table 
 
 A sample of the XML structure is:
 
-<pre class="prettyprint linenums">
-<code>&lt;Journal Number="6616" Date="9 March 2016" ApplicationNoStart="GB1601103.3" ApplicationNoEnd="GB1601537.2" PublicationNoStart="GB2529798" PublicationNoEnd="GB2529995"&gt;
+<pre class="prettyprint linenums"><code>&lt;Journal Number="6616" Date="9 March 2016" ApplicationNoStart="GB1601103.3" ApplicationNoEnd="GB1601537.2" PublicationNoStart="GB2529798" PublicationNoEnd="GB2529995"&gt;
 	&lt;Headings&gt;
 		&lt;Heading Name="Proceedings under the Patents Act 1977" InternalName="Main" ID="1"&gt;
 			&lt;Sections&gt;
@@ -147,22 +146,19 @@ A sample of the XML structure is:
 		&lt;/Heading&gt;
 		...More headings...
 	&lt;/Headings&gt;
-&lt;/Journal&gt;</code>
-</pre>
+&lt;/Journal&gt;</code></pre>
 
-Putting all that data into a single RSS field would be a little too unwieldy, and have little focus.  To ask a more specific question of the data, this particular feed will list cases from the **Proceedings under the Patents Act 1977 > Patents Granted** section.  It would be possible to create many instances of the script to query different aspects of the data, or Google Apps scripts also allow for passing in parameters as part of the Web App URL which could specify which section to return, or even keywords to search by.
+Putting that data into a single RSS field would be a little too unwieldy, and have little focus. This particular feed will list cases from the **Proceedings under the Patents Act 1977 > Patents Granted** section. It would be possible to create many instances of the script to query different aspects of the data, or Google Apps scripts also allow for passing in parameters as part of the Web App URL which could specify which section to return, or even keywords to search by.
 
-Back in the script, fetching the URL will just fetch the raw text data.  For the script to actually understand the data as XML and to extract values from it, it needs to be explicitly loaded as XML.  This is done using the **XmlService.parse** method.  Once that is done there are various methods to select specific sections of the data from the XML using the **getChild()** and **getChildren()** XML methods, starting at the root (**getRootElement()**).
+Back in the script, fetching the URL will just fetch the raw text data.  For the script to understand the data as XML and to extract values from it, it needs to be loaded as XML.  This is done using the **XmlService.parse** method.  Once that's done there are various methods to select specific sections of the data from the XML using the **getChild()** and **getChildren()** XML methods, starting at the root (**getRootElement()**).
 
-<pre class="prettyprint linenums">
-<code>// Parse the XML to get a list from the applications filed section.
+<pre class="prettyprint linenums"><code>// Parse the XML to get a list from the applications filed section.
 var journalXml = XmlService.parse(latestJournalText);
 var sections = journalXml.getRootElement().getChild('Headings').getChild('Heading').getChild('Sections').getChildren('Section');
 // We are selecting the Patents Granted section which is index 4
-var patentsGranted = sections[4].getChild('Cases').getChildren('Case');</code>
-</pre>
+var patentsGranted = sections[4].getChild('Cases').getChildren('Case');</code></pre>
 
-### 4. Create the RSS Feed
+#### Step 4. Create the RSS Feed
 
 There isn't a lot of detail provided in the XML for each Patent. The script will build an RSS 2.0 compliant feed, using the following available fields from the XML for each **item** element in the resulting RSS.
 
@@ -170,10 +166,9 @@ There isn't a lot of detail provided in the XML for each Patent. The script will
 - **PublicationNo** - The publication number, will be used to create the  **link** element in the RSS and the **guid** element (a unique identifier).
 - **CaseStatus** - The case status, will be used for the **category** element in the RSS.
 
-The code in the previous step provided a list of Patents Granted that the script can loop through.  To create the necessary RSS data the script again uses the **XmlService** (RSS being XML based).  At the end it returns the content using the  **ContentService.createTextOutput** method, which is necessary when deploying as a Web App.
+The code in the previous step provided a list of Patents Granted that the script can loop through. To create the necessary RSS data the script again uses the **XmlService** (RSS being XML based).  At the end it returns the content using the **ContentService.createTextOutput** method, which is necessary when deploying as a Web App.
 
-<pre class="prettyprint linenums">
-<code>// Create the RSS document
+<pre class="prettyprint linenums"<code>// Create the RSS document
 var root = XmlService.createElement('rss');
 var channel = XmlService.createElement('channel')
 	.addContent(XmlService.createElement('title').setText('Proceedings under the Patents Act 1977'))
@@ -192,10 +187,9 @@ for (var j = 0; j < applicationsFiled.length; j++) {
 }
 root.addContent(channel);
 var rss = XmlService.getPrettyFormat().format(rssDocument);
-return ContentService.createTextOutput(rss).setMimeType(ContentService.MimeType.RSS);</code>
-</pre>
+return ContentService.createTextOutput(rss).setMimeType(ContentService.MimeType.RSS);</code></pre>
 
-### 5. Deploy as Web App.
+#### Step 5. Deploy as Web App.
 
 Within the apps script screen the Publish menu has an option to publish: **Publish > Deploy as web app**
 

@@ -14,11 +14,11 @@ TutorialNeeded: web browser
 TutorialTime: 1 hour
 ---
 
-The [tools page](https://www.librarieshacked.org/tools) on this site gives some examples of tools for data analysis and data visualisation.  There are too many to list, but [HighCharts](http://www.highcharts.com/) is an especially easy charting library to create a wide variety of interactive charts with relatively little coding knowledge or time required.
+The [tools page](https://www.librarieshacked.org/tools) on this site gives some examples of tools for data analysis and data visualisation.  There are too many to list, but [HighCharts](http://www.highcharts.com/) is an especially easy charting library to create a wide variety of interactive charts with relatively little coding knowledge.
 
-Note: HighCharts is free for non-commercial and personal use.  For commercial use (which includes government) it does require a developer licence.
+Note: HighCharts is free for non-commercial and personal use.  For commercial use (which includes government), it does require a developer licence.
 
-[Leeds Data Mill](http://leedsdatamill.org/) is one of the UKs leading local open data portals, publishing a wide variety of datasets about the city.  They publish a set of library-based datasets, providing annual usage counts (in some cases since 2000), separated by individual library.
+[Leeds Data Mill](http://leedsdatamill.org/) is one of the UK's leading local open data portals, publishing a wide variety of datasets about the city. They publish a set of library-based datasets, providing annual usage counts (in some cases since 2000), separated by individual library.
 
 - [Library visits](http://leedsdatamill.org/dataset/library-visits) 
 - [Library loans (books)](http://leedsdatamill.org/dataset/library-loans-books-only)
@@ -29,8 +29,7 @@ These are downloadable as CSV files, but often in cases where datasets may be up
 
 This tutorial takes the library computer bookings dataset as an example and uses HighCharts to create a line chart visualisation, showing the computer bookings counts for each library from 2001 to 2014. An example of the chart, created with the same code and demonstrating the interactive features of HighCharts, is at the top of this page.
 
-Step 1.  Set up the base HTML
------------------------------
+### Step 1.  Set up the base HTML
 
 To start from scratch (rather than embedding into an existing page), create a blank HTML file which will include:
 
@@ -63,8 +62,7 @@ To start from scratch (rather than embedding into an existing page), create a bl
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-Step 2.  Write JavaScript to create the chart
----------------------------------------------
+### Step 2.  Write JavaScript to create the chart
 
 Once the structure of the page is in place, there is some JavaScript code needed to create the chart when the page has loaded.
 

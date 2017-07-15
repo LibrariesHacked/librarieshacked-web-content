@@ -1,5 +1,5 @@
 ---
-Title: book search auto-complete textbox
+Title: book search auto-complete
 Description: auto-completing text boxes for book search suggestions
 Type: Tutorial
 Tags: 
@@ -14,26 +14,24 @@ TutorialNeeded: an HTML text editor of your choice
 TutorialTime: 1 hour
 ---
 
-Open <abbr title="Application Programming Interfaces">APIs</abbr> (Application Programming Interfaces) give plenty of opportunity to create a wide variety of applications, reusing systems and data for new tools.  But sometimes these can just be used to provide small user-experience improvements.  This tutorial will cover using an API to provide auto-complete functionality on a website.
+Open <abbr title="Application Programming Interfaces">APIs</abbr> (Application Programming Interfaces) provide opportunities to create a wide variety of applications, reusing systems and data for new tools.  But sometimes these can also just provide small user-experience functions.  This tutorial will cover using an API to develop auto-complete functionality on a website.
 
-Why use auto-complete?
-----------------------
+### Why use auto-complete?
 
-A book search is a good example where auto-complete functionality can be useful.  When using the catalogue search on library sites the steps may be:
+A book search is a good example where auto-complete can be useful.  When using the catalogue search on library sites the steps may be:
 
 1. Enter the search term either for an author, or a title.  If author it must be in the form **surname, first name**.  Hit search.
-2. Scroll through list of search results (**page 3 of 180...**).  If too many results you can go back the original screen and modify your search.  If no results the results page will be empty.
+2. Scroll through list of search results (**page 3 of 180...**).  If too many results, you can go back the original screen and modify your search.  If no results the results page will be empty.
 
-That doesn't give users a speedy experience.  Using auto-complete allows you to show data as the user types.  As they type more, the results are refined by the increased detail.  Once the user sees the option they want, they can select it.  The underlying data could come from many sources.  Sometimes (like in Google) it's common searches that other people have performed.  Other times, it's actually looking at the underlying database being searched and giving an indication if there are any matches.
+That doesn't give users a speedy experience.  Using auto-complete allows you to show data as the user types.  As more is typed, the results are refined by the increased detail.  Once the user sees the option they want, they can select it.  The underlying data could come from many sources.  Sometimes, like when using Google, it's common searches that other people have performed.  Other times, it's actually looking at the underlying database, and giving an indication if there are any matches.
 
 This kind of dynamic search information can prompt the user for what they're looking for (if they have half a title in their mind).  It can also be used to provide them details of their search results before they've even pressed search.  There is often no point in showing a results page of zero results, unless an easy option to adjust the search is provided.  Could the user be informed before they have run the search that no results will be returned?
 
-The [Google Books API](http://books.google.co.uk/) is one API to provide book searching.  There are plenty of others though, [open library](http://openlibrary.org) for example.  The Google Books API should normally be used with an API key, which is granted by Google and needs to be included in the URL when a search is made.
+The [Google Books API](http://books.google.co.uk/) is one API to provide book searching.  There are plenty of others though including [open library](http://openlibrary.org).  The Google Books API should normally be used with an API key, which is granted by Google and needs to be included in the URL when a search is made.
 
-Step 1. Start with a basic HTML5 template
------------------------------------------
+### Step 1. Start with a basic page template
 
-The example will be done within a single web page, so the following is a basic HTML5 page template to get started.
+The example will be coded within a single web page; the following is a basic HTML5 page template to get started.
 
 <pre class="prettyprint linenums"><code class="language-html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -47,8 +45,7 @@ The example will be done within a single web page, so the following is a basic H
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-Step 2. Add references to JavaScript and CSS files
----------------------------------------------------------------
+### Step 2. Add references to JavaScript and CSS files
 
 For this tutorial we need jQuery and jQuery UI to provide the auto-complete functionality.  These are JavaScript **libraries**, created to simplify common JavaScript tasks, making them quicker and easier to code.  They are added to the page as shown below:
 
@@ -65,18 +62,17 @@ For this tutorial we need jQuery and jQuery UI to provide the auto-complete func
     &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;</code></pre>
 
-The files referred to here are held at **code.jquery.com**.  These could be downloaded and included as part of the project folder, but there are advantages to using externally hosted versions:
+The files referred to here are held at **code.jquery.com**.  These could be hosted as part of the project, but there are advantages to using externally hosted versions:
 
 - Users already having visited a site referencing those same JavaScript/CSS files won't need to download them again.  Their browser will cache them, effectively speeding up your site and saving the user time and data usage.
-- The files are hosted on web servers where performance is optimised, likely faster than your web server.
+- The files are hosted on web servers where performance is optimised, likely faster than your web server.  They are often distributed on many servers.
 - Less file space is used on your web server, and less cost to your bandwidth allowances.
 
-You do need to ensure you have a web connection when running the page on your own computer.  In this case the tutorial will need web access anyway to communicate with the API.
+You do need to ensure you have a web connection when running the page on your own computer.  In this case the tutorial will need web access anyway, to communicate with the API.
 
 In the HTML a new file is also referenced, **script.js**.  This will contain the custom JavaScript code, to be written in part 4.
 
-Step 3. Add the basic textbox HTML
-----------------------------------
+### Step 3. Add the textbox HTML
 
 The web page will just have a header and an input text box, and a space where details of the book will be added dynamically later.
 
@@ -93,10 +89,9 @@ The web page will just have a header and an input text box, and a space where de
     &lt;script src=&quot;js/scripts.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;</code></pre>
 
-Step 4. Add the auto-complete JavaScript
-----------------------------------------
+### Step 4. Add the auto-complete JavaScript
 
-The following code is added to the empty **script.js** file, providing a framework for the jQuery UI autocomplete functionality.
+The following code is added to the empty **script.js** file, providing a framework for the autocomplete functionality, which is part of JQuery UI.
 
 <pre class="prettyprint linenums"><code class="language-javascript">$(document).ready(function () {  //should only run once the document is ready
     $("#txbBookSearch").autocomplete({ // attach the autocomplete functionality to the textbox
@@ -110,17 +105,16 @@ The following code is added to the empty **script.js** file, providing a framewo
     });
 });</code></pre>
 
-Having jQuery on the page allows for the text box to be referenced by using it's ID (**$("#txbBookKeywork")**).  jQueryUI gives the functionality to easily attach to the text box so that it will provide suggestions as text is entered (**.autocomplete(....)**).
+Having jQuery on the page allows for the text box to be referenced by using it's ID (**$("#txbBookSearch")**).  jQueryUI gives the functionality to easily attach to the text box so that it will provide suggestions as text is entered (**.autocomplete(....)**).
 
 The full auto-complete documentation is available on the [jQueryUI pages](http://jqueryui.com/autocomplete).  In this basic template there is space to write the code that will run at two different **events**:
 
 - When the input text is changed, in order to provide the suggestions (**source: function (request, response)...**); 
 - When an item is selected from the suggestions (**select: function (event, ui)...**);
 
-There is also the option to specify a number of characters that have to be entered before it will start making suggestions (**minLength:...**).  This example sets it to 2.
+There is also the option to specify the number of characters that have to be entered before it will start making suggestions (**minLength:...**).  This example sets it to 2.  That's a little low, so in reality you may want more.
 
-Step 5. Provide the search suggestions
---------------------------------------
+### Step 5. Provide search suggestions
 
 When a user enters text of at least 2 characters, the code should search all books from the google API, and list the closest matches.
 
@@ -165,10 +159,9 @@ The code added to call the API uses [jQuery's AJAX method](http://api.jquery.com
 
 The code transforms the data returned into a set of values that contain various details about each book: title, author, published date etc. By default the value we define as being the *label* value is the one shown within the drop down suggestion list.  That label can be constructed from the returned values, so we can show 'title, author, date published' in the suggestions.
 
-Step 6. Selecting the book
---------------------------
+### Step 6. Selecting the book
 
-All that's left is to code what will happen when a book is selected.  This will depend on the site using the service - it could list all details of the book, or take the user to a page on the book in order to provide further actions.  To demonstrate an example usage, this will show some details about the book on the page and provide a link to the OCLC WorldCat page for that book.
+All that's left is to code what will happen when a book is selected.  This will depend on the site using the service - it could list all details of the book, or take the user to a page about the book in order to provide further actions.  To demonstrate an example usage, this will show some details about the book on the page and provide a link to the OCLC WorldCat page for that book.
 
 Full JavaScript code:
 

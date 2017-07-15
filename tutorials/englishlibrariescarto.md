@@ -14,7 +14,7 @@ TutorialNeeded: web browser,carto account
 TutorialTime: 1 hour
 ---
 
-On 30th March 2017 the Libraries Taskforce released [Public libraries in England: basic dataset](https://data.gov.uk/dataset/public-libraries-in-england-basic-dataset).  This listed all libraries in England (statutory and non-statutory).  It included:
+On 30th March 2017 the Libraries Taskforce released [Public libraries in England: Basic Dataset](https://data.gov.uk/dataset/public-libraries-in-england-basic-dataset).  This listed all libraries in England (statutory and non-statutory).  It included:
 
 - Library Service (e.g. Gloucestershire)
 - Library Name (e.g. Ashby-De-La-Zouch)
@@ -23,28 +23,23 @@ On 30th March 2017 the Libraries Taskforce released [Public libraries in England
 - Email
 - Website
 
-Not as much as could have been hoped, but a dataset nonetheless.  One limiting factor in the data is there isn't good location data for the libraries.  For each property in the UK Ordnance Survey hold detailed address, location coordinates, and a reference: UPRN.  This data is not open data.  It is available as part of an OS product called AddressBase, which is free to use for any public sector organisation, but expensive for others.  However, the Ordnance Survey have a [presumption to publish]() policy for open data.  For datasets regarding public assets they are likely to allow these to be published as open data as long as it does not damage their own commercial interests. In the case of locations of around 4000 libraries, it is unlikely that making those open data would affect the commercial viability of the AddressBase product.
+Although the data was released in 2017, it was collected from library authorities in 2016.
 
-This tutorial will attempt to map those libraries using freely available open data.  This is surprisingly difficult.  Those familiar with mapping tools, perhaps Google fusion tables or MapData, may find this difficult to believe.  Just upload the CSV file into those products and it gives you a map.  That's true, but is it open data?
+One limiting factor in the data is there isn't good location data for the libraries.  For each property in the UK, Ordnance Survey (OS) hold detailed address, location co-ordinates, and a reference: Unique Property Reference Number (UPRN).  This data is not open data.  It is available as part of an premium OS product called AddressBase, which is free to use by any public sector organisation, but expensive for others.
 
-| Google Fusio Tables |
-| MapData |
+However, the OS have a [presumption to publish](https://www.ordnancesurvey.co.uk/business-and-government/help-and-support/public-sector/guidance/presumption-to-publish-criteria.html) policy for open data.  For datasets regarding public assets, that do not 'substantially copy' their licensed data, it can be presumed that these can be open data. In the case of around 3000 libraries, it is unlikely making those open data would affect the commercial viability of the AddressBase product or substantially copy it.
 
+This tutorial will attempt to map those libraries using the current dataset and freely available open data.  This is surprisingly difficult.  Those familiar with mapping tools (like Google or MapData), will know you normally just upload the CSV, it geocodes it all and shows the points.  That's true, but there are normally many licence restrictions.  Google will geocode for you, but you then HAVE to plot the points on a Google map and use their services.
 
-
-
-
-Step 1. Signup or login to Carto
---------------------------------
+### Step 1. Signup or login to Carto
 
 Carto (previously known as CartoDB) is a free online map mapping service, though the free tier of membership restricts how much data you can store and doesn't allow private data.
 
-It works by a process of uploading data into it's web interface.  As long as this data then has some kind of spatial component (such as co-ordinates, or even addresses) you can visualise the data in map form, and optionally embed that map into websites.
+It works by a process of uploading data into it's web interface.  As long as this data then has some kind of spatial component (such as co-ordinates) you can visualise the data in map form, and optionally embed that map into websites.
 
 The [signup](https://carto.com/signup) is quite simple, and does not ask for too many details.
 
-Step 2.  Upload first dataset
------------------------------
+### Step 2.  Upload first dataset
 
 In the Carto dashboard change 'Your maps' to 'Your datasets'
 

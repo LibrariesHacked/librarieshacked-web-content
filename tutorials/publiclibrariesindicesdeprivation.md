@@ -35,8 +35,7 @@ The geographical areas used are 'Lower Layer Super Output Areas' (LSOAs), define
 
 The indices, and associated LSOAs, offer a way of comparing areas across the country, and can be combined with other datasets that use the same defined areas (such as population estimates, age of population, religion, etc).  When assessing council services, you would expect very little assessment to be done in a particular area without reference to those LSOAs and their respective deprivation indices.
 
-Libraries in deprived areas
----------------------------
+### Libraries in deprived areas
 
 When assessing library services, an important consideration may be the accessibility of the library for areas that are most deprived (and by association, those with most need).  But outside of individual authority lists, there is no comprehensive list of libraries, or in particular which LSOAs they are located in.
 
@@ -46,8 +45,7 @@ Taking an older, though still relatively recent dataset, the list of libraries o
 
 With that data, along with the defined LSOA areas, and the deprivation indices for those LSOAs, it is possible to do some analysis on which areas public libraries tend to be located, in terms of deprivation.
 
-Carto
------
+### Carto
 
 [Carto](https://carto.com/) is a paid-for mapping and data service that offers a free option for a relatively small usage (maximum 250Mb), which generally covers personal use.  The service is built on PostGIS, an open source database specialised for GIS (Geographic Information Systems) querying.  The analysis could all be done directly on a PostGIS database, but Carto has a convenient web interface and also includes many flashy map visualisations such as chloropleth maps (coloured/shaded areas).
 

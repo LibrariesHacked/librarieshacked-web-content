@@ -27,8 +27,7 @@ Yahoo Query Language (YQL) allows for directly searching the html of web pages, 
 
 It sounds quite a lot in terms of programming, but using YQL and jQuery to shorten the amount of JavaScript, it can be done in a very small amount of code.  If you are completely unfamiliar with YQL, it was partly covered in this example of [collecting global library stats](http://www.librarieshacked.org/tutorials/yqlstats).  There is also an excellent [developer resource](https://developer.yahoo.com/yql/).
 
-Step 1.  Search twitter for tweets and links
--------------------------------------------
+### Step 1.  Search Twitter for tweets and links
 
 YQL comes with some 'community tables'.  In [the YQL console](https://developer.yahoo.com/yql/console/) you can tick 'show community tables' on the left hand side and you get access to all kinds of data: wikipedia, twitter, amazon, bbc, etc.  If you select the twitter tables and select 'twitter.search.tweets' an example is generated of a twitter search. this appears as:
 
@@ -47,8 +46,7 @@ YQL then makes querying twitter quite straightforward, and after designing a que
 
 In one go that returns tweets matching that search term, any linked URLs, user data for whoever sent each tweet, and location if attached, etc.
 
-Step 2.  Get the metadata for the links within tweets
------------------------------------------------------
+### Step 2.  Get the metadata for the links within tweets
 
 The data returned includes links from within tweets that are already separated from the text of the tweet, so there's no need to mess around detecting them or manipulating the text data to extract them.
 
@@ -66,8 +64,7 @@ FROM yql.multi
 WHERE queries = "
     SELECT * FROM html WHERE url = 'http://www.librarieshacked.org' AND xpath='//head/meta|//head/title';SELECT * FROM html WHERE url = 'http://www.librarieshacked.org/tutorials' AND xpath='//head/meta|//head/title'"</code></pre>
 
-Step 3.  Use JavaScript/jQuery to put it all together
------------------------------------------------------
+### Step 3.  Use JavaScript/jQuery to put it all together
 
 To effectively use those two data sources, a tool needs to be created which will take a search term, find all the tweets that include links, use these to retrieve the webpage meta tags, and display this. Using the jQuery library, an example JavaScript function is:
 

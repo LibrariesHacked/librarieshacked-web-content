@@ -14,25 +14,25 @@ TutorialNeeded: a google account
 TutorialTime: 1 hour
 ---
 
-Google is a useful place for working on collaborative documents, in an environment that's easy to control access to.  These include spreadsheets, docs, slides, fusion tables etc.  And also the lesser known 'Apps Scripts'.
+Google is a useful place for working on collaborative documents, in an environment that's easy to control access to.  These include spreadsheets, documents, slides, fusion tables etc.  And also the lesser known 'Apps Scripts'.
 
 The [Google Apps Script](https://developers.google.com/apps-script/) language is primarily JavaScript with a number of additions to simplify common scripting tasks, and integrate with other Google services.
 
-For example, if you have a Google Analytics account it supports [a set of script methods](https://developers.google.com/apps-script/advanced/analytics) to allow you to easily query your data.
+For example, if you have a Google Analytics account it supports [a set of script methods](https://developers.google.com/apps-script/advanced/analytics) to allow you to easily query your Analytics data.
 
-Analytics already provided API (Application Programming Interface) access for a long time, but this makes accessing data from Google services a lot easier, and removes authentication as a task.  If you write an apps script and host it on your Google account then it can be given automatic access to your Analytics data.  Similarly, it will provide easy read/write access to the data in documents and spreadsheets that are in the same account.  So you could query your Analytics account and update a shared Google Sheet with the data (if you wanted to).
+Analytics already provided API (Application Programming Interface) access, but this makes accessing data from Google services a lot easier, and removes authentication as a task.  If you write an apps script and host it on your Google account then it can be given automatic access to your Analytics data.  Similarly, it will provide easy read/write access to documents and spreadsheets that are in the same account.  So you could query your Analytics account and update a Google Sheet with the data (if you wanted to).
 
-When working on scripts it also offers a decent development environment. This allows you to debug and work through scripts (though debugging is noticeably slow).
+When working on scripts, it also offers a decent development environment, allowing you to debug them (though debugging is noticeably slow).
 
-Scripts are able to send out emails (at a limit of 100 per day), and can be set to run as part of a schedule.  That also makes it useful as a notifications and alerts system, where otherwise any automation scripts would need to be hosted on a server.
+Scripts are able to send out emails, at a limit of 100 per day, and can be set to run as part of a schedule.  That also makes it useful as a notifications and alerts system, where otherwise any automation scripts would need to be hosted on a server.
 
-As an example, the below script could be set to run as an automated task every day to check a library account, and send you an email if a loan is due for return within a certain time frame (e.g. within a couple of days).  It uses the following Google script additions:
+As an example, the below script could be set to run as an automated task every day to check a library account, and send you an email if a loan is due for return within a certain time frame (e.g. within 5 days), and also to renew it if it is just about to go overdue.  It uses the following Google script additions:
 
-- MailApp.sendEmail.  To send out the alert email if loans are due.
-- UrlFetchApp.fetch.  To fetch data from a URL.  in this case a web service that retrieves loan data.
-- XmlService.parse.  To parse XML returned from the web service into an accessible object.
+- **MailApp.sendEmail**.  To send out the alert email if loans are due.
+- **UrlFetchApp.fetch**.  To fetch data from a URL.  In this case a web service that retrieves loan data.
+- **XmlService.parse**.  To parse XML returned from the web service into an accessible object.
 
-The script is tailored for Axiell Arena web services, just doing the same thing as if you were using the library app and renewing a loan manually.  The following UK public library authorities are supported.
+The script is only compatible with Axiell Arena web services.  It effectively does the same thing as if you were using the library app and renewing a loan manually.  The following UK public library authorities are supported.
 
 | Service | URL | Library ID |
 | ------- | --- | ---------- |
@@ -40,27 +40,23 @@ The script is tailored for Axiell Arena web services, just doing the same thing 
 | Wakefield | https://libraries.wakefield.gov.uk/arena.pa.palma/loans |  |
 | Wiltshire | https://libraries.wiltshire.gov.uk/arena.pa.palma/loans | 400001 |
 
-Instructions to install are as follows:
+Instructions to set up your own version are as follows:
 
 1. In your [Google drive account](https://drive.google.com/drive/my-drive) select **New > More > Google Apps Script**
-2. In the script body paste all of the below scripts, overwriting anything that may be there already.
-3. You will need to then replace the placeholder details: your member ID, PIN, and your email address.
+2. In the script body paste all of the below script, overwriting anything that may be there already.
+3. You will need to replace the placeholder details: your member ID, PIN, and your email address.
 4. Change the Library ID, and Library URL to be the ones for your library service (see above).
+5. You then have the options on when to react to loan due dates.  The number of days remaining on a loan at which it will automatically renew it, and the number of days remaining at which you'll simply receive an email reminder.
+6. You can then set schedules for it to run using .  Probably the most sensible would be sometime in the evening each day.
 
 <pre class="prettyprint linenums"><code>function CheckLoans() {
-    // user acount details
+    // Customise these variable to match your details, library service, and preferences.
     var memberId = '12345678';
     var PIN = '1234';
     var emailAddress = 'email@email@com';
-
-    // library details - in this case an id and web service for Wiltshire libraries
     var libraryId = '400001';
     var libraryUrl = 'https://libraries.wiltshire.gov.uk/arena.pa.palma/loans';
-
-    // script options:
-    // at less than 1 day to go we renew the item
     var daysToRenew = 1;
-    // at less than 5 days to go, send an email notification
     var daysToSendEmail = 5;
 
     // setting up some data for the script
