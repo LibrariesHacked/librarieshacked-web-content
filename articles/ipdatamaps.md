@@ -8,7 +8,7 @@ Author: dave
 Date: 2016/03/07
 ---
 
-This is the first of two posts on Intellectual Property data in preparation for a hackathon at Manchester Library on 12th March 2016.  Rather than a detailed tutorial post, this is an overview of the datasets and process for mapping currently available IP data.
+This is the first of two posts on Intellectual Property data in preparation for a hackathon at Manchester Library on 12th March 2016. This is an overview of the datasets and process for mapping currently available IP data.
 
 To take part in the event at Manchester library visit [EventBrite - IP Magnet Challenge](https://www.eventbrite.co.uk/e/the-ip-magnet-challenge-intellectual-property-data-hackathon-tickets-21674235221).
 
@@ -30,8 +30,7 @@ There are a couple of datasets listed on Gov.uk, where the data has been compile
 
 Licence: The data is released under an Open Government Licence.
 
-Patents data
-------------
+#### Patents data
 
 The snapshot data for patents includes postcode districts for each application - for the applicant(s), and the current proprietor(s).
 
@@ -44,15 +43,13 @@ The snapshot data for patents includes postcode districts for each application -
 
 There are 523,367 records.  Of these 159,913 have postcode information, representing the number of applications from the UK (around 30%).
 
-Analysing location data
------------------------
+#### Analysing location data
 
 Comparing the two columns for applicant and current proprietor column, there are only 34,239 records where they are different, around a fifth of the total.
 
 As there is not much difference, taking just the applicant postcode district data, this post will visualise the number of applications coming from different postcode districts.  For geographic visualisations, choropleth maps can be useful to visualise differences in areas. This is colouring areas based upon a value for that area (in this case - number of applications).
 
-Postcode districts
-------------------
+#### Postcode districts
 
 The IP data gives the postcode district rather than full postcode.  What is a postcode district?  Postcode data is split into different levels.
 
@@ -65,8 +62,7 @@ The IP data gives the postcode district rather than full postcode.  What is a po
 
 (Data abbreviated from Ordnance Survey [Linked Open Data Ontologies](http://data.ordnancesurvey.co.uk/ontology/postcode/PostcodeDistrict).)
 
-Postcode open data
-------------------
+#### Postcode open data
 
 Ordnance Survey have a free open data product called Code-Point Open, which provides coordinate-based location information for all 1.8M postcode units.
 
@@ -88,15 +84,13 @@ Fortunately this has already been done by a geospatial organisation called Geoly
 
 **Licence: Released under the same terms as the OS OpenData license with the single addition of GeoLytix to the attribution list.**
 
-Carto
------
+#### Carto
 
 Having found the relevant data sets, [Carto](https://cartodb.com/) is an online tool *to map and analyse location data*.  A free account (restricted by 250Mb limit) is generally enough to do a lot of visualisation work.
 
 Both the Geolytix open data, and the Gov.UK snapshots of IPO data can be directly uploaded into Carto as datasets.  These can then be joined (using the postcode district in both sets), and manipulated using structured query langugage (SQL).  The [Carto docs](https://carto.com/docs/) are the best places to get started if you want to delve into mapping data within the online tool.
 
-Filtering data to Manchester
-----------------------------
+#### Filtering data to Manchester
 
 Filtering data can aid in display, as any kind of interactive visualisation will perform better with a smaller set of data.  Wikipedia lists the districts within the M postcode area:
 
@@ -105,6 +99,5 @@ Filtering data can aid in display, as any kind of interactive visualisation will
 The map below shows the relevant postcode districts in the M postcode area, coloured to show the number of IP data applicants.  Clicking on a particular area will show some more detailed information.
 
 <iframe width="100%" height="520" frameborder="0" src="https://daveroweuk.cartodb.com/viz/a0bf12e8-e2e4-11e5-8559-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
 
 **Contains OS data © Crown copyright 2016, and GeoLytix open data polygons**

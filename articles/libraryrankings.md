@@ -12,7 +12,7 @@ The [OCLC global library stats](https://www.oclc.org/global-library-statistics.e
 
 When counting libraries, the OCLC appreciate it's difficult to ensure standards.
 
->For the sake of uniformity, the total number of libraries represents administrative units and not service points, since not all sources report service points consistently. Some of the country entries did not specify which unit they were reporting, in which case it was assumed that it was administrative units.
+> For the sake of uniformity, the total number of libraries represents administrative units and not service points, since not all sources report service points consistently. Some of the country entries did not specify which unit they were reporting, in which case it was assumed that it was administrative units.
 
 The administrative units figure is strange as it often doesn't represent what many would think of as a library.  And for comparative stats, each country will have different systems of administration.  In the UK the administrative unit is commonly the local authority, which can significantly vary in size, population, and number of libraries.  It also seems odd to assume an ambiguous figure would be administrative units, and not branches.
 
@@ -29,8 +29,7 @@ An excellent site, Practical Statistics, looks at the accuracy of the data, part
 
 >The results are not encouraging. The library statistics that OCLC offered for Norway could not be used for serious work. The quality was far too uneven. OCLC faced the same problem that Unesco faced. Countries with weak library systems have hardly any statistics at all. There may be some numbers floating around, but they do not reflect the situation on the ground. Countries with stronger systems have better statistics, but they do not publish them in a form that is convenient for outsiders.
 
-World literacy rankings
------------------------
+#### World literacy rankings
 
 A recent report on 'Literature Behaviour Characteristics' ranked Finland as the most literate nation.
 

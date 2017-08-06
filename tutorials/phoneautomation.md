@@ -14,30 +14,30 @@ TutorialNeeded: an android device, a python text editor of your choice
 TutorialTime: 1 hour
 ---
 
-The shift to using mobile operating systems like Android and iOS has led to an increased use of phones and tablets as mini-PCs, with the ability to perform the same productivity tasks PCs are used for.  The keyboards are more fiddly, the screens smaller (although often with greater resolutions than many monitors), but it's easy enough to cast the display onto a TV and add a bluetooth mouse/keyboard.  For many people mobile tech is able to replace their old PC, with add on devices only used when necessary.
+The shift to mobile operating systems like Android and iOS has led to an increased use of phones and tablets as mini-PCs, with the ability to perform the productivity tasks PCs are used for. The keyboards are more fiddly, the screens smaller (although often with greater resolutions than many monitors), but it's easy enough to cast the display onto a TV and add a bluetooth mouse/keyboard. For many people, mobile tech is able to replace their old PC.
 
-A limitation of mobile operating systems is that they don't offer the same level of automation for 'power-users' that a desktop operating system does.  On a desktop there are countless ways of programming and scripting tasks, using any language of choice.
+A limitation of mobile operating systems is that they don't offer the same level of automation for 'power-users' a desktop operating system does. On a desktop there are countless ways of programming and scripting tasks, using any language of choice.
 
-Both Android and iOS allow users to develop apps and deploy these to their own devices, but this requires creating whole apps rather than just the simple scripting of tasks for automation.  There are also plenty of apps that allow tasks to be scheduled, but these don't offer the flexibility of real scripting.  Rather than choosing from a list of pre-set tasks, users need to be able to create scripts that do exactly what they want - including automating many processes that will have no relevance to other people.
+Both Android and iOS allow users to develop apps and deploy these to their own devices, but this requires creating whole apps rather than just the simple scripting of tasks for automation. There are also plenty of apps that allow tasks to be scheduled, but these don't offer the flexibility of real scripting. Rather than choosing from a list of pre-set tasks, users need to be able to create scripts that do exactly what they want - including automating many processes that will have no relevance to other people.
 
-Apple make user scripting difficult - no app would even be allowed on the app store that could download and run code;  apps are also 'sandboxed', not allowing integration with other files or apps on the device.  This makes sharing data and files between apps difficult.
+Apple make scripting difficult - no app would be allowed on the app store that could download and run code. Apps are also 'sandboxed', not allowing integration with other files or apps on the device. This makes sharing data and files between apps difficult.
 
-Despite this, there are still options for automation in iOS.  The excellent blog post, [Automating iOS: How Pythonista Changed My Workflow](http://www.macstories.net/stories/automating-ios-how-pythonista-changed-my-workflow), demonstrates using Pythonista, a beautiful looking iOS app for automating tasks, and provides a discussion of workarounds for the security restrictions.
+Despite this, there are still options for automation in iOS. The excellent blog post, [Automating iOS: How Pythonista Changed My Workflow](http://www.macstories.net/stories/automating-ios-how-pythonista-changed-my-workflow), demonstrates using Pythonista, a beautiful looking iOS app for automating tasks, and provides workarounds for the restrictions.
 
-For Android, one option is SL4A - a scripting tool for android.  This allows scripting using a number of different languages, as well as giving direct access to the device functionality - such as location and camera.  The example below takes a quick look at using SL4A to use the device location sensor and integrate with an API - the culture grid web service.
+For Android, one option is SL4A - a scripting tool for android. This allows scripting using a number of different languages, as well as giving direct access to the device functionality - such as location and camera. The example below takes a quick look at using SL4A to use the device location sensor and integrate with an API - the culture grid web service.
 
-### Step 1.  Install and set-up the apps
+#### Step 1. Install and set-up the apps
 
 - You'll need to make sure your android device allows you to install apps that aren't from the Google Play store.  This is a phone setting usually found in the security section
 - Install the SL4A app by navigating to [this link to sl4a](http://code.google.com/p/android-scripting/) on your device.
-- Also install the Python for Android app.  This can be done from within SL4A.  Launch SL4A, and in the menu navigate to **view > interpreters**.  Then launch the menu again and select *add*, and then *python 2.6.2*.  This will launch the download of Python for Android.
-- Once installed, launch python for android and click install.  You're ready to script with Python within SL4A.
+- Also install the Python for Android app. This can be done from within SL4A. Launch SL4A, and in the menu navigate to **view > interpreters**. Then launch the menu again and select *add*, and then *python 2.6.2*. This will launch the download of Python for Android.
+- Once installed, launch python for android and click install. You're ready to script with Python within SL4A.
 
-### Step 2.  Create a script
+#### Step 2. Create a script
 
-This example will find the current location and then call to the culture grid web service to retrieve the nearest library and display it as a notification on the device.  Not necessarily the best use of automation for productivity - but one that demonstrates using the android API and culture grid.
+This example will find the current location and then call to the culture grid web service to retrieve the nearest library and display it as a notification on the device. Not necessarily the best use of automation for productivity - but one that demonstrates using the android API and culture grid.
 
-- Launch SL4A and from the menu select **add > python**.  This launches a text editor where you can write your python script.  Rather than go through line by line, the code below is commented throughout.
+- Launch SL4A and from the menu select **add > python**. This launches a text editor where you can write your python script. Rather than go through line by line, the code below is commented throughout.
 
 <pre class="prettyprint linenums"><code># three python imports are necessary for this.  android, urllib (for calling the web service), and ElementTree (for dealing with the xml data returned)
 import android, urllib, time, xml.etree.ElementTree as ET
@@ -109,15 +109,15 @@ for e in root.findall('.//str'):
 # we have all the data - throw it into a toast notification to tell the user
 droid.notify(libraryName, libraryAddress)</code></pre>
 
-### Step 3.  Publish the script as a shortcut
+#### Step 3. Publish the script as a shortcut
 
-Once that is done it can be tested within SL4A.  To save a script when in the editor launch the menu and select *save and run*.  The script can also be launched by tapping it when on the home page of the app.
+Once that is done it can be tested within SL4A. To save a script when in the editor launch the menu and select *save and run*. The script can also be launched by tapping it when on the home page of the app.
 
-For convenience, the script can be added as a widget on the device.  Add a widget and select SL4A - this will give you an option to select the script you wish to run without having to launch the SL4A app.
+For convenience, the script can be added as a widget on the device. Add a widget and select SL4A - this will give you an option to select the script you wish to run without having to launch the SL4A app.
 
-### Further information
+#### Further information
 
-There is an excellent list of tutorials for SL4A on their wiki.  This includes a couple of library related ones - looking up books on a library catalogue site, and looking up books on LibraryThing.  Both implement the barcode scanner on the devices.
+There is an excellent list of tutorials for SL4A on their wiki. This includes a couple of library related ones - looking up books on a library catalogue site, and looking up books on LibraryThing. Both implement the barcode scanner on the devices.
 
 [List of Tutorials](https://code.google.com/p/android-scripting/wiki/Tutorials)
 

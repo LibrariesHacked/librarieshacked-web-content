@@ -31,7 +31,7 @@ Using encryption on the web has been regarded as essential for login and payment
 
 It's important to assess the requirement for encryption not just in the context of risk to the data involved in that service.  Many recent hacks against individuals have been a result of credentials leaked from insecure accounts, used to gain access to more secure services.  Facebook CEO Mark Zuckerberg had his Twitter and Pinterest accounts hacked as a result of leaked LinkedIn credentials[^4].  Twitter CEO Jack Dorney and Google CEO Sundar Pichai have had similar experiences.  If a service requires login, the likelihood is those credentials will be securing data elsewhere.  Protecting them is essential.
 
-### UK libraries
+#### UK libraries
 
 In a library context, patron credentials that need protecting are often a user ID and PIN/Password.  An individual's library account may then hold information such as email address, house address, date of birth, and even equalities information on an individual.  How well do UK library services protect that formation, and ensure security?  Logging in to a web catalogue should only be offered over a good standard of encryption.  Anything else would compromise that organisation's credibility to store personal data.
 
@@ -49,9 +49,9 @@ Current UK public web catalogues are shown below, with an indicator as to whethe
 
 The majority of these can be tested simply by visiting the site, but for further methodology see **what to do** suggestions below.
 
-<div class="table-responsive"><table id="tblCatalogues"></table></div>
+<div class="container"><table class="table" id="tblCatalogues"></table></div>
 
-### Updates
+#### Updates
 
 This post will be updated regularly to reflect changes.  All of the library services with seriously failing standards were contacted with Freedom of Information requests to ask what they were doing to address the securty concerns.  Some responded by installing certificates, some did nothing, and others have waited until future system changes.
 
@@ -63,7 +63,7 @@ This post will be updated regularly to reflect changes.  All of the library serv
 - 31st December 2016. Cumbria have implemented encryption although there is mixed HTTP/HTTPS content.  North Lincolnshire, and Lincolnshire have also upgraded to include encryption.
 - 15th July 2017.  All of Capita hosted sites have been fixed to make them enforce HTTPS.  Contacted Capita a couple of times regarding this.
 
-### What to do?
+#### What to do?
 
 Are you part of a local authority?  Firstly try to ensure your IT department include the web catalogue in any annual **penetration tests** as part of their <abbr title="Public Services Network">PSN</abbr> accreditation.  Not only will the tests be carried out by external, accredited professionals, but negative results will be dealt with urgently.  For those library services that are outsourced from the local authority, this is not a reason to not have strict IT security standards.  The same tests should be completed on an annual basis.
 
@@ -73,8 +73,7 @@ Some basic testing of web security doesn't need experienced penetration testers 
 2. If already using HTTPS, can the login be accessed by HTTP instead? Try changing the address to HTTP.  It should redirect back to HTTPS.
 3. If you're the site owner, check the site against an online SSL checker such as SSL Labs[^6].  This will give detailed and complex results, but also a simple grade of quality.  You should ideally be getting an A grade, anything lower then report to your supplier and IT to investigate.
 
-References
-----------
+#### References
 
 [^1]: GlobalSign: [SSL Information Center](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/)
 [^2]: Wikipedia: [Transport Level Security](https://en.wikipedia.org/wiki/Transport_Layer_Security)

@@ -31,7 +31,7 @@ However, the OS have a [presumption to publish](https://www.ordnancesurvey.co.uk
 
 This tutorial will attempt to map those libraries using the current dataset and freely available open data.  This is surprisingly difficult.  Those familiar with mapping tools (like Google or MapData), will know you normally just upload the CSV, it geocodes it all and shows the points.  That's true, but there are normally many licence restrictions.  Google will geocode for you, but you then HAVE to plot the points on a Google map and use their services.
 
-### Step 1. Signup or login to Carto
+#### Step 1. Signup or login to Carto
 
 Carto (previously known as CartoDB) is a free online map mapping service, though the free tier of membership restricts how much data you can store and doesn't allow private data.
 
@@ -39,7 +39,7 @@ It works by a process of uploading data into it's web interface.  As long as thi
 
 The [signup](https://carto.com/signup) is quite simple, and does not ask for too many details.
 
-### Step 2.  Upload first dataset
+#### Step 2.  Upload first dataset
 
 In the Carto dashboard change 'Your maps' to 'Your datasets'
 
@@ -82,8 +82,7 @@ Then repeating the process but selecting to upload a file instead of providing a
 
 'the_geom is the column that will store the location (geometry) of each library.  There is no recognised location field in the uploaded data so Carto will currently show these as 'null'.
 
-Geocoding the data
-------------------
+#### Geocoding the data
 
 Carto offers some geocoding facilities 'out of the box' which would allow for geocoding from address data (such as ).  In the UK
 
@@ -112,8 +111,7 @@ Upload that CSV into Carto.
 
 
 
-Step 4.  Data checking
-----------------------
+#### Step 4.  Data checking
 
 So with libraries and official postcodes uploaded some data checking can be done.
 

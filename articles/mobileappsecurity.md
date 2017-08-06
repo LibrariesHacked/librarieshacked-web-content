@@ -8,8 +8,7 @@ Author: dave
 Date: 2015/05/31
 ---
 
-Web app security and architecture
----------------------------------
+#### Web app security and architecture
 
 Web browsers provide a set of information to ensure users are kept informed of online security.  The user can see if a connection is encrypted.  The web address will be HTTPS (rather than HTTP), and there will be an indication of security such as a padlock symbol and a green coloured address bar.  When using encrypted connections the browser will also ensure various standards to make sure that security isn't compromised. This includes ensuring that all requests on the page use encryption (protecting against [mixed content](https://developer.mozilla.org/en-US/docs/Security/MixedContent)), and that the [encryption certificate](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/) is valid.
 
@@ -21,8 +20,7 @@ Web sites only expose one application tier to the user.  Spliting a web applicat
 
 The user interacts with the web pages (presentation tier) in the browser, the logic and data are then largely handled by the web server and database server, not exposed to the public (aside from selected data that is displayed on those pages).
 
-Mobile apps
------------
+#### Mobile apps
 
 Mobile apps are a significant change in architecture.  Splitting by presentation/logic/data again, the presentation tier is still displayed to the user on their device, but the device will also hold more of the logic and the data tier.  This exposes more of the process used to construct the presentation.  From a security point of view both the logic and data tiers are then more vulnerable.
 
@@ -30,8 +28,7 @@ Despite this, mobile operating systems give less information that browsers over 
 
 A hybrid mobile app is one where the app acts as a cointainer for webpages held on the device.  All a developer needs to do is write those pages, and make small modifications to the container app to customise it (app icon, etc).  It is a good short-cut to writing individual *native* apps, and means that a single set of code can be deployed to all app stores.  One of the most popular hybrid app frameworks is [Apache Cordova](http://cordova.apache.org/).  The downside is the result tends to look more web-like and less integrated with the native operating system.
 
-Analysing app security
-----------------------
+#### Analysing app security
 
 Without built-in security features on mobile operating systems, security analysis of an app is largely left down to the user.  There are tools and options for achieving this:
 
@@ -44,8 +41,7 @@ Without built-in security features on mobile operating systems, security analysi
 
 Using a variety of these tools, this post looks at a number of publicly available library membership apps to determine the security of the web services used to interact with the library catalogue and member data.
 
-Solus
------
+#### Solus
 
 | App type | Example | Privacy policy | Enforces HTTPS |
 | -------- | ------- | -------------- | -------------- |
@@ -61,8 +57,7 @@ As of 2015, the URL used to access those web services is an HTTPS one, encryptin
 
 The privacy policy gives details of policy on adware, spyware, what data is stored, colection of usage stats, and user options.
 
-Axiell
-------
+#### Axiell
 
 | App type | Example | Privacy policy | Enforces HTTPS |
 | -------- | ------- | -------------- | -------------- |
@@ -74,8 +69,7 @@ The Axiell app also differs from the Solus one in that it does not use a single 
 
 Because the Axiell app uses individual web services for each library, the answer to whether data is transmitted securely is *it depends*.  Some authorities have web services which are HTTPS, others use just HTTP (much like their web catalogues).  This makes it a slight gamble for the user as to the level of security they are provided with.
 
-Sirsi Dynix
------------
+#### Sirsi Dynix
 
 | App type | Example | Privacy policy | Enforces HTTPS |
 | -------- | ------- | -------------- | -------------- |
@@ -87,8 +81,7 @@ In this case the app is a hybrid app, displaying web pages stored on the device.
 
 BookMyne also use a set of web services under an HTTPS address, so data is transmitted securely.
 
-Civica - Sorcer mobile
-----------------------
+#### Civica - Sorcer mobile
 
 | App type | Example | Privacy policy | Enforces HTTPS |
 | -------- | ------- | -------------- | -------------- |
@@ -98,8 +91,7 @@ Civica provide Sorcer mobile for users to access their library account.  Another
 
 The app is written in native code (e.g. Java for the Android version).  Like the Axiell app, it directly accesses different URLs for each registered library.  Again, these appear to be a mix of HTTP and HTTPS, so the security of the app is dependent on which service the user is member of.
 
-Civica - Spydus mobile
-----------------------
+#### Civica - Spydus mobile
 
 | App type | Example | Privacy policy | Enforces HTTPS |
 | -------- | ------- | -------------- | -------------- |
@@ -107,8 +99,7 @@ Civica - Spydus mobile
 
 Civica seem to have another app providing integration with Spydus.
 
-Infor
------
+#### Infor
 
 | App type | Example | Privacy policy | Enforces HTTPS |
 | -------- | ------- | -------------- | -------------- |
@@ -118,8 +109,7 @@ Infor systems have an Android/iOS/Windows app for the Iguana web portal.  Again,
 
 The privacy policy says nothing about how data is stored or transferred, it lists functions of the app.
 
-Future developments
--------------------
+#### Future developments
 
 The current state of mobile app security standards (despite apps being in development for quite a few years) can be said to be immature compared with web security.  Issues for users such as unencrypted web services, or allowing encryption for only some users, highlight security concerns cannnot be left to the good will of suppliers.
 

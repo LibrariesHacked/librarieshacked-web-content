@@ -31,8 +31,7 @@ There are more significant examples.  Public Lending Right collect statistics fr
 
 There are many flaws in the [CIPFA annual library statistics](http://www.cipfa.org/services/statistics/comparative-profiles/public-libraries), but they are still collected annually by a majority of library services.  Having gone to the significant difficulty of putting that data together, the library services then submit it to CIPFA (a private organisation) who sell it back to them, sell it [to the DCMS](http://www.cipfastats.net/news/newsstory.asp?content=17410), and anyone else wishing to pay [£427.50 for a PDF](http://www.cipfa.org/policy-and-guidance/publications/c/cipfa-library-profile-2016).  If the libraries released this data openly there could be no need for this, but it is a practice that still continues.  At the least the data could be submitted to CIPFA, **AND** made open.  That would then encourage reuse by interested observers and researchers.
 
-Tips for open data
-------------------
+#### Tips for open data
 
 So, what could bring about a change in this culture?
 

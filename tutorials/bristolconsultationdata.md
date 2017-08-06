@@ -19,7 +19,7 @@ https://www.bristol.gov.uk/committee/2015/ua/ua000/0303_5.pdf) that aims to clos
 
 Along with survey data from a 'Bristol library futures' public consultation, the proposal draws from a number of data sources, including some geographic (GIS) data.
 
-### GIS data
+#### GIS data
 
 In the proposals, locations of libraries and the Bristol authority boundary lines are used to visualise library coverage.  The libraries are plotted with circular radius of 1.5 miles, to show the plans still give majority coverage across the authority.  Using a radius as a measure comes with various issues:
 
@@ -47,7 +47,7 @@ In this case the distance was assessed with the following qualifying factors, sp
 - Public transport links
 - Support for the elderly and disabled
 
-### Visualising the map data
+#### Visualising the map data
 
 The basic map within the PDF provided by Bristol council provides a visualisation of coverage, but doesn't allow residents to see (for example) what a 1 mile radius for each library would look like, or explore in detail which areas get the highest coverage.  Or to see the effect on coverage that closing 7 of the libraries would have.
 
@@ -74,7 +74,7 @@ The associated map is shown below, with the code sample underneath.
 <br/>
 <div id="map"></div>
 
-### Plugins used
+#### Plugins used
 
 The HTML below uses a number of JavaScript files.  These are:
 
@@ -84,7 +84,7 @@ The HTML below uses a number of JavaScript files.  These are:
 - Proj4JS: provides an easy way to convert from the northing/easting values usually used by local authorities, and the latitude/longitude values preferred by online mapping engines.
 - MapFunctions: JavaScript to generate the map, this code included below the HTML.
 
-### HTML code
+#### HTML code
 
 <pre class="prettyprint linenums"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -116,7 +116,7 @@ The HTML below uses a number of JavaScript files.  These are:
 &lt;/html&gt;</code>
 </pre>
 
-### Map functions
+#### Map functions
 
 <pre class="prettyprint linenums"><code>var closingCircles, libraryCircles, map, closingDisplayed = false;
 

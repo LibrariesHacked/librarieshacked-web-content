@@ -10,8 +10,7 @@ Date: 2014/11/20
 
 *[HTTPS]: Hyper Text Transfer Protocol Secure
 
-HTTPS in the browser
---------------------
+#### HTTPS in the browser
 
 Many people are familiar with HTTPS: encrypting communication between your PC and a website.  Various rules are associated with this standard.  Websites need to present a certificate, which needs to be verified by a certificate authority.  A browser would refuse to display a site if the certificate it found was for a different site, or unverified, or expired.  Browsers also provide a reassuring green padlock in the address bar when using HTTPS, giving users some peace of mind when logging into online services.
 
@@ -19,8 +18,7 @@ Users expect encryption (or expect **security**, whether they know about encrypt
 
 The effect of not using encryption when passing login credentials would be that someone else on the network could be having a nose at network traffic (termed **packet sniffing**).  They would simply be able to take note of the address of the site and the username/password relatively easily.
 
-HTTPS in apps
--------------
+#### HTTPS in apps
 
 Apps on phones and tablets have few built in security features to make the user aware of the security going on in the background.  The major operating systems (iOS, Android, Windows) give no information about how data is being transferred while using the app, it's left to the trust and imagination of the user.
 
@@ -28,8 +26,7 @@ It is easy to be cautious when using the web.  As soon as you open your browser 
 
 So much can go on even when an app isn't open.  With the web, even if you know a particular site doesn't have encryption, you might only access it while connected to a secure network.  For individuals that have personal blogs, a security certificate will often cost more than the website.  One imperfect way around this is to only login to your personal blog on a secure network, and to never use a password used elsewhere.  With apps, activity can be triggered whenever a connection becomes available, making it fairly impossible to only use a particular app when on a particular network.
 
-Library apps
-------------
+#### Library apps
 
 With the increase in mobile apps for public library users, security is going to become a bigger issue for library authorities.  A local council will already have a fairly substantial set of web security standards - most will have regular **penetration tests**, employing professional security experts to attack their websites and create reports on anything that isn't up to scratch.  Mobile app security is a bit of a black hole in this regard - it is unlikely security is tested to the same standards, if at all.
 

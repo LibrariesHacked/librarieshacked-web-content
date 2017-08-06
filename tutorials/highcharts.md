@@ -29,7 +29,7 @@ These are downloadable as CSV files, but often in cases where datasets may be up
 
 This tutorial takes the library computer bookings dataset as an example and uses HighCharts to create a line chart visualisation, showing the computer bookings counts for each library from 2001 to 2014. An example of the chart, created with the same code and demonstrating the interactive features of HighCharts, is at the top of this page.
 
-### Step 1.  Set up the base HTML
+#### Step 1.  Set up the base HTML
 
 To start from scratch (rather than embedding into an existing page), create a blank HTML file which will include:
 
@@ -62,7 +62,7 @@ To start from scratch (rather than embedding into an existing page), create a bl
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-### Step 2.  Write JavaScript to create the chart
+#### Step 2.  Write JavaScript to create the chart
 
 Once the structure of the page is in place, there is some JavaScript code needed to create the chart when the page has loaded.
 

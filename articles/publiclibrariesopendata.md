@@ -12,7 +12,7 @@ Open data has become so successful it is being used to justify a review Freedom 
 
 There is an argument for organisations better linking FoI processes to open data.  As requests are turned into automated open data outputs, requests should gradually reduce, effectively *'ticking off'* each one as a new dataset out in the open.  Reducing the number of requests, but not questioning the need.
 
-## technology and data investment
+#### technology and data investment
 
 Even with FoI under challenge, as well as general local and central government austerity, there is still considerable investment in technology and data:
 
@@ -20,7 +20,7 @@ Even with FoI under challenge, as well as general local and central government a
 - In 2014, the LGA open data incentive scheme encouraged Councils to publish planning licenses, premises licenses (e.g. pubs), and toilets, giving £7000 to each Council that published all 3 to a standard schema. Out of that came such aggregated developments as [the Great British Public Toilet Map.](http://greatbritishpublictoiletmap.rca.ac.uk/)
 - A range of councils have invested in data portals to showcase their datasets.  Examples include [Leeds Data Mill](http://leedsdatamill.org/), [Hampshire Hub](http://www.hampshirehub.net/), and Glasgow's [data launchpad](https://data.glasgow.gov.uk/).
 
-## investment in data, but not libraries?
+#### Investment in data, but not libraries?
 
 With closures and reductions in public library funding, alongside increases in funding for public data initiatives, there is a missing association between libraries and the process of providing information to citizens.
 

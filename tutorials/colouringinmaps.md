@@ -14,7 +14,7 @@ TutorialNeeded: web browser,QGIS
 TutorialTime: 1 hour
 ---
 
-Open data can be a headache.  **Ownership** of data isn't straightforward, and if datasets include data under a third-party licence then it can be difficult to separate out what can and can't be published.  Also, data that an organisation may consider themselves to own may be *derived* from third party data.
+Open data can be a headache. **Ownership** of data isn't straightforward, and if datasets include data under a third-party licence then it can be difficult to separate out what can and can't be published. Also, data that an organisation may consider themselves to own may be *derived* from third party data.
 
 In local government, a block to open data publishing is Ordnance Survey (OS) licensing restrictions.  For example, a local Council will create planning datasets which include *point* and *polygon* data (the points and boundaries on a map that the planning application refers to).  Even though this data will have been created by the local authority, it will have been done so with the aid of licensed data and mapping tools.  So even though those planning applications are public information, and made available for anyone to view, a lot of the most important information about them is derived and cannot be made **open** to use.
 
@@ -24,9 +24,9 @@ For a confusing read, the [Sharing derived data](https://www.ordnancesurvey.co.u
 
 The OS only supply a few cities though; it would be nice to be able to create maps for any area of the UK.  One area in which the OS have released recent open data, is their [Open Maps Local product](https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-map-local.html), allowing anyone to use certain map layers for any purpose.
 
-### Download the data
+#### Download the data
 
-Follow the links through the OS site to [download the open data](https://www.ordnancesurvey.co.uk/opendatadownload/products.html).  It involves selecting which National Grid reference squares you wish to download (e.g. ST), and some brief registration data as the link to download will be sent by email.
+Follow the links through the OS site to [download the open data](https://www.ordnancesurvey.co.uk/opendatadownload/products.html). It involves selecting which National Grid reference squares you wish to download (e.g. ST), and some brief registration data as the link to download will be sent by email.
 
 The download comes in a zipped up package with the following structure:
 
@@ -34,13 +34,13 @@ The download comes in a zipped up package with the following structure:
 - doc: a licence file.
 - resources: optional map styling files that can be loaded when editing the map layers.
 
-The data is in ESRI Shapefile data format.   A link to a guide for this data is given at the following location:
+The data is in ESRI Shapefile data format. A link to a guide for this data is given at the following location:
 
 [OS Open Map Getting Started](http://www.ordnancesurvey.co.uk/docs/user-guides/os-open-map-local-getting-started-guide.pdf)
 
 There are many GIS tools that will open shapefiles - ESRI's ArcGIS Desktop, Pitney Bowes' MapInfo, but the open source option is [QGIS](http://qgis.org/en/site/), a fully featured and free GIS tool.
 
-### Open in QGIS
+#### Open in QGIS
 
 The data folder from the OS looks full of files, and it can be daunting trying to figure out what needs to be opened.  For example:
 
@@ -49,9 +49,9 @@ The data folder from the OS looks full of files, and it can be daunting trying t
 - ST_Building.shp
 - ST_Building.shx
 
-In the case above, those 4 files are related to a single layer - the *.shp* file being the one to be opened in QGIS.  
+In the case above, those 4 files are related to a single layer - the *.shp* file being the one to be opened in QGIS.
 
-On loading *QGIS Desktop*, from the menu select *Add vector layer* either from the left toolbar, or the *Layer > Add Layer* menu.  To locate the source file browse to one of the *.shp* files from the data directory.
+On loading *QGIS Desktop*, from the menu select *Add vector layer* either from the left toolbar, or the *Layer > Add Layer* menu. To locate the source file browse to one of the *.shp* files from the data directory.
 
 To get a decent map it can be enough just to load the following layers:
 
@@ -62,18 +62,18 @@ To get a decent map it can be enough just to load the following layers:
 
 There are then options that may be useful depending on the particular map area such as railways lines, stations, tidal water, roundabouts, etc.
 
-### Style the map
+#### Style the map
 
 Style each individual layer by right clicking the layer name in the layer pane window and selecting *properties*.  From there, style details can be customised such as:
 
 - Line colours, pattern, weight, fill colours
 - Labels, fonts
- 
-After a little tweaking a map suitable for colouring in can be created (no fill colours and suitable spacing between lines).  It can be useful to use differing light pattern fills (e.g. spots, dashed lines, etc) for buildings, woodland, and water.
 
-### Print or save as image
+After a little tweaking a map suitable for colouring in can be created (no fill colours and suitable spacing between lines). It can be useful to use differing light pattern fills (e.g. spots, dashed lines, etc) for buildings, woodland, and water.
 
-To export QGIS has the *Print Composer* tool.  Selecting *Project > New Print Composer* will launch the tool, the current map can then be loaded into the print view by selecting *Layout > Add map*.  This then gives a selection tool to design the map area on the printed page (can be full screen for plain images).
+#### Print or save as image
+
+To export QGIS has the *Print Composer* tool. Selecting *Project > New Print Composer* will launch the tool, the current map can then be loaded into the print view by selecting *Layout > Add map*. This then gives a selection tool to design the map area on the printed page (can be full screen for plain images).
 
 More details on using the print composer tool are given at the QGIS tutorials and tips site:
 

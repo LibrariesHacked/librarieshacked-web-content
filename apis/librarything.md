@@ -1,6 +1,6 @@
 ---
 Title: librarything
-Description: three services provided: thingISBN, thingTitle and thingLang.  a web services API also provides full developer access to librarything data.  1000 requests per day
+Description: three services provided, thingISBN, thingTitle and thingLang.  a web services API also provides full developer access to librarything data.  1000 requests per day
 Type: BibliographicApi
 Format: XML
 Tutorial:
