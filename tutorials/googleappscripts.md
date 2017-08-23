@@ -14,17 +14,17 @@ TutorialNeeded: a google account
 TutorialTime: 1 hour
 ---
 
-Google is a useful place for working on collaborative documents, in an environment that's easy to control access to.  These include spreadsheets, documents, slides, fusion tables etc.  And also the lesser known 'Apps Scripts'.
+Google is a useful place for working on collaborative documents, and controlling access to those documents. These include spreadsheets, documents, slides, fusion tables etc. And also the lesser known 'Apps Scripts'.
 
-The [Google Apps Script](https://developers.google.com/apps-script/) language is primarily JavaScript with a number of additions to simplify common scripting tasks, and integrate with other Google services.
+The [Google Apps Script](https://developers.google.com/apps-script/) language is primarily JavaScript with a number of additional functions to simplify common scripting tasks, and integrate with other Google services.
 
-For example, if you have a Google Analytics account it supports [a set of script methods](https://developers.google.com/apps-script/advanced/analytics) to allow you to easily query your Analytics data.
+For example, if you have a Google Analytics account it supports [a set of methods](https://developers.google.com/apps-script/advanced/analytics) to allow you to easily query your Analytics data.
 
 Analytics already provided API (Application Programming Interface) access, but this makes accessing data from Google services a lot easier, and removes authentication as a task.  If you write an apps script and host it on your Google account then it can be given automatic access to your Analytics data.  Similarly, it will provide easy read/write access to documents and spreadsheets that are in the same account.  So you could query your Analytics account and update a Google Sheet with the data (if you wanted to).
 
-When working on scripts, it also offers a decent development environment, allowing you to debug them (though debugging is noticeably slow).
+When working on scripts, it also offers a decent development tool, allowing you to debug the scripts you write (though debugging is noticeably slow).
 
-Scripts are able to send out emails, at a limit of 100 per day, and can be set to run as part of a schedule.  That also makes it useful as a notifications and alerts system, where otherwise any automation scripts would need to be hosted on a server.
+Scripts are able to send out emails, at a limit of 100 per day, and can be set to run as part of a schedule. That also makes it useful as a notifications and alerts system, where otherwise automation scripts would need to be hosted on a server.
 
 As an example, the below script could be set to run as an automated task every day to check a library account, and send you an email if a loan is due for return within a certain time frame (e.g. within 5 days), and also to renew it if it is just about to go overdue.  It uses the following Google script additions:
 
@@ -32,7 +32,7 @@ As an example, the below script could be set to run as an automated task every d
 - **UrlFetchApp.fetch**.  To fetch data from a URL.  In this case a web service that retrieves loan data.
 - **XmlService.parse**.  To parse XML returned from the web service into an accessible object.
 
-The script is only compatible with Axiell Arena web services.  It effectively does the same thing as if you were using the library app and renewing a loan manually.  The following UK public library authorities are supported.
+The script is only compatible with Axiell Arena web services. It effectively does the same thing as if you were using the library app and renewing a loan manually. The following UK public library authorities are supported.
 
 | Service | URL | Library ID |
 | ------- | --- | ---------- |
