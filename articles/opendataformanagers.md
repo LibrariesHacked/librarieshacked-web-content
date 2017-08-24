@@ -79,6 +79,6 @@ It's also not bad for customer service excellence.
 
 Managers aren't always good at making decisions. They manage and empower their staff to make their own decisions in their areas of expertise. So if you want to do it, and feel comfortable with the data you work on, get on with it and just say what you're doing.
 
-This doesn't mean starting with things that could be controversial. What are your day-to-day reports? Top titles being lent? Push it out as open data, and tweet them. Summer Reading Challenge completion stats? Update them on your website and tell anyone interested (internal and external) to find them there.
+This doesn't mean starting with things that could be controversial. What are your day-to-day reports? Top titles being lent? Push it out as open data, and tweet them. Summer Reading Challenge completion stats? Update them on your website and tell anyone interested (internal and external) to find them there. Just done a CIPFA return last month? Send it to info @ librarieshacked.org
 
 Asking a manager to decide whether they want to do open data is just asking them a tricky question. Like asking if they want a biscuit or a cake. It's too difficult to answer, never ask something like that. Tell them you've baked a cake, shared it out, and they're welcome to have a slice.
