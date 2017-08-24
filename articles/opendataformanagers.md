@@ -14,11 +14,11 @@ Explaining open data can be difficult. Not the meaning of open data, a short sen
 
 But 'why' is tricky. Why invest time and money in it? What's in it for us? What's in it for me?
 
-People have no hesitation in using open data. Library services wouldn't refuse book covers for catalogue sites, population data to analysing library usage, bibliographic data to aid in cataloging, deprivation data for analysing membership reach. When these are free it's great, and we take advantage of that. Yet the idea that library data could serve needs outside of the service isn't often considered. Even when it is, it still doesn't answer **why**. Services are naturally selfish: happy to use, but not share.
+People have no hesitation in using open data. Library services wouldn't refuse book covers for catalogue sites, population data to analyse library usage, bibliographic data to aid in cataloging. When these are free it's great, and we take advantage of that. Yet the idea that library data could serve needs outside of the service isn't often considered. Even when it is, it still doesn't answer **why**. Services are naturally selfish: happy to use, but not share.
 
 Yet libraries are not historically selfish about providing data and information. Few library managers would ask why they should be providing books and information to the public for free. We're aware of the value of the public having access to data and information; this is why we have public libraries.
 
-That's possibly a decent enough reason for an information professional to explore open data, but wouldn't cut it for a manager. Library services have fixed and costed functions like book lending, and computer use. For a manager there'll be little interest in adding to what libraries do on the grounds that they should do it, either ethically or professionally.
+That's likely a decent enough reason for an information professional to explore open data, but wouldn't cut it for a manager. Library services have fixed and costed functions like book lending, and computer use. For a manager there'll be little interest in adding to what libraries do on the grounds that they should do it, either ethically or professionally.
 
 Speaking to people who are enthusiastic about open data, many have a moment at which it 'clicked'. That could be attending an event (like the [#ODCamp](http://odcamp.org.uk/) unconference), it could be seeing an example of open data being put to public use, or frustration at a lack of data in certain areas. It seems like open data has not 'clicked' in UK public libraries, though there's growing awareness of issues arising from being left behind.
 
