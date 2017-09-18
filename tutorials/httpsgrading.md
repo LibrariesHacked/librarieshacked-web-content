@@ -62,6 +62,7 @@ This post will be updated regularly to reflect changes.  All of the library serv
 - 15th November 2016. Darlington apply SSL certificate to their Arena site.
 - 31st December 2016. Cumbria have implemented encryption although there is mixed HTTP/HTTPS content.  North Lincolnshire, and Lincolnshire have also upgraded to include encryption.
 - 15th July 2017.  All of Capita hosted sites have been fixed to make them enforce HTTPS.  Contacted Capita a couple of times regarding this.
+- 1st September 2017. Hillingdon, East Ayrshire, Hounslow, Knowsley, Northumberland, Reading, Vale of Glamorgan, and West Lothian have implemented HTTPS, either on existing or new systems.
 
 #### What to do?
 
