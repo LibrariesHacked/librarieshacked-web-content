@@ -6,7 +6,7 @@ This is the content repository for the Libraries Hacked website, currently hoste
 What it is
 ----------
 
-All content on the { libraries: hacked } website is stored in markdown (.md) format. The website uses a Content Management System called Pico that does not rely on any external database, but uses files stored within a content directory.
+All content on the website is stored in markdown (.md) format. The website uses a Content Management System called Pico that does not rely on any external database, but uses files stored within a content directory.
 
 This repository holds all the content. Directories are used to split the content into sections.
 
