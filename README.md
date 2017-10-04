@@ -1,12 +1,12 @@
-{ libraries: hacked } website content
+Libraries Hacked website content
 =====================================
 
-This is the content repository for the Libraries Hacked website, currently hosted at [https://www.librarieshacked.org](https://www.librarieshacked.org).  Updates made here will be automatically pushed to the website.
+This is the content repository for the Libraries Hacked website, currently hosted at [https://www.librarieshacked.org](https://www.librarieshacked.org). Updates made here will be automatically pushed to the website.
 
 What it is
 ----------
 
-All content on the { libraries: hacked } website is stored in markdown (.md) format.  The website uses a Content Management System called Pico that does not rely on any external database, but uses files stored within a content directory.
+All content on the { libraries: hacked } website is stored in markdown (.md) format. The website uses a Content Management System called Pico that does not rely on any external database, but uses files stored within a content directory.
 
 This repository holds all the content. Directories are used to split the content into sections.
 
@@ -15,7 +15,7 @@ Directories
 
 | Directory | Description |
 | --------- | ----------- |
-| | set of dictinct pages under no category: 404, about, contact, index, and privacy policy |
+| / | a set of dictinct pages under no category: 404, about, contact, index, and privacy policy |
 | apis | listings of library data APIs |
 | apps | various example apps that use or interact with library data |
 | articles | articles on open data and library technology |
@@ -33,11 +33,11 @@ Directories
 Build/Deploy
 ------------
 
-The website is refreshed directly with content from this repository.  The files are copied into the content directory of the website.
+The website is refreshed directly with content from this repository. The files are copied into the content directory of the website. As the website uses a cache folder, the cache needs to be cleared when any updates are made.
 
 See the [main website repository](https://github.com/librarieshacked/libraries-hacked-website) for more info on how the website works.
 
 Licence
 -------
 
-Attribution licence for { libraries: hacked } content is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Attribution licence for Libraries Hacked content is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
