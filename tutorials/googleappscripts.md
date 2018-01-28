@@ -5,7 +5,7 @@ Type: Tutorial
 Tags:
 Template: tutorialpage
 Author: dave
-Date: 2015/02/07
+Date: 2017/12/16
 GitHub:
 TutorialType: WebDevelopment
 TutorialComplexity: medium
@@ -13,6 +13,40 @@ TutorialSkillsRequired: JavaScript,scripting,XML
 TutorialNeeded: a google account
 TutorialTime: 1 hour
 ---
+
+Library fines can be annoying. Have a few books out
+
+1. A pre-overdue email comes through (well, goes into spam) a few days before the item is due. No problem, I'll renew that when the time comes.
+2. The time never comes. It's forgotten about - probably looking at data or something.
+3. Days pass. Sometimes it's a very busy time and it's 5 or 6 days.
+
+During this time I've no dount there is great frustration for the library in not getting their books back, and the customers popping in asking at the desk. 'Has Mr H brought those books back yet?'  'Nope, sorry, he's still got them, don't worry though, we will make him pay another 15p.
+
+Renewing books ensures that the system is updated . This is not from systems not being able to do
+
+
+
+In these days of pre-overdue notices and online renewals it's easy to say there's no excuse to bring a library book back late. And in some ways there isn't, other than being forgetful and busy.
+
+Let's imagine a pre-overdue notice goes out a few days before a user ius due to go overdue. Whether it arrives by email or text the reaction is probably something like 'ah, I've got a few days, must remember to finish that book and bring it back '.  A useful reminder certianly, but not an urgent one.
+
+It's easu to say with, but it's equally easy to argue that with automation more can .  A simple patrctice could be:
+
+1. A pre-overdue email/SMS is sent out a few days 
+2. Shortly before the item (e.g. a few hours) is due to go overdue the system attempts to renew the item. That may be possible, if the item hasn't been reserved by someone else, or the user hasn't renewed too many times. Either way another nnotification is sent to the user.
+3. 
+
+The affect of 
+
+In the absence of such processes it's let to the users to create such automation.
+
+
+
+But on the other hand, in these days of automation it doesn't . A pre-overdue notice . Library services also send out overdue notices, that alert users when they have gone overdue. Are these sent out the day the user goes overdue? The next day? Ensuring fines are kept to a minimum
+
+
+
+
 
 Google is a useful place for working on collaborative documents, and controlling access to those documents. These include spreadsheets, documents, slides, fusion tables etc. And also the lesser known 'Apps Scripts'.
 
