@@ -1,6 +1,6 @@
 # Website content
 
-This is the content repository for the Libraries Hacked website, currently hosted at [https://www.librarieshacked.org](https://www.librarieshacked.org). Updates made here will be automatically pushed to the website.
+This was the content repository for the Libraries Hacked website, previously hosted at [https://www.librarieshacked.org](https://www.librarieshacked.org). Now archived as the latest website uses a single Jekyll repository with content externally hosted in a separate blog.
 
 ## Description
 
